@@ -1,23 +1,24 @@
 # TITULO DO PROJETO
 
 
-**Nome completo do Aluno 1, email do aluno 1**
+**Gabrielle Lira Dantas Wanderley, email do aluno 1**
 
-**Nome completo do Aluno 2, email do aluno 2**
+**Julia Gabriela de Resende, email do aluno 2**
 
-**Nome completo do Aluno 3, email do aluno 3**
+**Leandra Costa Ramos, email do aluno 3**
 
-**Nome completo do Aluno 4, email do aluno 4**
+**Luiz Victor Aldenucci, email do aluno 4**
 
-**Nome completo do Aluno 5, email do aluno 5**
+**Pedro Araújo Franco, email do aluno 5**
 
+**Renato Matos Alves Penna, email do aluno 6**
 ---
 
 Professores:
 
-** Prof. Nome do Prof 1 **
+** Eveline Alonso Veloso **
 
-** Prof. Nome do Prof 2 **
+** Juliana Amaral Baroni de Carvalho **
 
 ---
 
