@@ -1,19 +1,21 @@
-# Nome do projeto
+# WheelsOn
 
-Escreva um ou dois parágrafos resumindo o objetivo do seu projeto.
+No cenário atual, o aluguel de veículos se destaca como uma solução flexível e acessível para atender às demandas de mobilidade. Este projeto propõe uma plataforma intuitiva que conecta proprietários de veículos com consumidores, oferecendo uma variedade de opções para diferentes necessidades. Com foco na praticidade e transparência, os clientes podem reservar online, garantindo segurança e qualidade. Além de proporcionar conveniência, o projeto promove práticas sustentáveis ao incentivar o compartilhamento de veículos, contribuindo para uma mobilidade mais eficiente e ambientalmente consciente.
+
 
 ## Integrantes
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
+* Gabrielle Lira Dantas Wanderley
+* Julia Gabriela de Resende
+* Leandra Costa Ramos
+* Luiz Victor Aldenucci
+* Pedro Araújo Franco
+* Renato Matos Alves Penna
 
 ## Professor
 
-* Nome completo do professor 1
-* Nome completo do professor 2
+* Eveline Alonso Veloso
+* Juliana Amaral Baroni de Carvalho
 
 ## Instruções de utilização
 
