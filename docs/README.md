@@ -74,7 +74,19 @@ _Apresente aqui os perfis dos usuários-chave do sistema. Diversas são as infor
 
 ### 3.1. Análise da situação atual
 
-_Apresente uma descrição textual de como os sistemas atuais resolvem o problema que se propõe a resolver.  Caso sua proposta seja inovadora e não existam processos claramente definidos, **apresente como as tarefas que o seu sistema pretende implementar são executadas atualmente**, mesmo que não se utilize tecnologia computacional._
+No cenário atual, o setor de aluguel de veículos desempenha um papel significativo na oferta de soluções de mobilidade flexíveis e acessíveis. Com a crescente demanda por alternativas de transporte, especialmente em áreas urbanas densamente povoadas, tornou-se imperativo oferecer serviços que atendam às necessidades dos consumidores de forma eficaz e eficiente.
+
+**Análise da Situação Atual:**
+
+Demanda Crescente por Mobilidade Flexível: Com o aumento das atividades urbanas e o desejo de mobilidade sem a necessidade de possuir um veículo, a demanda por serviços de aluguel de carros está em ascensão. Os consumidores buscam opções flexíveis que se adaptem às suas necessidades específicas, seja para viagens de lazer, negócios ou outras finalidades.
+
+**Desafios de Sustentabilidade:**
+
+Embora o aluguel de veículos ofereça uma alternativa mais sustentável em comparação com a propriedade individual de carros, ainda há desafios em relação à eficiência energética e à emissão de gases de efeito estufa. A promoção de práticas sustentáveis, como o compartilhamento de veículos, é fundamental para mitigar os impactos ambientais.
+
+**Experiência do Cliente e Transparência:**
+
+A experiência do cliente e a transparência nas transações são elementos essenciais para o sucesso no setor de aluguel de veículos. Os consumidores valorizam a conveniência, a segurança e a clareza nas políticas de aluguel, incluindo preços transparentes, termos e condições claros e processos de reserva simplificados.
 
 ### 3.2. Descrição geral da proposta
 
