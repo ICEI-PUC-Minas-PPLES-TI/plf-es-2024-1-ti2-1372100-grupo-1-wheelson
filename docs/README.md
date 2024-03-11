@@ -12,6 +12,7 @@
 **Pedro Araújo Franco, email do aluno 5**
 
 **Renato Matos Alves Penna, email do aluno 6**
+
 ---
 
 Professores:
@@ -40,16 +41,11 @@ _Apresente uma frase introdutória definindo o que será apresentado._
 
 ### 1.1 Contextualização
 
-_Na **contextualização**, o aluno deve dizer do que se trata o trabalho, em que área ou contexto se insere.
-A **contextualização** deve ser desenvolvida de algo mais genérico para algo mais específico. 
-A citação de pesquisas quantitativas é bem aceita aqui (corretamente referenciadas)._
+_No cenário atual, o aluguel de automóveis se destaca como uma solução flexível e acessível para atender às necessidades de viagens. O projeto propõe uma plataforma intuitiva para conectar proprietários de automóveis com consumidores, oferecendo múltiplas opções para diferentes necessidades. Com foco na praticidade e transparência, os clientes podem fazer reservas online, garantindo segurança e qualidade, com rigorosas medidas de higiene. Além de proporcionar comodidade, o projeto promove práticas sustentáveis, incentivando o compartilhamento de veículos, promovendo viagens mais eficientes e ecologicamente corretas.
 
 ### 1.2 Problema
 
-_Em seguida o aluno deve caminhar a contextualização para descrever o **problema** que o trabalho trata. 
-O **problema** pode ser algo vivido em uma empresa específica. Neste caso, o aluno deve rapidamente apresentar 
-o cenário de problema da empresa. A empresa só deve ser citada explicitamente se o aluno tiver autorização 
-para tal._
+_ No setor de aluguel de carros, há dificuldades em gerenciar adequadamente a frota e agilizar os processos de reserva e devolução. Isso leva a problemas como falta ou excesso de veículos em certas localidades e atrasos nas transações, afetando tanto a empresa quanto a experiência do cliente. Uma solução automatizada e eficiente é necessária para resolver essas questões._
 
 ### 1.3 Objetivo geral
 
@@ -58,13 +54,15 @@ O objetivo deve ser bem direto, específico e definido com verbos de ação (ela
 
 #### 1.3.1 Objetivos específicos
 
-_Apresente também alguns (pelo menos 2) **objetivos específicos** dependendo de onde você vai querer 
-concentrar sua prática investigativa, ou como você irá aprofundar seu trabalho._
+_Elaborar mecanismos de pesquisa e filtragem de veículos de forma que a experiência do cliente seja eficiente e prática._
+
+_Desenvolver requisitos que visem a gerência dos veículos registrados e seus status correntes (disponível ou alugado)._
+
+_Desenvolver um sistema simples de pagamento, simplificando o processo de aluguel._
 
 ### 1.4 Justificativas
 
-_Mostre também as **justificativas** para o 
-desenvolvimento do seu trabalho e, caso deseje, destaque alguma contribuição do trabalho._
+_Alugar um carro pode se tornar um processo trabalhoso, estressante e extremamente burocrático. Com isso em mente, nosso projeto visa unificar, simplificar e abrir novas oportunidades para aqueles que desejam alugar veículos ou disponibilizá-los para aluguel. Propomos a criação de uma plataforma amigável, de fácil acesso e com um processo de pagamento simples, como forma de reformular o sistema de aluguel de veículos._
 
 ## 2. Participantes do processo
 
