@@ -37,7 +37,8 @@ mostrar algum resultado relevante do trabalho (até 10 linhas)._
 
 ## 1. Introdução
 
-_Apresente uma frase introdutória definindo o que será apresentado._
+_No cenário atual, o aluguel de veículos se destaca como uma solução flexível e acessível para atender às demandas de mobilidade. Este projeto propõe uma plataforma intuitiva que conecta proprietários de veículos com consumidores, oferecendo uma variedade de opções para diferentes necessidades. Com foco na praticidade e transparência, os clientes podem reservar online, garantindo segurança e qualidade. Além de proporcionar conveniência, o projeto promove práticas sustentáveis ao incentivar o compartilhamento de veículos, contribuindo para uma mobilidade mais eficiente e ambientalmente consciente.
+._
 
 ### 1.1 Contextualização
 
@@ -49,8 +50,7 @@ _ No setor de aluguel de carros, há dificuldades em gerenciar adequadamente a f
 
 ### 1.3 Objetivo geral
 
-_O aluno deve escrever um pequeno parágrafo ou frase com o **objetivo geral** do trabalho. 
-O objetivo deve ser bem direto, específico e definido com verbos de ação (elaborar, propor, avaliar, comparar, desenvolver, etc.). No caso específico deste projeto, o objetivo deste trabalho é desenvolver um sistema para automação de processos para um problema específico._
+Desenvolver um sistema para automação dos processos de aluguel de um veículo.
 
 #### 1.3.1 Objetivos específicos
 
@@ -66,7 +66,7 @@ _Alugar um carro pode se tornar um processo trabalhoso, estressante e extremamen
 
 ## 2. Participantes do processo
 
-_Apresente aqui os perfis dos usuários-chave do sistema. Diversas são as informações que podem ser relevantes para a definição dos perfis dos usuários, tais como idade, gênero, aspectos culturais, nível de educação, entre outros. A pesquisa de mercado pode ser uma ferramenta poderosa para se identificar e caracterizar os perfis de usuários. Apresente claramente o papel a ser desempenhado por cada usuário._
+Os perfis dos usuários chaves do sistema se consistem em locadores e locatários de veículos.
 
 ## 3. Modelagem do processo de negócio
 
@@ -74,9 +74,9 @@ _Apresente aqui os perfis dos usuários-chave do sistema. Diversas são as infor
 
 No cenário atual, o setor de aluguel de veículos desempenha um papel significativo na oferta de soluções de mobilidade flexíveis e acessíveis. Com a crescente demanda por alternativas de transporte, especialmente em áreas urbanas densamente povoadas, tornou-se imperativo oferecer serviços que atendam às necessidades dos consumidores de forma eficaz e eficiente.
 
-**Análise da Situação Atual:**
+**Demanda Crescente por Mobilidade Flexível:**
 
-Demanda Crescente por Mobilidade Flexível: Com o aumento das atividades urbanas e o desejo de mobilidade sem a necessidade de possuir um veículo, a demanda por serviços de aluguel de carros está em ascensão. Os consumidores buscam opções flexíveis que se adaptem às suas necessidades específicas, seja para viagens de lazer, negócios ou outras finalidades.
+Com o aumento das atividades urbanas e o desejo de mobilidade sem a necessidade de possuir um veículo, a demanda por serviços de aluguel de carros está em ascensão. Os consumidores buscam opções flexíveis que se adaptem às suas necessidades específicas, seja para viagens de lazer, negócios ou outras finalidades.
 
 **Desafios de Sustentabilidade:**
 
@@ -88,11 +88,12 @@ A experiência do cliente e a transparência nas transações são elementos ess
 
 ### 3.2. Descrição geral da proposta
 
-_Apresente aqui uma descrição da sua proposta abordando seus limites e suas ligações com as estratégias e objetivos do negócio. Apresente aqui as oportunidades de melhorias._
+O WheelsOn será uma plataforma online que conecta proprietários de veículos com consumidores em busca de opções de aluguel de carros. Com uma interface intuitiva e fácil de usar, os clientes poderão navegar pela plataforma, visualizar uma variedade de veículos disponíveis e fazer reservas de forma conveniente e rápida, oferecendo uma ampla gama de opções de veículos para atender às diversas necessidades dos consumidores. A plataforma priorizará a praticidade e a transparência em todas as transações, garantindo informações claras sobre preços, termos e condições de aluguel. Além disso, o WheelsOn promoverá práticas sustentáveis ao incentivar o compartilhamento de veículos, contribuindo para uma mobilidade mais eficiente e ambientalmente consciente. 
+
 
 ### 3.3. Modelagem dos processos
 
-[PROCESSO 1 - Nome do Processo](processo-1-nome-do-processo.md "Detalhamento do Processo 1.")
+[PROCESSO 1 - Nome do Processo](processo-1-nome-do-processo.md "Detalhamento do Processo 1.")  
 
 [PROCESSO 2 - Nome do Processo](processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
 
