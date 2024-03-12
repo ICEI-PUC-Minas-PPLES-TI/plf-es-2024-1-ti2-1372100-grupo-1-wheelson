@@ -1,4 +1,4 @@
-# TITULO DO PROJETO
+# WHEELSON
 
 
 **Gabrielle Lira Dantas Wanderley, email do aluno 1**
@@ -43,6 +43,9 @@ _No cenário atual, o aluguel de veículos se destaca como uma solução flexív
 ### 1.1 Contextualização
 
 _No cenário atual, o aluguel de automóveis se destaca como uma solução flexível e acessível para atender às necessidades de viagens. O projeto propõe uma plataforma intuitiva para conectar proprietários de automóveis com consumidores, oferecendo múltiplas opções para diferentes necessidades. Com foco na praticidade e transparência, os clientes podem fazer reservas online, garantindo segurança e qualidade, com rigorosas medidas de higiene. Além de proporcionar comodidade, o projeto promove práticas sustentáveis, incentivando o compartilhamento de veículos, promovendo viagens mais eficientes e ecologicamente corretas.
+Referências:
+https://mobilidade.estadao.com.br/mobilidade-para-que/4-vantagens-de-alugar-um-carro-no-dia-a-dia/
+https://portal.fgv.br/artigos/aumento-locacoes-veiculos-brasil
 
 ### 1.2 Problema
 
@@ -60,9 +63,13 @@ _Desenvolver requisitos que visem a gerência dos veículos registrados e seus s
 
 _Desenvolver um sistema simples de pagamento, simplificando o processo de aluguel._
 
+_Desenvolver funcionalidade própria para que clientes sejam também fornecedores de veículos._
+
 ### 1.4 Justificativas
 
-_Alugar um carro pode se tornar um processo trabalhoso, estressante e extremamente burocrático. Com isso em mente, nosso projeto visa unificar, simplificar e abrir novas oportunidades para aqueles que desejam alugar veículos ou disponibilizá-los para aluguel. Propomos a criação de uma plataforma amigável, de fácil acesso e com um processo de pagamento simples, como forma de reformular o sistema de aluguel de veículos._
+_Alugar um carro pode se tornar um processo trabalhoso, estressante e extremamente burocrático. Os sistemas disponíveis no mercado brasileiro que suprem a necessidade da população de alugar veículos hoje não é comparável, em relação à praticidade, rapidez e dinamismo, aos disponíveis em países de primeiro mundo. Com isso em mente, nosso projeto visa unificar, simplificar e abrir novas oportunidades para aqueles que desejam alugar veículos ou disponibilizá-los para aluguel.
+Como referência, um serviço de compartilhamento de veículos norte-americano, disponibilizado nos Estados Unidos e Canadá:
+https://turo.com/
 
 ## 2. Participantes do processo
 
