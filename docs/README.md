@@ -72,19 +72,7 @@ Os perfis dos usuários chaves do sistema se consistem em locadores e locatário
 
 ### 3.1. Análise da situação atual
 
-No cenário atual, o setor de aluguel de veículos desempenha um papel significativo na oferta de soluções de mobilidade flexíveis e acessíveis. Com a crescente demanda por alternativas de transporte, especialmente em áreas urbanas densamente povoadas, tornou-se imperativo oferecer serviços que atendam às necessidades dos consumidores de forma eficaz e eficiente.
-
-**Demanda Crescente por Mobilidade Flexível:**
-
-Com o aumento das atividades urbanas e o desejo de mobilidade sem a necessidade de possuir um veículo, a demanda por serviços de aluguel de carros está em ascensão. Os consumidores buscam opções flexíveis que se adaptem às suas necessidades específicas, seja para viagens de lazer, negócios ou outras finalidades.
-
-**Desafios de Sustentabilidade:**
-
-Embora o aluguel de veículos ofereça uma alternativa mais sustentável em comparação com a propriedade individual de carros, ainda há desafios em relação à eficiência energética e à emissão de gases de efeito estufa. A promoção de práticas sustentáveis, como o compartilhamento de veículos, é fundamental para mitigar os impactos ambientais.
-
-**Experiência do Cliente e Transparência:**
-
-A experiência do cliente e a transparência nas transações são elementos essenciais para o sucesso no setor de aluguel de veículos. Os consumidores valorizam a conveniência, a segurança e a clareza nas políticas de aluguel, incluindo preços transparentes, termos e condições claros e processos de reserva simplificados.
+Hoje, caso alguém precise se deslocar para algum local, é possível utilizar aplicativos de motoristas de aluguel, como Uber, 99, dentre outros. Também existe a possibilidade de o cliente alugar um veículo para utilizá-lo pelo período desejado, porém, diferentemente de alguns países, não possuímos em nossa região um sistema que possibilite a disponibilização de seu própio carro para aluguel.
 
 ### 3.2. Descrição geral da proposta
 
