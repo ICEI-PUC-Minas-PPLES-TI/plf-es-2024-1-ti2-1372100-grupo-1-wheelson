@@ -1,7 +1,6 @@
-### 3.3.2 Processo 2 – NOME DO PROCESSO
+### 3.3.2 Processo 2 – Gerenciamento-de-veiculos
 
-_Apresente aqui o nome e as oportunidades de melhoria para o processo 2. 
-Em seguida, apresente o modelo do processo 2, descrito no padrão BPMN._
+Um processo eficiente de gerenciamento de veículos é fundamental para garantir a disponibilidade e qualidade da frota de uma locadora de veículos. O processo de Gerenciamento de Veículos visa controlar o cadastramento e a disponibilidade dos veículos para garantir que a locadora possa atender às demandas dos clientes de forma segura e eficaz.
 
 ![Exemplo de um Modelo BPMN do PROCESSO 2](images/process.png "Modelo BPMN do Processo 2.")
 
