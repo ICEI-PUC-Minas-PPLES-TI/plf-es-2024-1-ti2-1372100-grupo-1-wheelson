@@ -83,7 +83,6 @@ Hoje, caso alguém precise se deslocar para algum local, é possível utilizar a
 
 ### 3.2. Descrição geral da proposta
 
-O WheelsOn será uma plataforma online que conecta proprietários de veículos com consumidores em busca de opções de aluguel de carros. Com uma interface intuitiva e fácil de usar, os clientes poderão navegar pela plataforma, visualizar uma variedade de veículos disponíveis e fazer reservas de forma conveniente e rápida, oferecendo uma ampla gama de opções de veículos para atender às diversas necessidades dos consumidores. A plataforma priorizará a praticidade e a transparência em todas as transações, garantindo informações claras sobre preços, termos e condições de aluguel. Além disso, o WheelsOn promoverá práticas sustentáveis ao incentivar o compartilhamento de veículos, contribuindo para uma mobilidade mais eficiente e ambientalmente consciente. 
 
 O projeto WheelsOn visa preencher esta lacuna deixada pelo mercado, unindo proprietarios de veiculos e locatários, facilitando o processo de aluguel autonômo. Usuários poderão se cadastrar tanto como locador ou locatário, realizar aluguéis de veículos ou então, disponibilizar os própios automóveis para aluguel. O processo de pagamento será todo realizado pelo aplicativo, evitando assim contato com terceiros.
 
