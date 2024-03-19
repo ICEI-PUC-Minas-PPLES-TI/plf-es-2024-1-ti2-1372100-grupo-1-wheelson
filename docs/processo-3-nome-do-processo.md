@@ -1,9 +1,10 @@
-### 3.3.3 Processo 3 – NOME DO PROCESSO
+### 3.3.3 Processo 3 – Sistema de reservas
 
 _Apresente aqui o nome e as oportunidades de melhoria para o processo 3. 
 Em seguida, apresente o modelo do processo 3, descrito no padrão BPMN._
 
-![Exemplo de um Modelo BPMN do PROCESSO 3](images/process.png "Modelo BPMN do Processo 3.")
+![Exemplo de um Modelo BPMN do PROCESSO 3]()
+![WhatsApp Image 2024-03-18 at 20 36 00_ccf51ddd](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/125665016/780e6608-ec16-44ed-8e77-870a744bbe76)
 
 
 #### Detalhamento das atividades
