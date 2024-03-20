@@ -3,7 +3,7 @@
 É essencial para qualquer software deseja sempre se manter ativo, que seus usuários sejam identificados e verificados, assim mantendo uma boa segurança para seu sistema. Tendo em vista isso, o processo Gerenciamento de clientes visa controlar essa admissão dos usuários para uma plataforma mais segura e eficiente.
 
 
-![gerenciamento-de-clientes](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129970038/ddc694e7-ea11-4554-bb3e-653303734742)
+![gerenciamento-de-clientes](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129970038/cab0ff4f-2206-49e8-8c80-0cf15d5a4da8)
 
 
 #### Detalhamento das atividades
