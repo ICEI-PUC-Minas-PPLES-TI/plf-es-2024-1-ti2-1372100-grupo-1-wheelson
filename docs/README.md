@@ -75,8 +75,7 @@ https://turo.com/
 
 Os participantes dos processos deste sistema se consistem em:
 -Usuários (Locadores e/ou Locatários).
--Equipe de gestão de serviços.
--Inspetor Wheelson.
+-Equipe de gestão WheelsOn.
 
 ## 3. Modelagem do processo de negócio
 
@@ -94,7 +93,7 @@ O projeto WheelsOn visa preencher esta lacuna deixada pelo mercado, unindo propr
 
 [PROCESSO 1 - Nome do Processo](processo-1-nome-do-processo.md "Detalhamento do Processo 1.")  
 
-[PROCESSO 2 - Nome do Processo](processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
+[PROCESSO 2 - Gerenciamento de veiculos](processo-2-Gerenciamento-de-veiculos.md "Detalhamento do Processo 2.")
 
 [PROCESSO 3 - Nome do Processo](processo-3-nome-do-processo.md "Detalhamento do Processo 3.")
 
