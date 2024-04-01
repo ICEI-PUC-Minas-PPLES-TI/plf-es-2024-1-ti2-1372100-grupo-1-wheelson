@@ -76,6 +76,7 @@ https://turo.com/
 Os participantes dos processos deste sistema se consistem em:
 -Usuários (Locadores e/ou Locatários).
 -Equipe de gestão de serviços.
+-Inspetor Wheelson.
 
 ## 3. Modelagem do processo de negócio
 
