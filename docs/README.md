@@ -73,7 +73,9 @@ https://turo.com/
 
 ## 2. Participantes do processo
 
-Os perfis dos usuários chaves do sistema se consistem em locadores e locatários de veículos.
+Os participantes dos processos deste sistema se consistem em:
+-Usuários (Locadores e/ou Locatários).
+-Equipe de gestão de serviços.
 
 ## 3. Modelagem do processo de negócio
 
