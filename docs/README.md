@@ -57,14 +57,15 @@ Desenvolver um sistema para automação dos processos de aluguel de um veículo.
 
 #### 1.3.1 Objetivos específicos
 
-_Elaborar mecanismos de pesquisa e filtragem de veículos de forma que a experiência do cliente seja eficiente e prática._
+_Elaborar mecanismos de pesquisa e filtragem de veículos disponiveis para aluguel ._
 
 _Desenvolver requisitos que visem a gerência dos veículos registrados e seus status correntes (disponível ou alugado)._
 
-_Desenvolver um sistema simples de pagamento, simplificando o processo de aluguel._
+_Desenvolver um sistema interno de pagamentos._
 
-_Desenvolver funcionalidade própria para que clientes sejam também fornecedores de veículos._
+_Desenvolver funcionalidade própria para que clientes escolham entre se cadastrar como locadores ou locatários de veículos._
 
+_Desenvolver funcionalidades apropriadas para aluguel e devolução de veículos alugados, auxiliando a comunicação entre locador e locatário._
 ### 1.4 Justificativas
 
 _Alugar um carro pode se tornar um processo trabalhoso, estressante e extremamente burocrático. Os sistemas disponíveis no mercado brasileiro que suprem a necessidade da população de alugar veículos hoje não é comparável, em relação à praticidade, rapidez e dinamismo, aos disponíveis em países de primeiro mundo. Com isso em mente, nosso projeto visa unificar, simplificar e abrir novas oportunidades para aqueles que desejam alugar veículos ou disponibilizá-los para aluguel.
