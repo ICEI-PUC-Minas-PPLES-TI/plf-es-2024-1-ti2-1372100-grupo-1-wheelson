@@ -1,8 +1,9 @@
-### 3.3.2 Processo 2 – Gerenciamento de veiculos
+### 3.3.2 Processo 2 – Gerenciamento de veiculo
 
 Um processo eficiente de gerenciamento de veículos é fundamental para garantir a disponibilidade e qualidade da frota de uma locadora de veículos. O processo de Gerenciamento de Veículos visa controlar o cadastramento e a disponibilidade dos veículos para garantir que a locadora possa atender às demandas dos clientes de forma segura e eficaz.
 
-![Exemplo de um Modelo BPMN do PROCESSO 2]( ![diagram derencia de veiculo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/7f3d0a7d-a16c-430c-b5bd-1d08fad1a636)
+![Exemplo de um Modelo BPMN do PROCESSO 2]( ![diagram_2 gerenciamento de veiculo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/c77ba63c-e191-4f46-8839-5013a92deeb6)
+
  )
   )
 )

@@ -73,7 +73,9 @@ https://turo.com/
 
 ## 2. Participantes do processo
 
-Os perfis dos usuários chaves do sistema se consistem em locadores e locatários de veículos.
+Os participantes dos processos deste sistema se consistem em:
+-Usuários (Locadores e/ou Locatários).
+-Equipe de gestão WheelsOn.
 
 ## 3. Modelagem do processo de negócio
 
@@ -91,9 +93,9 @@ O projeto WheelsOn visa preencher esta lacuna deixada pelo mercado, unindo propr
 
 [PROCESSO 1 - Nome do Processo](processo-1-nome-do-processo.md "Detalhamento do Processo 1.")  
 
-[PROCESSO 2 - Nome do Processo](processo-2-nome-do-processo.md "Detalhamento do Processo 2.")
+[PROCESSO 2 - Gerenciamento de veiculos](processo-2-Gerenciamento-de-veiculos.md "Detalhamento do Processo 2.")
 
-[PROCESSO 3 - Nome do Processo](processo-3-nome-do-processo.md "Detalhamento do Processo 3.")
+[PROCESSO 3 - Reserva de veículo](processo-3-Reserva-de-veículo.md "Detalhamento do Processo 3.")
 
 [PROCESSO 4 - Nome do Processo](processo-4-nome-do-processo.md "Detalhamento do Processo 4.")
 
