@@ -94,7 +94,7 @@ O projeto WheelsOn visa preencher esta lacuna deixada pelo mercado, unindo propr
 
 [PROCESSO 1 - Nome do Processo](processo-1-nome-do-processo.md "Detalhamento do Processo 1.")  
 
-[PROCESSO 2 - Gerenciamento de veiculos](processo-2-Gerenciamento-de-veiculos.md "Detalhamento do Processo 2.")
+[PROCESSO 2 - Gerenciamento de veiculos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-2-Gerenciamento-de-veiculos.md )
 
 [PROCESSO 3 - Reserva de veículo](processo-3-Reserva-de-veículo.md "Detalhamento do Processo 3.")
 
