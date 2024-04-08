@@ -2,8 +2,7 @@
 
 _Se consiste no processo de devoução de um veículo para o locador. Trata as medidas necessarias em caso de entrega do automóvel em condições piores do que na data inicial de aluguel._
 
-![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129300086/bc7ce2fc-0b0e-482f-83a1-5be709a31fe8)
-
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129300086/cc8d968b-a61c-4bdb-b573-8a29624fea2e)
 
 
 
@@ -17,7 +16,6 @@ _Se consiste no processo de devoução de um veículo para o locador. Trata as m
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
-
 |  Descrição      | Área de Texto    | Mínimo 30 caracteres |                |
 
 **Finalização do aluguel**
@@ -53,7 +51,6 @@ _Se consiste no processo de devoução de um veículo para o locador. Trata as m
 |  Número do cartão     |    Número   |0000 0000 0000 0000    |                   |
 |   Data de validade  |    Data        |   00/00/0000       |                   |
 |  CVV               |    Número              |3 dígitos                |           |
-
 |CPF ou CNPJ do titular   |Caixa de texto   |      formato de CPF ou CNPJ          |   |
 
 
