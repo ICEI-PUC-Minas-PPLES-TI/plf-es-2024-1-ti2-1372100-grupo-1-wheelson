@@ -66,3 +66,9 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 |                      |                                |                   |
+
+
+Campo	Tipo	Restrições	Valor Padrão
+Placa do veículo	Caixa de Texto	-	-
+Modelo do veículo	Caixa de Texto	-	-
+Ano de fabricação	Caixa de Texto	Fabricação anterior a 2014	-
