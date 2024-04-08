@@ -10,61 +10,66 @@ _Se consiste no processo de devoução de um veículo para o locador. Trata as m
 
 #### Detalhamento das atividades
 
-_Descreva aqui cada uma das propriedades das atividades do processo 4. 
-Devem estar relacionadas com o modelo de processo apresentado anteriormente._
 
-_Os tipos de dados a serem utilizados são:_
 
-_* **Área de texto** - campo texto de múltiplas linhas_
-
-_* **Caixa de texto** - campo texto de uma linha_
-
-_* **Número** - campo numérico_
-
-_* **Data** - campo do tipo data (dd-mm-aaaa)_
-
-_* **Hora** - campo do tipo hora (hh:mm:ss)_
-
-_* **Data e Hora** - campo do tipo data e hora (dd-mm-aaaa, hh:mm:ss)_
-
-_* **Imagem** - campo contendo uma imagem_
-
-_* **Seleção única** - campo com várias opções de valores que são mutuamente exclusivas (tradicional radio button ou combobox)_
-
-_* **Seleção múltipla** - campo com várias opções que podem ser selecionadas mutuamente (tradicional checkbox ou listbox)_
-
-_* **Arquivo** - campo de upload de documento_
-
-_* **Link** - campo que armazena uma URL_
-
-_* **Tabela** - campo formado por uma matriz de valores_
-
-**Nome da atividade 1**
+**Registro do problema na devolução**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+
+|  Descrição      | Área de Texto    | Mínimo 30 caracteres |                |
+
+**Finalização do aluguel**
+
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| Finalizar aluguel            | Fim do Processo de devolução     | default           |
 
 
-**Nome da atividade 2**
+**Registro do valor extra a ser pago**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Valor               | Número       |                |                   |
+
+**Escolher froma de pagamento**
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| PIX                  | Tela de pagamento por pix      | default                  |
+|   Cartão de crédito |  Tela de preenchimento de dados do cartão| default       |
+
+**Preencher dados do cartão de crédito**
+
+| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
+| ---             | ---              | ---            | ---               |
+| [Nome do campo] | [tipo de dados]  |                |                   |
+|  Nome do titular  | Caixa de texto  |                |                   |
+|  Número do cartão     |    Número   |0000 0000 0000 0000    |                   |
+|   Data de validade  |    Data        |   00/00/0000       |                   |
+|  CVV               |    Número              |3 dígitos                |           |
+
+|CPF ou CNPJ do titular   |Caixa de texto   |      formato de CPF ou CNPJ          |   |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
