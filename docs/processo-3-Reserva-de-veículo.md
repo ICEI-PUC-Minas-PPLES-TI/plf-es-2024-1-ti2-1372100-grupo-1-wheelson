@@ -42,7 +42,7 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 | **Campo**             | **Tipo**         | **Restrições** | **Valor default** |
 | ---                   | ---              | ---            | ---               |
-| [enviar arquivo]      | [jpeg|pdf]       | photoshop|png  |                   |
+| [enviar arquivo]      | [jpeg|pdf]       | [photoshop|png]|                   |
 | ***Exemplo:***        |                  |                |                   |
 | arquivo               | pdf              | photoshop|png  |                   |
 
