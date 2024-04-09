@@ -8,7 +8,50 @@ No processo de reservas de veículos, o cliente inicialmente faz uma solicitaç�
 
 #### Detalhamento das atividades
 
-**Enviar foto da CNH**
+**Escolher veículo que deseja alugar**
+
+| **Campo**             | **Tipo**         | **Restrições** | **Valor default** |
+| ---                   | ---              | ---            | ---               |
+| [enviar arquivo]      | [jpeg] [pdf]     |[photoshop][png]|                   |
+| ***Exemplo:***        |                  |                |                   |
+| arquivo               | pdf              |[photoshop][png]|                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---                 |
+| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
+| ***Exemplo:***       |                                |                     |
+| Enviar CRV           | Análise de documentação        | default             |
+
+**Verificar se o veículo encontra-se  disponível**
+
+| **Campo**             | **Tipo**         | **Restrições** | **Valor default** |
+| ---                   | ---              | ---            | ---               |
+| [enviar arquivo]      | [jpeg] [pdf]     |[photoshop][png]|                   |
+| ***Exemplo:***        |                  |                |                   |
+| arquivo               | pdf              |[photoshop][png]|                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---                 |
+| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
+| ***Exemplo:***       |                                |                     |
+| Enviar CRV           | Análise de documentação        | default             |
+
+**Escolher local de retirada e devolução**
+
+| **Campo**             | **Tipo**         | **Restrições** | **Valor default** |
+| ---                   | ---              | ---            | ---               |
+| [enviar arquivo]      | [jpeg] [pdf]     |[photoshop][png]|                   |
+| ***Exemplo:***        |                  |                |                   |
+| arquivo               | pdf              |[photoshop][png]|                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---                 |
+| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
+| ***Exemplo:***       |                                |                     |
+| Enviar CRV           | Análise de documentação        | default             |
+
+
+**Enviar foto do documento CNH**
 
 | **Campo**             | **Tipo**         | **Restrições** | **Valor default** |
 | ---                   | ---              | ---            | ---               |
@@ -36,19 +79,6 @@ No processo de reservas de veículos, o cliente inicialmente faz uma solicitaç�
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 | Validar informações  | Validar informações            |                     |
 
-**Análise da documentação**
-
-| **Campo**                        | **Tipo**         | **Restrições**                    | **Valor default** |
-| ---                              | ---              | ---                               | ---               |
-| [Nome do campo]                  | [tipo de dados]  |                                   |                   |
-|   Nome                           | Caixa de texto   | Apenas visualização               |                   |
-|   CPF                            | Caixa de texto   | Apenas visualização               |                   |
-|   Foto do documento CNH          | Imagem           | Apenas visualização               |                   |
-
-| **Comandos**         |  **Destino**                   | **Tipo**            |
-| ---                  | ---                            | ---                 |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| Proxima tarefa       | Tela de confirmação            |                     |
 
 **Escolher forma de pagamento**
 
