@@ -34,7 +34,7 @@ _Se consiste no processo de devoução de um veículo para o locador. Trata as m
 | [Nome do campo] | [tipo de dados]  |                |                   |
 | Valor               | Número       |                |                   |
 
-**Escolher froma de pagamento**
+**Escolher forma de pagamento**
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
