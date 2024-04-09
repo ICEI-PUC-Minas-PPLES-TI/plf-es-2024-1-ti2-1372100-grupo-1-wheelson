@@ -52,6 +52,12 @@ No processo de reservas de veículos, o cliente inicialmente faz uma solicitaç�
 
 **Escolher forma de pagamento**
 
+| **Comandos**         |  **Destino**                             | **Tipo**           |
+| ---                  | ---                                      | ---                |
+| [Nome do botão/link] | Atividade/processo de destino            | (default/cancel/  )|
+| PIX                  | Tela de pagamento por pix                | default            |
+| Cartão de crédito    | Tela de preenchimento de dados do cartão | default            |
+
 **Cadastro de cartão de crédito**
 
 | **Campo**         | **Tipo**         | **Restrições**   | **Valor default** |
