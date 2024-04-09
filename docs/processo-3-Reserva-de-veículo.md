@@ -69,12 +69,12 @@ No processo de reservas de veículos, o cliente inicialmente faz uma solicitaç�
 | [Nome do botão/link]        | Atividade/processo de destino  | (default/cancel/  ) |
 | Cadastrar cartão de crédito | Tela de confirmação            |                     |
 | Realizar o pagamento via PIX| Tela de confirmação            |                     |
-| Tela de confirmação         | Tela         | cancel              |
+| Tela de confirmação         | Tela de confirmação            | cancel              |
 
 **Concluir reserva**
 | **Comandos**             |  **Destino**                   | **Tipo**            |
 | ---                      | ---                            | ---                 |
 | [Nome do botão/link]     | Atividade/processo de destino  | (default/cancel/  ) |
-|         Aprovar          |      Fim do processo           |                     |
-|         Reprovar         |    Cancela processo            | cancel              |
+|         Aprovar          | Fim do processo                |                     |
+|         Reprovar         | Cancela processo               | cancel              |
 
