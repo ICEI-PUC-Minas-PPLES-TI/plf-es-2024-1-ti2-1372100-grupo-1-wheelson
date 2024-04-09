@@ -13,10 +13,8 @@ No processo de reservas de veículos, o cliente inicialmente faz uma solicitaç�
 | tipo de veículo       | ret, suv, sedã   |tipo            |                   |
 
 | **Comandos**            |  **Destino**                         | **Tipo** |
-| ---                     | ---                                  | ---                 |
-| [Nome do botão/link]    | Atividade/processo de destino        | (default/cancel/  ) |
-| ***Exemplo:***          |                                      |                     |
-| Escolher tipo dp veículo|Tela de verificação de disponibilidade| default             |
+| ---                     | ---                                  | ---      |
+| Escolher tipo dp veículo|Tela de verificação de disponibilidade| default  |
 
 **Verificar se o veículo encontra-se  disponível**
 
