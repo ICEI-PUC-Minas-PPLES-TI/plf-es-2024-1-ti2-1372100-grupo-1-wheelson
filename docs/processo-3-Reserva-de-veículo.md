@@ -40,12 +40,11 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 **Enviar foto da CNH**
 
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| **Campo**             | **Tipo**         | **Restrições** | **Valor default** |
+| ---                   | ---              | ---            | ---               |
+| [enviar arquivo]      | [jpeg|pdf]       | photoshop|png  |                   |
+| ***Exemplo:***        |                  |                |                   |
+| arquivo               | pdf              | photoshop|png  |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
