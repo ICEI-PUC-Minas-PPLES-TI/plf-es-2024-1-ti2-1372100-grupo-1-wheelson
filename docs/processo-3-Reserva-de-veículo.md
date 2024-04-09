@@ -58,7 +58,7 @@ No processo de reservas de veículos, o cliente inicialmente faz uma solicitaç�
 | PIX                  | Tela de pagamento por pix                | default            |
 | Cartão de crédito    | Tela de preenchimento de dados do cartão | default            |
 
-**Cadastro de cartão de crédito**
+**Preencher dados do cartão de crédito**
 
 | **Campo**         | **Tipo**         | **Restrições**   | **Valor default** |
 | ---               | ---              | ---              | ---               |
