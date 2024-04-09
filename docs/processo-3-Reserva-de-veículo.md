@@ -28,10 +28,11 @@ No processo de reservas de veículos, o cliente inicialmente faz uma solicitaç�
 **Escolher local de retirada e devolução**
 
 | **Campo**             | **Tipo**          | **Restrições**                                    | **Valor default** |
-| local                 | endereço completo | Local não escolhido dentro das opções disponíveis |                   |
-|                       |                   |                                                   |                   |
+| ---                   | ---               |    ---                                            | ---               |
+| local                 |endereço completo  | Local não escolhido dentro das opções disponíveis |                   |
 
 | **Comandos**                              | **Destino**                                       | **Tipo** |
+| ---                                       | ---                                               | ---      |
 | Escolher local (opções disponíveis)       | Página de revisão                                 | default  |
 |                                           |                                                   |          |
 
