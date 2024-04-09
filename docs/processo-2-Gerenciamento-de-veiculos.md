@@ -8,7 +8,7 @@ Um processo eficiente de gerenciamento de veículos é fundamental para garantir
 
 
 #### Detalhamento das atividades
-
+<!--
 _Descreva aqui cada uma das propriedades das atividades do processo 2. 
 Devem estar relacionadas com o modelo de processo apresentado anteriormente._
 
@@ -37,35 +37,33 @@ _* **Arquivo** - campo de upload de documento_
 _* **Link** - campo que armazena uma URL_
 
 _* **Tabela** - campo formado por uma matriz de valores_
-
-**Solicitar informações do carro como placa, modelo e ano de fabricação**
+-->
+**Enviar certificado de Registro de Veiculo (CRV) ou Recibo de compra e venda**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-| ***Exemplo:***  |                  |                |                   |
-| login           | Caixa de Texto   | formato de e-mail |                |
-| senha           | Caixa de Texto   | mínimo de 8 caracteres |           |
+| Cadastrar CRV   | Arquivo          |                |                   |
+
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| Enviar CRV           | Validar documentação           |                   |
 
 
-**Nome da atividade 2**
+
+**Enviar informações do carro como placa, modelo e ano de fabricação**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
+| Placa           | Caixa de texto   |sem caracteres especiais|     0000000       |
+| Modelo          | Caixa de texto   |                |                   |
+| Ano de fabricação| Data            |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| Enviar informações   |  Validar informações           |                   |
 
 
 
