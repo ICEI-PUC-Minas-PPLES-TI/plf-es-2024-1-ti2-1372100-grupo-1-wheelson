@@ -3,8 +3,7 @@
 No processo de reservas de veículos, o cliente inicialmente faz uma solicitação, e a agência verifica a disponibilidade do veículo desejado. Uma vez confirmada a disponibilidade, o cliente fornece informações pessoais e de pagamento, e a agência emite a confirmação da reserva junto com os detalhes do aluguel. Após receber as instruções, o cliente retira o veículo no local e data combinados. Ao término do período de uso, o cliente devolve o veículo à agência.
 
 
-![WhatsApp Image 2024-04-01 at 20 44 24_d153050f](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/125665016/98c968c6-e7b3-413b-b815-5846b9f54873)
-
+![reserva atualizada](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/135463549/aff83f06-1aea-4a52-a127-b5622b52f563)
 
 
 #### Detalhamento das atividades
@@ -50,7 +49,7 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 | ***Exemplo:***       |                                |                   |
-| entrar               | Fim do Processo 1              | default           |
+| Enviar CRV           | Validar documentação           | default           |
 | cadastrar            | Início do proceso de cadastro  |                   |
 
 
