@@ -46,21 +46,21 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | arquivo               | pdf              |[photoshop][png]|                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---               |
+| ---                  | ---                            | ---                 |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                   |
-| Enviar CRV           | Validar documentação           | default           |
-| cadastrar            | Início do proceso de cadastro  |                   |
+| ***Exemplo:***       |                                |                     |
+| Enviar CRV           | Validar documentação           | default             |
 
+**Revisar data, local, custos totais e horário de retirada**
 
-**Analisar identidade enviada pelo cliente**
+| **Campo**       | **Tipo**         | **Restrições**                                 | **Valor default** |
+| ---             | ---              | ---                                            | ---               |
+| [Data]          | (dd-mm-aaaa)     |[qualquer um fora do tipo]                      | 00/00/0000        |
+| [Local]         | Nome Local       |[qualquer não compatível com local selecionado] | default           |
+| [Custos Totais] | 000,00           |[entre 0000,0 e 00,00]                          | 000,00            |
+| [Horário]       | (hh:mm:ss)       |[qualquer um fora do tipo]                      | 00:00:00          |
 
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|                 |                  |                |                   |
-
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|                      |                                |                   |
+| Validar informações  | Validar informações            |                     |
