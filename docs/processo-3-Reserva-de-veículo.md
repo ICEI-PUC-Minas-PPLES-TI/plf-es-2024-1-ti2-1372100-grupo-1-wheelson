@@ -20,7 +20,7 @@ No processo de reservas de veículos, o cliente inicialmente faz uma solicitaç�
 | ---                  | ---                            | ---                 |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 | ***Exemplo:***       |                                |                     |
-| Enviar CRV           | Validar documentação           | default             |
+| Enviar CRV           | Análise de documentação        | default             |
 
 **Revisar data, local, custos totais e horário de retirada**
 
@@ -35,3 +35,46 @@ No processo de reservas de veículos, o cliente inicialmente faz uma solicitaç�
 | ---                  | ---                            | ---                 |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 | Validar informações  | Validar informações            |                     |
+
+**Análise da documentação**
+
+| **Campo**                        | **Tipo**         | **Restrições**                    | **Valor default** |
+| ---                              | ---              | ---                               | ---               |
+| [Nome do campo]                  | [tipo de dados]  |                                   |                   |
+|   Nome                           | Caixa de texto   | Apenas visualização               |                   |
+|   CPF                            | Caixa de texto   | Apenas visualização               |                   |
+|   Foto do documento CNH          | Imagem           | Apenas visualização               |                   |
+
+| **Comandos**         |  **Destino**                   | **Tipo**            |
+| ---                  | ---                            | ---                 |
+| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
+| Proxima tarefa       | Tela de confirmação            |                     |
+
+**Escolher forma de pagamento**
+
+**Cadastro de cartão de crédito**
+
+| **Campo**         | **Tipo**         | **Restrições**   | **Valor default** |
+| ---               | ---              | ---              | ---               |
+| [Nome do campo]   | [tipo de dados]  |                  |                   |
+| Numero do cartão  | Caixa de texto   | 0000.0000.0000.00|                   |
+| Data de vencimento| Caixa de texto   | 00/00/0000       |                   |
+| Nome no titular   | Caixa de texto   |                  |                   |
+| CVV               | Caixa de texto   | 000              |                   |
+| CPF               | Caixa de texto   | 000.000.000-00   |                   |
+
+
+| **Comandos**                |  **Destino**                   | **Tipo**            |
+| ---                         | ---                            | ---                 |
+| [Nome do botão/link]        | Atividade/processo de destino  | (default/cancel/  ) |
+| Cadastrar cartão de crédito | Tela de confirmação            |                     |
+| Realizar o pagamento via PIX| Tela de confirmação            |                     |
+| Tela de confirmação         | Tela         | cancel              |
+
+**Concluir reserva**
+| **Comandos**             |  **Destino**                   | **Tipo**            |
+| ---                      | ---                            | ---                 |
+| [Nome do botão/link]     | Atividade/processo de destino  | (default/cancel/  ) |
+|         Aprovar          |      Fim do processo           |                     |
+|         Reprovar         |    Cancela processo            | cancel              |
+
