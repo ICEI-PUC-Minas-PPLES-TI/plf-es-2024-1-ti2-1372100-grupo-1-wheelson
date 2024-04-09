@@ -12,58 +12,31 @@ No processo de reservas de veículos, o cliente inicialmente faz uma solicitaç�
 
 | **Campo**             | **Tipo**         | **Restrições** | **Valor default** |
 | ---                   | ---              | ---            | ---               |
-| [enviar arquivo]      | [jpeg] [pdf]     |[photoshop][png]|                   |
-| ***Exemplo:***        |                  |                |                   |
-| arquivo               | pdf              |[photoshop][png]|                   |
+| tipo de veículo       | ret, suv, sedã   |tipo            |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---                 |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                     |
-| Enviar CRV           | Análise de documentação        | default             |
+| **Comandos**            |  **Destino**                         | **Tipo** |
+| ---                     | ---                                  | ---                 |
+| [Nome do botão/link]    | Atividade/processo de destino        | (default/cancel/  ) |
+| ***Exemplo:***          |                                      |                     |
+| Escolher tipo dp veículo|Tela de verificação de disponibilidade| default             |
 
 **Verificar se o veículo encontra-se  disponível**
 
-| **Campo**             | **Tipo**         | **Restrições** | **Valor default** |
-| ---                   | ---              | ---            | ---               |
-| [enviar arquivo]      | [jpeg] [pdf]     |[photoshop][png]|                   |
-| ***Exemplo:***        |                  |                |                   |
-| arquivo               | pdf              |[photoshop][png]|                   |
-
-| **Comandos**         |  **Destino**                   | **Tipo** |
+| **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                     |
-| Enviar CRV           | Análise de documentação        | default             |
+| Disponível           | Prosseguir para escolher local | default             |
+|                      | de retirada e devolução        |                     |
+| Indisponível         | Retornar para "Escolher veículo| default             |
+|                      | que deseja alugar"             |                     |
 
 **Escolher local de retirada e devolução**
 
-| **Campo**             | **Tipo**         | **Restrições** | **Valor default** |
-| ---                   | ---              | ---            | ---               |
-| [enviar arquivo]      | [jpeg] [pdf]     |[photoshop][png]|                   |
-| ***Exemplo:***        |                  |                |                   |
-| arquivo               | pdf              |[photoshop][png]|                   |
+| **Campo**             | **Tipo**          | **Restrições**                                    | **Valor default** |
+| local                 | endereço completo | Local não escolhido dentro das opções disponíveis |                   |
 
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---                 |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                     |
-| Enviar CRV           | Análise de documentação        | default             |
+| **Comandos**                       | **Destino**             | **Tipo** |
+| Escolher local (opções disponíveis)| Página de revisão       | default  |
 
-
-**Enviar foto do documento CNH**
-
-| **Campo**             | **Tipo**         | **Restrições** | **Valor default** |
-| ---                   | ---              | ---            | ---               |
-| [enviar arquivo]      | [jpeg] [pdf]     |[photoshop][png]|                   |
-| ***Exemplo:***        |                  |                |                   |
-| arquivo               | pdf              |[photoshop][png]|                   |
-
-| **Comandos**         |  **Destino**                   | **Tipo** |
-| ---                  | ---                            | ---                 |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| ***Exemplo:***       |                                |                     |
-| Enviar CRV           | Análise de documentação        | default             |
 
 **Revisar data, local, custos totais e horário de retirada**
 
