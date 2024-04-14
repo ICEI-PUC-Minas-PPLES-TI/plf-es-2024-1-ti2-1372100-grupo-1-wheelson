@@ -9,7 +9,7 @@
 #### Detalhamento das atividades
 
 
-**Escolher cadastro**
+**Escolher como deve se cadastrar**
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
@@ -39,7 +39,7 @@
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|   Enviar            |   Envia dados para Análise da documentação |       Default            |
+|   Enviar            |   Envia dados para Analisar documentação |       Default            |
 | Voltar | Retorna para tela anterior | cancel |
 
 **Cadastro de Locador**
@@ -61,12 +61,12 @@
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-|   Enviar            |  Envia dados para Tela de confirmação      |       Default            |
+|   Enviar            |  Envia dados para Tela de Atualizar status do usuário      |       Default            |
 | Voltar | Retorna para tela anterior | cancel |
 
 
 
-**Análise da documentação**
+**Analisar documentação**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
@@ -86,9 +86,9 @@
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| Proxima tarefa       | Tela de confirmação            |                 |
+| Proxima tarefa       | Tela de Atualizar status do usuário            |                 |
 
-**Confirmação**
+**Atualizar status do usuário**
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
