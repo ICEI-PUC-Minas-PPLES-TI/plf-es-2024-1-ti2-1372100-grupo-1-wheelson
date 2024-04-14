@@ -11,14 +11,19 @@ _Se consiste no processo de devoução de um veículo para o locador. Trata as m
 
 
 
-**Registro do problema na devolução**
+**Registrar no sistema uma descrição detalhada do problema**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
 |  Descrição      | Área de Texto    | Mínimo 30 caracteres |                |
 
-**Finalização do aluguel**
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+| Enviar            | Envio para a equipe WheelsOn     | default           |
+
+
+**Finalizar aluguel**
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
@@ -27,14 +32,19 @@ _Se consiste no processo de devoução de um veículo para o locador. Trata as m
 | Finalizar aluguel            | Fim do Processo de devolução     | default           |
 
 
-**Registro do valor extra a ser pago**
+**Registrar o valor extra a ser pago pelo proprietário**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | [Nome do campo] | [tipo de dados]  |                |                   |
 | Valor               | Número       |                |                   |
+| Descrição           | Área de texto       |                |                   |
 
-**Escolher forma de pagamento**
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+| Enviar            | Envio para o locatário     | default           |
+
+**Escolher forma de pagamento (cartão de crédito ou pix)**
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
@@ -42,7 +52,7 @@ _Se consiste no processo de devoução de um veículo para o locador. Trata as m
 | PIX                  | Tela de pagamento por pix      | default                  |
 |   Cartão de crédito |  Tela de preenchimento de dados do cartão| default       |
 
-**Preencher dados do cartão de crédito**
+**Preencher dados do cartão de crédito e realizar pagamento**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
@@ -52,6 +62,11 @@ _Se consiste no processo de devoução de um veículo para o locador. Trata as m
 |   Data de validade  |    Data        |   00/00/0000       |                   |
 |  CVV               |    Número              |3 dígitos                |           |
 |CPF ou CNPJ do titular   |Caixa de texto   |      formato de CPF ou CNPJ          |   |
+
+| **Comandos**         |  **Destino**                   | **Tipo** |
+| ---                  | ---                            | ---               |
+| Realizar pagamento   |Tela de finalização do aluguel    | default           |
+
 
 
 
