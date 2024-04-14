@@ -3,7 +3,7 @@
 É essencial para qualquer software deseja sempre se manter ativo, que seus usuários sejam identificados e verificados, assim mantendo uma boa segurança para seu sistema. Tendo em vista isso, o processo Gerenciamento de clientes visa controlar essa admissão dos usuários para uma plataforma mais segura e eficiente.
 
 
-![gerenciamento-de-clientes](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129970038/5b7a3ec7-e7ee-4dde-9bb3-063603e66f28)
+![gerenciamento-de-clientes](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129970038/49afe11f-f2dd-4d33-af61-3abd85df473e)
 
 
 #### Detalhamento das atividades
@@ -13,16 +13,14 @@
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 |    Cadastrar-se como Locador   |  Tela de cadastro de locador        |       |
 | Cadastrar-se como Locatário | Tela de cadastro de locatário |     |
 | Voltar | Retorna a página inicial  | cancel |
 
-**Cadastro de Locatário**
+**Cadastrar dados como locatário**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
 |   Nome          |   Caixa de texto |                |                   |
 |   CPF           | Caixa de texto   | 000.000.000-00 |                   |
 | Data de nascimento | Data          |    00/00/0000  |                   |
@@ -38,15 +36,13 @@
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 |   Enviar            |   Envia dados para Analisar documentação |       Default            |
 | Voltar | Retorna para tela anterior | cancel |
 
-**Cadastro de Locador**
+**Cadastrar dados como locador**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
 |   Nome          |   Caixa de texto |                |                   |
 |   CPF           | Caixa de texto   | 000.000.000-00 |                   |
 | Data de nascimento | Data          |    00/00/0000  |                   |
@@ -60,7 +56,6 @@
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 |   Enviar            |  Envia dados para Tela de Atualizar status do usuário      |       Default            |
 | Voltar | Retorna para tela anterior | cancel |
 
@@ -70,7 +65,6 @@
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
 |   Nome          |   Caixa de texto |   Apenas visualização             |                   |
 |   CPF           | Caixa de texto   | Apenas visualização|                   |
 | Data de nascimento | Data          |   Apenas visualização  |                   |
@@ -85,13 +79,11 @@
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 | Proxima tarefa       | Tela de Atualizar status do usuário            |                 |
 
 **Atualizar status do usuário**
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
 |         Aprovar          |      Fim do processo    |                   |
 |         Reprovar         |    Cancela processo                  | cancel  |
 
