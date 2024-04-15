@@ -92,13 +92,13 @@ O projeto WheelsOn visa preencher esta lacuna deixada pelo mercado, unindo propr
 
 ### 3.3. Modelagem dos processos
 
-[PROCESSO 1 - Nome do Processo](processo-1-nome-do-processo.md "Detalhamento do Processo 1.")  
+[PROCESSO 1 - Nome do Processo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-1-Gerenciamento-de-clientes.md)  
 
 [PROCESSO 2 - Gerenciamento de veiculos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-2-Gerenciamento-de-veiculos.md )
 
-[PROCESSO 3 - Reserva de veículo](processo-3-Reserva-de-veículo.md "Detalhamento do Processo 3.")
+[PROCESSO 3 - Reserva de veículo]([processo-3-Reserva-de-veículo.md "Detalhamento do Processo 3."](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-3-Reserva-de-ve%C3%ADculo.md))
 
-[PROCESSO 4 - Nome do Processo](processo-4-nome-do-processo.md "Detalhamento do Processo 4.")
+[PROCESSO 4 - Nome do Processo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-4-Devolu%C3%A7%C3%A3o-de-ve%C3%ADculo.md)
 
 ## 4. Projeto da solução
 
