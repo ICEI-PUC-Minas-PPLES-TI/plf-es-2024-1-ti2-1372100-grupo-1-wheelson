@@ -1,13 +1,13 @@
 # WHEELSON
 
 
-**Gabrielle Lira Dantas Wanderley, email do aluno 1**
+**Gabrielle Lira Dantas Wanderley, gabrielle.lira.d.w@gmail.com**
 
 **Julia Gabriela de Resende, email do aluno 2**
 
 **Leandra Costa Ramos, email do aluno 3**
 
-**Luiz Victor Aldenucci, email do aluno 4**
+**Luiz Victor Aldenucci, luizvictoraldenucci@gmail.com**
 
 **Pedro Araújo Franco, email do aluno 5**
 
