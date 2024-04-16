@@ -52,13 +52,15 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 
 
-**Enviar informações do carro como placa, modelo e ano de fabricação**
+**Enviar informações do carro**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | Placa           | Caixa de texto   |sem caracteres especiais|     0000000       |
 | Modelo          | Caixa de texto   |                |                   |
 | Ano de fabricação| Data            |                |                   |
+| Valor Diário| Número            |       R$00,00         |                   |
+| Cor   | Caixa de texto            |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
