@@ -3,7 +3,8 @@
 Um processo eficiente de gerenciamento de veículos é fundamental para garantir a disponibilidade e qualidade da frota de uma locadora de veículos. O processo de Gerenciamento de Veículos visa controlar o cadastramento e a disponibilidade dos veículos para garantir que a locadora possa atender às demandas dos clientes de forma segura e eficaz.
 
 
-![diagram_2](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/92e7662b-442f-4fb0-8c3f-db8cc58fff96)
+![diagram_2](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/d9d8cb00-2144-45b6-a242-e1ac2855b7f6)
+
 
 
 #### Detalhamento das atividades
@@ -51,13 +52,15 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 
 
-**Enviar informações do carro como placa, modelo e ano de fabricação**
+**Enviar informações do carro**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 | Placa           | Caixa de texto   |sem caracteres especiais|     0000000       |
 | Modelo          | Caixa de texto   |                |                   |
 | Ano de fabricação| Data            |                |                   |
+| Valor Diário| Número            |       R$00,00         |                   |
+| Cor   | Caixa de texto            |                |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
