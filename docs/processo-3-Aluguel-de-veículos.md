@@ -33,7 +33,7 @@ No processo de aluguel de veículos, o cliente inicialmente faz uma solicitaçã
 | **Comandos**                              | **Destino**                                       | **Tipo** |
 | ---                                       | ---                                               | ---      |
 | Escolher local (opções disponíveis)       | Página de revisão                                 | default  |
-|                                           |                                                   |          |
+
 
 
 **Revisar data, local, custos totais e horário de retirada**
