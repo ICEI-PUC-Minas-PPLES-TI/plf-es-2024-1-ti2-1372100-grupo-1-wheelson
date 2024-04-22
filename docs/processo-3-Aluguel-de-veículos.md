@@ -1,6 +1,6 @@
-### 3.3.3 Processo 3 – Reserva de veículo
+### 3.3.3 Processo 3 – Aluguel de veículos
 
-No processo de reservas de veículos, o cliente inicialmente faz uma solicitação, e a agência verifica a disponibilidade do veículo desejado. Uma vez confirmada a disponibilidade, o cliente fornece informações pessoais e de pagamento, e a agência emite a confirmação da reserva junto com os detalhes do aluguel. Após receber as instruções, o cliente retira o veículo no local e data combinados. Ao término do período de uso, o cliente devolve o veículo à agência.
+No processo de aluguel de veículos, o cliente inicialmente faz uma solicitação, e a agência verifica a disponibilidade do veículo desejado. Uma vez confirmada a disponibilidade, o cliente fornece informações pessoais e de pagamento, e a agência emite a confirmação da reserva junto com os detalhes do aluguel. Após receber as instruções, o cliente retira o veículo no local e data combinados. Ao término do período de uso, o cliente devolve o veículo no local previamente descrito.
 
 ![reserva atualizada](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/135463549/4a2db5aa-c11a-4d61-85a2-4b88b3fb23f3)
 
@@ -14,16 +14,15 @@ No processo de reservas de veículos, o cliente inicialmente faz uma solicitaç�
 
 | **Comandos**            |  **Destino**                         | **Tipo** |
 | ---                     | ---                                  | ---      |
-| Escolher tipo dp veículo|Tela de verificação de disponibilidade| default  |
+| Escolher tipo do veículo|Tela de verificação de disponibilidade| default  |
 
 **Verificar se o veículo encontra-se  disponível**
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
-| Disponível           | Prosseguir para escolher local | default             |
-|                      | de retirada e devolução        |                     |
-| Indisponível         | Retornar para "Escolher veículo| default             |
-|                      | que deseja alugar"             |                     |
+| Disponível           | Prosseguir para escolher local de retirada e devolução   | default             |
+| Indisponível         | Retornar para "Escolher veículo que deseja alugar" | default             |
+
 
 **Escolher local de retirada e devolução**
 
