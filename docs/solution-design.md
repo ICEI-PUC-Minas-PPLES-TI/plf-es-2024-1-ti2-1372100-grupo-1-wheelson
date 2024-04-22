@@ -15,6 +15,10 @@ _Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou s
 | ---            | ---             |
 | SGBD           | MySQL           |
 | Front end      | HTML+CSS+JS     |
+| Framework      | Bootstrap       |
 | Back end       | Java SpringBoot |
+| Gerenciamento de Dependências | Maven|
 | Deploy         | Github Pages    |
+| IDE            | VS Code         |
+| Construção de protótipos | Figma |
 
