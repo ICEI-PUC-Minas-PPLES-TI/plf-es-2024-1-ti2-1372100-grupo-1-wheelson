@@ -24,7 +24,7 @@ No processo de aluguel de veículos, o cliente inicialmente faz uma solicitaçã
 | Indisponível         | Retornar para "Escolher veículo que deseja alugar" | default             |
 
 
-**Escolher local de retirada e devolução**
+**Ponto de encontro**
 
 | **Campo**             | **Tipo**          | **Restrições**                                    | **Valor default** |
 | ---                   | ---               |    ---                                            | ---               |
