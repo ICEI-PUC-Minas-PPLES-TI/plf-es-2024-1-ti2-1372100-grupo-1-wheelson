@@ -6,15 +6,17 @@ No processo de aluguel de veículos, o cliente inicialmente faz uma solicitaçã
 
 #### Detalhamento das atividades
 
+
 **Escolher veículo que deseja alugar**
 
 | **Campo**             | **Tipo**         | **Restrições** | **Valor default** |
 | ---                   | ---              | ---            | ---               |
-| tipo de veículo       | ret, suv, sedã   |tipo            |                   |
+| Pesquisar             |   Caixa de texto |                |                   |
 
 | **Comandos**            |  **Destino**                         | **Tipo** |
 | ---                     | ---                                  | ---      |
-| Escolher tipo do veículo|Tela de verificação de disponibilidade| default  |
+|  Pesquisar              | Filtrar veículos disponíveis         |          |
+| Escolher veículo        |Tela de exibição de disponibilidade do veículo| default  |
 
 **Verificar se o veículo encontra-se  disponível**
 
@@ -28,11 +30,16 @@ No processo de aluguel de veículos, o cliente inicialmente faz uma solicitaçã
 
 | **Campo**             | **Tipo**          | **Restrições**                                    | **Valor default** |
 | ---                   | ---               |    ---                                            | ---               |
-| local                 |endereço completo  | Local não escolhido dentro das opções disponíveis |                   |
+| Data e Hora da retirada          | Data e hora         |               |        |
+| Data e hora da devolução         | Data e hora            |               |        |
+| Rua             | Caixa de texto       |                         |            |
+| Bairro             | Caixa de texto       |                         |            |
+| Ponto de referência      | Área de texto      |                         |            |
+| [Custos Totais] | Número         |[entre 0000,0 e 00,00]  -                         |             |
 
 | **Comandos**                              | **Destino**                                       | **Tipo** |
 | ---                                       | ---                                               | ---      |
-| Escolher local (opções disponíveis)       | Página de revisão                                 | default  |
+| Escolher local                            | Página de revisão                                 | default  |
 
 
 
@@ -40,10 +47,13 @@ No processo de aluguel de veículos, o cliente inicialmente faz uma solicitaçã
 
 | **Campo**       | **Tipo**         | **Restrições**                                 | **Valor default** |
 | ---             | ---              | ---                                            | ---               |
-| [Data]          | (dd-mm-aaaa)     |[qualquer um fora do tipo]                      | 00/00/0000        |
-| [Local]         | Nome Local       |[qualquer não compatível com local selecionado] | default           |
-| [Custos Totais] | 000,00           |[entre 0000,0 e 00,00]                          | 000,00            |
-| [Horário]       | (hh:mm:ss)       |[qualquer um fora do tipo]                      | 00:00:00          |
+| Data e Hora da retirada          | Data e hora         |       Apenas visualização        |        |
+| Data e hora da devolução         | Data e hora            |       Apenas visualização        |        |
+| Rua             | Caixa de texto       |      Apenas visualização                   |            |
+| Bairro             | Caixa de texto       |      Apenas visualização                   |            |
+| Ponto de referência      | Área de texto      |      Apenas visualização                   |            |
+| [Custos Totais] | Número         |[entre 0000,0 e 00,00]  - Apenas visualização                        |             |
+
 
 | **Comandos**         |  **Destino**                   | **Tipo**            |
 | ---                  | ---                            | ---                 |
