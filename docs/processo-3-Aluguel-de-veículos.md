@@ -2,7 +2,7 @@
 
 No processo de aluguel de veículos, o cliente inicialmente faz uma solicitação, e a agência verifica a disponibilidade do veículo desejado. Uma vez confirmada a disponibilidade, o cliente fornece informações pessoais e de pagamento, e a agência emite a confirmação da reserva junto com os detalhes do aluguel. Após receber as instruções, o cliente retira o veículo no local e data combinados. Ao término do período de uso, o cliente devolve o veículo no local previamente descrito.
 
-![reserva atualizada](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/135463549/4a2db5aa-c11a-4d61-85a2-4b88b3fb23f3)
+![reserva tis](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/135463549/8643cc08-4265-4194-813a-0e448e89061c)
 
 #### Detalhamento das atividades
 
