@@ -4,7 +4,8 @@
 
 _Apresente o modelo de dados por meio de um modelo relacional que contemple todos os conceitos e atributos apresentados na modelagem dos processos._ 
 
-![Processos drawio](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/4e5f16c2-2bc4-4ceb-b233-75eb6dc30e67)
+![ModeloRelacional](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129970038/d60b0a2b-9da7-4fe9-a679-0f6ba5eb87f4)
+
 
 ---
 
