@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Form-cliente</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form-cliente</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <body>
+        <div class="container">
+            <header>Formulario de cadastro</header>
+            <div class="progress-bar">
+                <div class="step">
+                    <p>Nome</p>
+                    <div class="bullet">
+                        <span>1</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="step">
+                    <p>Contato</p>
+                    <div class="bullet">
+                        <span>2</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="step">
+                    <p>Idade</p>
+                    <div class="bullet">
+                        <span>3</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="step">
+                    <p>Endereço</p>
+                    <div class="bullet">
+                        <span>4</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="step">
+                    <p>Documento</p>
+                    <div class="bullet">
+                        <span>5</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+                <div class="step">
+                    <p>Submit</p>
+                    <div class="bullet">
+                        <span>6</span>
+                    </div>
+                    <div class="check fas fa-check"></div>
+                </div>
+            </div>
+            <div class="form-outer">
+                <form action="#">
+                    <div class="page slide-page">
+                        <div class="title">Informaçoes basicas:</div>
+                        <div class="field">
+                            <div class="label">Nome</div>
+                            <input type="text" required />
+                        </div>
+                        <div class="field">
+                            <div class="label">Sobrenome</div>
+                            <input type="text" required />
+                        </div>
+                        <div class="field">
+                            <button class="firstNext next">Proximo</button>
+                        </div>
+                    </div>
+
+                    <div class="page">
+                        <div class="title">Informações de Contato:</div>
+                        <div class="field">
+                            <div class="label">Email: </div>
+                            <input type="text" required />
+                        </div>
+                        <div class="field">
+                            <div class="label">Telefone: </div>
+                            <input type="Number" required />
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-1 prev">Voltar</button>
+                            <button class="next-1 next">Proximo</button>
+                        </div>
+                    </div>
+                    <!-- <div class="page">
+                        <div class="title">Contact Info 2:</div>
+                        <div class="field">
+                            <div class="label">Email Address</div>
+                            <input type="text" required />
+                        </div>
+                        <div class="field">
+                            <div class="label">Phone Number</div>
+                            <input type="Number" required />
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-2 prev">Previous</button>
+                            <button class="next-2 next">Next</button>
+                        </div>
+                    </div>
+
+                    <div class="page">
+                        <div class="title">Contact Info 3:</div>
+                        <div class="field">
+                            <div class="label">Email Address</div>
+                            <input type="text" required />
+                        </div>
+                        <div class="field">
+                            <div class="label">Phone Number</div>
+                            <input type="Number" required />
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-3 prev">Previous</button>
+                            <button class="next-3 next">Next</button>
+                        </div>
+                    </div> -->
+
+                    <div class="page">
+                        <div class="title">Data de nacimento:</div>
+                        <div class="field">
+                            <div class="label">Data:</div>
+                            <input type="text" required />
+                        </div>
+                        <!-- <div class="field">
+                            <div class="label">Gender</div>
+                            <select required>
+                                <option>Male</option>
+                                <option>Female</option>
+                                <option>Other</option>
+                            </select>
+                        </div> -->
+
+                        <div class="field btns">
+                            <button class="prev-4 prev">Voltar</button>
+                            <button class="next-4 next">Proximo</button>
+                        </div>
+                    </div>
+
+                    <div class="page">
+                        <div class="title">Endereço: </div>
+                        <div class="field">
+                            <div class="label">Rua: </div>
+                            <input type="text" required />
+                        </div>
+                        <div class="field">
+                            <div class="label">Bairro: </div>
+                            <input type="Number" required />
+                        </div>
+                        <div class="field">
+                            <div class="label">Numero: </div>
+                            <input type="Number" required />
+                        </div>
+                        <div class="field">
+                            <div class="label">Cidade: </div>
+                            <input type="Number" required />
+                        </div>
+                        <div class="field">
+                            <div class="label">Estado: </div>
+                            <input type="Number" required />
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-1 prev">Voltar</button>
+                            <button class="next-1 next">Proximo</button>
+                        </div>
+                    </div>
+
+                    <div class="page">
+                        <div class="title">Documentos :</div>
+                        <div class="field">
+                            <div class="label">CPF: </div>
+                            <input type="text" required />
+                        </div>
+                        <div class="field">
+                            <div class="label">CNH: </div>
+                            <input type="file" required />
+                        </div>
+                        <div class="field btns">
+                            <button class="prev-1 prev">Voltar</button>
+                            <button class="next-1 next">Proximo</button>
+                        </div>
+                    </div>
+                    
+
+                    <div class="page">
+                        <div class="title">Login :</div>
+                        <div>
+                            <input type="radio" id="locador" name="drone" value="Locador" checked />
+                            <label for="locador">Locador</label>
+                          </div>
+                        
+                          <div>
+                            <input type="radio" id="locatario" name="drone" value="locatario" />
+                            <label for="locatario">Locatario</label>
+                          </div>
+                        <div class="field">
+                            <div class="label">Username</div>
+                            <input type="text" required />
+                        </div>
+                        <div class="field">
+                            <div class="label">Senha</div>
+                            <input type="password" required />
+                        </div>
+                        
+                        <div class="field btns">
+                            <button class="prev-5 prev">Voltar</button>
+                            <button class="submit">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
