@@ -56,7 +56,7 @@ public class Locador {
     String cidade;
 
     
-    @Column(name = "uf", length = 2)
+    @Column(name = "uf",nullable = false, length = 2)
     String uf;
 
     //Aprovado no sistema ou nao, deve ser inicializado como false sempre
@@ -181,8 +181,9 @@ public class Locador {
 
 
     public void setuf(String uf) {
-        uf = uf;
+        this.uf = uf;
     }
+    
 
 
     public boolean getStatus() {
