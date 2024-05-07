@@ -1,3 +1,4 @@
+fetchTableData
 $(function () {
     $("body").addClass("js-enabled");
     $("thead input[type=checkbox]").focus(function () {
@@ -77,3 +78,37 @@ $(function () {
                 }
             }
 })
+
+function fetchTableData(){
+
+    fetch('/locatario/status/false')
+        .then(response => {
+            if(!response) throw new Error("Error on request", 500);
+        })
+        .then(data => {
+            console.log(data);
+            createTable(data)
+        })
+
+}
+
+function createTable(data){
+    const table = document.querySelector(".table")
+    data.forEach(element => {
+        table.innerHTML += `
+    
+        <tr>                                                
+            <td>${element.nome}</td>
+            <td>${element.cnh}</td>
+            <td>${element.cpf}</td>
+            <td>
+                <input type="checkbox" class="big" data-toggle="modal" data-target="#modalEliminar">
+                </input> 
+            </td>
+        </tr>
+    
+        `
+            
+    });
+
+}
