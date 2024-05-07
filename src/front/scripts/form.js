@@ -1,5 +1,3 @@
-initMultiStepForm();
-
 function initMultiStepForm() {
     const progressNumber = document.querySelectorAll(".step").length;
     const slidePage = document.querySelector(".slide-page");
@@ -53,35 +51,77 @@ function initMultiStepForm() {
             current -= 1;
         });
     }
-    submitBtn.addEventListener("click",  () => {
-        console.log("submit form");
-        bullet[current - 1].classList.add("active");
-        progressCheck[current - 1].classList.add("active");
-        progressText[current - 1].classList.add("active");
-        current += 1;
-
-        
-
-        setTimeout(() => {
-            alert("Your Form Successfully Signed up");
-            location.reload();
-        }, 800);
-    });
-
-    function validateInputs(ths) {
-        let inputsValid = true;
-
-        const inputs =
-            ths.parentElement.parentElement.querySelectorAll("input");
-        for (let i = 0; i < inputs.length; i++) {
-            const valid = inputs[i].checkValidity();
-            if (!valid) {
-                inputsValid = false;
-                inputs[i].classList.add("invalid-input");
-            } else {
-                inputs[i].classList.remove("invalid-input");
+    submitBtn.addEventListener("click", () => {
+        const data = {
+            nome: document.getElementById("nome").value,
+            cpf: document.getElementById("cpf").value,
+            dataNascimento: document.getElementById("dataNascimento").value,
+            email: document.getElementById("email").value,
+            telefone: document.getElementById("telefone").value,
+            rua: document.getElementById("rua").value,
+            bairro: document.getElementById("bairro").value,
+            numero_resid: document.getElementById("numero").value,
+            cidade: document.getElementById("cidade").value,
+            uf: document.getElementById("estado").value,
+            status: false, // assumindo que o status seja sempre false
+            saldo: 0, // saldo inicial
+            dataEntrada: new Date().toISOString(), // data atual
+            senha: document.getElementById("senha").value
+        };
+    
+        fetch("http://localhost:8080/locador", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(data)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
             }
+            return response.json();
+        })
+        .then(data => {
+            console.log('Success:', data);
+            // lidar com a resposta de sucesso aqui
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            // lidar com o erro aqui
+        });
+    });
+    
+    
+    console.log("submit form");
+    bullet[current - 1].classList.add("active");
+    progressCheck[current - 1].classList.add("active");
+    progressText[current - 1].classList.add("active");
+    current += 1;
+
+    
+
+    
+};
+
+function validateInputs(ths) {
+    let inputsValid = true;
+
+    const inputs =
+        ths.parentElement.parentElement.querySelectorAll("input");
+    for (let i = 0; i < inputs.length; i++) {
+        const valid = inputs[i].checkValidity();
+        if (!valid) {
+            inputsValid = false;
+            inputs[i].classList.add("invalid-input");
+        } else {
+            inputs[i].classList.remove("invalid-input");
         }
-        return inputsValid;
     }
+    return inputsValid;
 }
+
+// Chamada da função apenas uma vez quando a página é carregada
+window.onload = function() {
+    initMultiStepForm();
+};
