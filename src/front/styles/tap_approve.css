@@ -1,0 +1,47 @@
+.container{
+  margin-top: 200px;
+}
+
+.tabs{
+  border-radius: 18px 18px 0px 0px;
+}
+
+
+
+.tabs-2{
+  margin: 10px  10px 0px 10px;
+}
+
+.tabs-tabla button:focus{
+  outline: none;
+  box-shadow: none;  
+}
+.tabs-active{
+  background-color: black;
+  color: white;
+}
+
+
+
+#tabla2{
+  display: none;
+}
+
+.tabla-responsive{
+  width: 19%;
+}
+input[type=checkbox].big
+{
+  
+  /* Double-sized Checkboxes */
+  -ms-transform: scale(2); /* IE */
+  -moz-transform: scale(2); /* FF */
+  -webkit-transform: scale(2); /* Safari and Chrome */
+  -o-transform: scale(2); /* Opera */
+  padding: 10px;
+
+}
+
+.table-bordered td, .table-bordered th {
+  text-align: center;
+}
