@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>Landing Page</title>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'><link rel="stylesheet" href="/src/front/styles/index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
 </head>
 <body>
 <!-- Start Landing Page -->
@@ -25,10 +27,33 @@
             <div class="info">
               <h1>O que é o WheelsOn ?</h1>
               <p>Uma plataforma de aluguel de carros para facilatar a mobilidade urbana e gerar renda extra.</p>
-              <a href="/src/front/pages/form.html" >
-              <button>Cadastrar</button>
+              <a>
+              <button type="button"  data-toggle="modal" data-target="#myModal">Cadastrar</button>
             </a>
             </div>
+            <!-- inicio Modal ---------------------------------------------------------------------------------------------------------------->
+
+            <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+              <div class="modal-dialog" role="document">
+                  <div class="modal-content clearfix">
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+                              aria-hidden="true">×</span></button>
+                      <div class="modal-body">
+                          <h3 class="title">Escolha seu perfil</h3>
+
+                          <a href="locador.html">
+                          <button class="btn">Locador</button>
+                        </a>
+                        <a href="locatario.html">
+                          <button class="btn">Locatario</button>
+                        </a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <!-- termino modal  ---------------------------------------------------------------------------------------->
+
             <div class="image">
               <!-- <img src="https://i.postimg.cc/65QxYYzh/001234.png"> -->
               <img src="/src/front/images/img-2.png" width="500px" >
@@ -37,7 +62,12 @@
         </div>
       </div>
       <!-- End Landing Page -->
-<!-- partial -->
-  
+
+
+      
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+          crossorigin="anonymous"></script>
 </body>
 </html>
