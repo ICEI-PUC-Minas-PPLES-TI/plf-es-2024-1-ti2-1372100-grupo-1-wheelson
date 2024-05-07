@@ -1,7 +1,10 @@
 package com.renatomatos.wheelson.services;
 
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -61,6 +64,13 @@ public class LocatarioService {
     //getall
     public Iterable<Locatario> findAll() {
         return locatarioRepository.findAll();
+    }
+    //getall com status false
+    public List<Locatario> findAllByStatusFalse() {
+        Iterable<Locatario> allLocatarios = locatarioRepository.findAll();
+        return StreamSupport.stream(allLocatarios.spliterator(), false)
+                .filter(locatario -> !locatario.isStatus())
+                .collect(Collectors.toList());
     }
 
     

@@ -1,11 +1,15 @@
 package com.renatomatos.wheelson.services;
 
+import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
+import java.util.stream.StreamSupport;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.renatomatos.wheelson.models.Locador;
+import com.renatomatos.wheelson.models.Locatario;
 import com.renatomatos.wheelson.repositories.LocadorRepository;
 
 import jakarta.transaction.Transactional;
@@ -60,5 +64,12 @@ public class LocadorService {
     //getall
     public Iterable<Locador> findAll() {
         return locadorRepository.findAll();
+    }
+
+     public List<Locador> findAllByStatusFalse() {
+        Iterable<Locador> allLocadores = locadorRepository.findAll();
+        return StreamSupport.stream(allLocadores.spliterator(), false)
+                .filter(locador -> !locador.getStatus())
+                .collect(Collectors.toList());
     }
 }

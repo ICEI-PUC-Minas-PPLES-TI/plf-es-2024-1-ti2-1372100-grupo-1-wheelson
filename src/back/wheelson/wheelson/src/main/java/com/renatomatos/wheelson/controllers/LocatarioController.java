@@ -1,6 +1,7 @@
 package com.renatomatos.wheelson.controllers;
 
 import java.net.URI;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -67,5 +68,12 @@ public class LocatarioController {
         this.locatarioService.delete(id);
         return ResponseEntity.noContent().build();
     }
+
+    @GetMapping("/status/false")
+public ResponseEntity<List<Locatario>> findAllByStatusFalse() {
+    List<Locatario> locatarios = (List<Locatario>) this.locatarioService.findAllByStatusFalse();
+    return ResponseEntity.ok().body(locatarios);
+}
+
 }
 

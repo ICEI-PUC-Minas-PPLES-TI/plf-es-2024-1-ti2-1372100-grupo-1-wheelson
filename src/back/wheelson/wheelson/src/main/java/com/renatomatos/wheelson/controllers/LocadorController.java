@@ -1,6 +1,7 @@
 package com.renatomatos.wheelson.controllers;
 
 import java.net.URI;
+import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -15,6 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.renatomatos.wheelson.models.Locador;
+import com.renatomatos.wheelson.models.Locatario;
 import com.renatomatos.wheelson.services.LocadorService;
 import org.springframework.web.bind.annotation.PutMapping;
 
@@ -61,5 +63,10 @@ public class LocadorController {
         return ResponseEntity.noContent().build();
     }
     
+      @GetMapping("/status/false")
+public ResponseEntity<List<Locador>> findAllByStatusFalse() {
+    List<Locador> locadores = (List<Locador>) this.locadorService.findAllByStatusFalse();
+    return ResponseEntity.ok().body(locadores);
+}
     
 }
