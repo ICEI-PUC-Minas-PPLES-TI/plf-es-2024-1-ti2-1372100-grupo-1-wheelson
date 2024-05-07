@@ -34,6 +34,12 @@ public class LocadorController {
         return ResponseEntity.ok().body(locador);
     }
 
+    @GetMapping
+    public ResponseEntity<Iterable<Locador>> findAll(){
+        Iterable<Locador> locadores = this.locadorService.findAll();
+        return ResponseEntity.ok().body(locadores);
+    }
+
     @PostMapping
     public ResponseEntity<Void> create( @RequestBody Locador locador){
          this.locadorService.create(locador);

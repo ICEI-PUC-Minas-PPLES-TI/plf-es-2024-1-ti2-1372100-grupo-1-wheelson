@@ -57,4 +57,8 @@ public class LocadorService {
         }
         
     }
+    //getall
+    public Iterable<Locador> findAll() {
+        return locadorRepository.findAll();
+    }
 }

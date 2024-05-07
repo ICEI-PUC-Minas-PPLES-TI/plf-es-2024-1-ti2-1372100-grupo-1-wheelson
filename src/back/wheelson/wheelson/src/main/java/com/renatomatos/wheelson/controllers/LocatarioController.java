@@ -26,6 +26,12 @@ public class LocatarioController {
         return ResponseEntity.ok().body(locatario);
     }
 
+    @GetMapping
+    public ResponseEntity<Iterable<Locatario>> findAll() {
+        Iterable<Locatario> locatarios = this.locatarioService.findAll();
+        return ResponseEntity.ok().body(locatarios);
+    }
+
     // @PostMapping
     // public ResponseEntity<Void> create(@ModelAttribute Locatario locatario,
     //                                    @RequestParam("imagemCNH") MultipartFile imagemCNH) {
