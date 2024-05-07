@@ -9,9 +9,13 @@ import javax.persistence.Table;
 import javax.validation.constraints.Size;
 */
 
-import java.util.Date;
+import java.util.*;
+
+
+
 //novos imports
 import jakarta.persistence.Id;
+import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -73,6 +77,11 @@ public class Locador {
 
     @Column(name = "senha", nullable = false)
     String senha;
+
+    
+    @OneToMany(mappedBy = "locador")
+    private List<Carro> carros = new ArrayList<Carro>();
+
 
     
     public Long getId() {
