@@ -81,7 +81,7 @@ $(function () {
 
 function fetchTableData(){
 
-    fetch('/locatario/status/false')
+    fetch('http:localhost:8080/locatario/status/false')
         .then(response => {
             if(!response) throw new Error("Error on request", 500);
         })
