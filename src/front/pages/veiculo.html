@@ -16,8 +16,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Form-cliente</title>
   <link rel="stylesheet" href="/src/front/styles/form.css">
+  <link rel="stylesheet" href="/src/front/styles/form2.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <body>
+ 
+  <body>
         <div class="buttonv">
             <a href="/src/front/pages/index.html">
             <button class="buttonv" href="front/pages/index.html"> Voltar</button>
@@ -25,7 +27,7 @@
             </div>
         <div class="container">
             <header>Cadastro de Veiculo</header>
-            <div class="progress-bar">
+            <div class="progress-bar  ">
                 <div class="step">
                     <p>Documentos</p>
                     <div class="bullet">
@@ -67,33 +69,29 @@
                         <div class="title">Proprietario</div>
                         <div class="field">
                             <div class="label">Você é o dono do veiculo :</div>
-                            <br>
+                            <div class="box">
                             <button class="simnao">Não</button>
                             <button class="simnao">Sim</button>
+                        </div>
                         </div>
                         <div class="field btns">
                             <button class="prev-1 prev">Voltar</button>
                             <button class="next-1 next">Proximo</button>
                         </div>
                     </div>
-                  
-
+                    
                     <div class="page">
                         <div class="title">Informações do carro:</div>
-                        <div class="field">
+                        <div class="field btns">
                             <div class="label">Placa:</div>
                             <input type="text" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">Modelo:</div>
+                            <div class="label lado">Modelo:</div>
                             <input type="text" required />
                         </div>
                         <div class="field">
                             <div class="label">Ano:</div>
-                            <input type="text" required />
-                        </div>
-                        <div class="field">
-                            <div class="label">Valor:</div>
+                            <input type="date" min="2015-01-01" max="2024-12-31" required />
+                            <div class="label lado">Valor:</div>
                             <input type="text" required />
                         </div>
                         <div class="field">

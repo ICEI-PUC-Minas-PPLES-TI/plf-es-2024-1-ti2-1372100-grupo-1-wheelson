@@ -330,7 +330,22 @@ form .page .btns button.next {
 
   .simnao{
     margin: 7px;
-    width: 150px;
-    height: 35px;
-    
   }
+  
+  .box{
+    width: var(--containerWidth);
+    height: 45px;
+    margin: 20px 0;
+    display: flex;
+    position: relative;
+  }
+
+  .lado{
+    left: 305px;
+  }
+
+  .progress-bar .step .bullet:before, .progress-bar .step .bullet:after {
+    right: -63px;
+    width: 50px;
+}
+  

@@ -1,0 +1,4 @@
+.progress-bar .step .bullet:before, .progress-bar .step .bullet:after {
+    right: -150px;
+    width: 120px;
+}
