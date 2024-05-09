@@ -9,7 +9,9 @@ import javax.persistence.Table;
 import javax.validation.constraints.Size;
 */
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
+import java.sql.Date;
 
 
 
@@ -28,7 +30,7 @@ import jakarta.persistence.Column;
 public class Locador {
 
     @Id
-    @Column(name = "id_locador")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
@@ -78,7 +80,7 @@ public class Locador {
     @Column(name = "senha", nullable = false)
     String senha;
 
-    
+    // Mapped by funciona pelo nome da variavel em Carro.
     @OneToMany(mappedBy = "locador")
     private List<Carro> carros = new ArrayList<Carro>();
 

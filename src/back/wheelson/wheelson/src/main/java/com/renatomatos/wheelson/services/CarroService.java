@@ -1,8 +1,10 @@
 package com.renatomatos.wheelson.services;
 
 import java.util.Optional;
-
+import java.util.stream.Collectors;
+import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 
 import com.renatomatos.wheelson.models.Carro;
@@ -51,5 +53,23 @@ public class CarroService {
             throw new RuntimeException("Não foi possível deletar o carro pois há entidades relacionadas!");
         }
     }
+    //Ordenar por disponibilidade
+    @Transactional
+    public List<Carro> findAll() {
+        List<Carro> carros =(List<Carro>) this.carroRepository.findAll();
+        return  carros.stream()
+        .sorted((c1, c2) -> Boolean.compare(c2.isDisponivel(), c1.isDisponivel()))
+        .collect(Collectors.toList());
+    }
+
+    @Transactional
+    public List<Carro> findByLocadorId(Long id) {
+        List<Carro> carros = this.carroRepository.findByLocadorId(id);
+        return carros;
+    }
+    // public ResponseEntity<List<Carro>> findByDisponivel(boolean disponivel) {
+    //     List<Carro> carros = this.carroRepository.findByDisponivel(disponivel);
+    //     return ResponseEntity.ok().body(carros);
+    // }
 
 }

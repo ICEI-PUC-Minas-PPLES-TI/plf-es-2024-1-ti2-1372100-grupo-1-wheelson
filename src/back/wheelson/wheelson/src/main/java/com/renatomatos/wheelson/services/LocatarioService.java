@@ -61,6 +61,7 @@ public class LocatarioService {
         }
         
     }
+    
     //getall
     public Iterable<Locatario> findAll() {
         return locatarioRepository.findAll();

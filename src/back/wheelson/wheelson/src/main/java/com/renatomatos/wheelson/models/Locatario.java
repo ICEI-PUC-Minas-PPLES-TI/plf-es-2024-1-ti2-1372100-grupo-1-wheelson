@@ -7,7 +7,7 @@ import java.sql.Date;
 @Table(name ="Locatario")
 public class Locatario {
     @Id
-    @Column(name = "id_locatario")
+    @Column(name = "id")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 

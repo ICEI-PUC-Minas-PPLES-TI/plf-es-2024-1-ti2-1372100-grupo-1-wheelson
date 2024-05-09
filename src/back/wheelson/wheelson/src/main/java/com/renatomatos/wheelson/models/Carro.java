@@ -16,20 +16,23 @@ public class Carro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "id_carro")
-    Long id;
-
-    @Column(name = "marca", nullable = false, length = 20)
-    String modelo;
+    @Column(name = "idCarro")
+    Long idCarro;
 
     @Column(name = "modelo", nullable = false, length = 20)
+    String modelo;
+
+    @Column(name = "marca", nullable = false, length = 20)
+    String marca;
+
+    @Column(name = "ano", nullable = false, length = 4)
     String ano;
 
     @Column(name = "valorDiario", nullable = false)
     double valorDiario;
 
-    @Column(name = "crv", nullable = false, length = 11, unique = true)
-    String crv;
+    @Column(name = "renavam", nullable = false, length = 11, unique = true)
+    String renavam;
 
     @Column(name = "placa", nullable = false, length = 7,unique = true)
     String placa;
@@ -38,28 +41,28 @@ public class Carro {
     boolean disponivel;
 
     @ManyToOne
-    @JoinColumn(name = "id_locador",nullable = false,updatable = false)
+    @JoinColumn(name = "id",nullable = false,updatable = false)
     Locador locador;
 
     public Carro() {
     }
 
-    public Carro(String modelo, String ano, double valorDiario, String crv, String placa, boolean disponivel, Locador locador) {
+    public Carro(String modelo, String ano, double valorDiario, String renavam, String placa, boolean disponivel, Locador locador) {
         this.modelo = modelo;
         this.ano = ano;
         this.valorDiario = valorDiario;
-        this.crv = crv;
+        this.renavam = renavam;
         this.placa = placa;
         this.disponivel = disponivel;
         this.locador = locador;
     }
 
     public Long getId() {
-        return id;
+        return idCarro;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long idCarro) {
+        this.idCarro = idCarro;
     }
 
     public String getModelo() {
@@ -68,6 +71,14 @@ public class Carro {
 
     public void setModelo(String modelo) {
         this.modelo = modelo;
+    }
+
+    public void setMarca(String marca){
+        this.marca = marca;
+    }
+
+    public String getMarca(){
+        return marca;
     }
 
     public String getAno() {
@@ -86,12 +97,12 @@ public class Carro {
         this.valorDiario = valorDiario;
     }
 
-    public String getCrv() {
-        return crv;
+    public String getRenavam() {
+        return renavam;
     }
 
-    public void setCrv(String crv) {
-        this.crv = crv;
+    public void setRenavam(String renavam) {
+        this.renavam = renavam;
     }
 
     public String getPlaca() {

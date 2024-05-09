@@ -48,6 +48,8 @@ public class LocatarioController {
     //         return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
     //     }
     // }
+
+    
     @PostMapping
     public ResponseEntity<Void> create( @RequestBody Locatario locatario){
          this.locatarioService.create(locatario);
