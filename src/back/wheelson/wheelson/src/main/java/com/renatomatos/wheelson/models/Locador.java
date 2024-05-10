@@ -11,6 +11,9 @@ import javax.validation.constraints.Size;
 
 import java.util.ArrayList;
 import java.util.List;
+
+
+
 import java.sql.Date;
 
 
@@ -19,6 +22,8 @@ import java.sql.Date;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -34,7 +39,9 @@ public class Locador {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     Long id;
 
-    @Column(name = "nome", nullable = false, unique = true, length = 100)
+    @NotEmpty
+    @NotNull
+    @Column(name = "nome", nullable = false,  length = 100)
     String nome;
     //Com o tamanho de 14, pois o cpf tem 11 digitos e 3 pontos
     @Column(name = "cpf", nullable = false, unique = true,  length = 14)

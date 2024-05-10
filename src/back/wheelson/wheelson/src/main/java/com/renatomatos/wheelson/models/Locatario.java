@@ -1,6 +1,9 @@
 package com.renatomatos.wheelson.models;
 
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
+
 import java.sql.Date;
 
 @Entity
@@ -11,7 +14,9 @@ public class Locatario {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
-    @Column(name = "nome", nullable = false, unique = true)
+    @NotEmpty
+    @NotNull
+    @Column(name = "nome", nullable = false, length = 100)
     private String nome;
 
     @Column(name = "cpf", nullable = false, unique = true)
