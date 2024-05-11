@@ -1,5 +1,5 @@
 # Rotas de usuário
-
+## Locador 
 | Método | Rota                       | Descrição                                                          |
 | ------ | -------------------------- | ------------------------------------------------------------------ |
 | GET   | `/locador/{id}`                   | Recebe um locador pelo ID                                             |
@@ -10,6 +10,10 @@
 | POST  | `/locador`                   | Cadastra um locador                                           |
 | PUT  | `/locador/{id}`                   | Altera os dados de um locador                                           |
 | DELETE  | `/locador{id}`                   | Apaga o perfil de um Locador                                        |
+
+## Locatário
+| Método | Rota                       | Descrição                                                          |
+| ------ | -------------------------- | ------------------------------------------------------------------ |
 | GET   | `/locatario/{id}`                   | Recebe um locatário pelo ID                                       |
 | GET   | `/locatario`                   | Recebe todos os locatários                                           |
 | GET   | `/locatario/status/false`                   | Recebe todos os locatários com status false              |
