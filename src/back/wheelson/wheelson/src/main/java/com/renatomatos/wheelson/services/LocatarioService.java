@@ -29,6 +29,22 @@ public class LocatarioService {
         return locatario.orElseThrow(() -> new RuntimeException("Locatario não encontrado"));
     }
 
+    public Locatario findByEmail(String email) {
+        Optional<Locatario> locatario = locatarioRepository.findByEmail(email);
+        return locatario.orElseThrow(() -> new RuntimeException("Locatario não encontrado"));
+    }
+
+    public Locatario findByEmailAndSenha(String email, String senha) {
+        Optional<Locatario> locatario = locatarioRepository.findByEmail(email);
+        if (locatario.isPresent()) {
+            if (locatario.get().getSenha().equals(senha)) {
+                return locatario.get();
+            }
+            throw new RuntimeException("Senha incorreta");
+        }
+        throw new RuntimeException("Locatario não encontrado");
+    }
+
     @Transactional
     public Locatario create(Locatario locatario) {
         return this.locatarioRepository.save(locatario);

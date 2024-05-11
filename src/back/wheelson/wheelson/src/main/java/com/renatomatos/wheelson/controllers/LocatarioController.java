@@ -77,5 +77,17 @@ public ResponseEntity<List<Locatario>> findAllByStatusFalse() {
     return ResponseEntity.ok().body(locatarios);
 }
 
+    @GetMapping("/email/{email}")
+    public ResponseEntity<Locatario> findByEmail(@PathVariable String email) {
+        Locatario locatario = this.locatarioService.findByEmail(email);
+        return ResponseEntity.ok().body(locatario);
+    }
+
+    //login
+    @GetMapping("login/{email}/{senha}")
+    public ResponseEntity<Locatario> findByEmailAndSenha(@PathVariable String email, @PathVariable String senha) {
+        Locatario locatario = this.locatarioService.findByEmailAndSenha(email, senha);
+        return ResponseEntity.ok().body(locatario);
+    }
 }
 

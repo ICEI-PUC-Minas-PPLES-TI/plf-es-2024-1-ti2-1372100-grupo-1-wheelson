@@ -29,6 +29,22 @@ public class LocadorService {
         return locador.orElseThrow(() -> new RuntimeException("Locador não encontrado"));
     }
 
+    public Locador findByEmail(String email) {
+        Optional<Locador> locador = locadorRepository.findByEmail(email);
+        return locador.orElseThrow(() -> new RuntimeException("Locador não encontrado"));
+    }
+
+    public Locador findByEmailAndSenha(String email, String senha) {
+        Optional<Locador> locador = locadorRepository.findByEmail(email);
+        if (locador.isPresent()) {
+            if (locador.get().getSenha().equals(senha)) {
+                return locador.get();
+            }
+            throw new RuntimeException("Senha incorreta");
+        }
+        throw new RuntimeException("Locador não encontrado");
+    }
+
     @Transactional
     public Locador create(Locador locador) {
         return this.locadorRepository.save(locador);
