@@ -11,7 +11,7 @@
 
 **Pedro Araújo Franco, email do aluno 5**
 
-**Renato Matos Alves Penna, email do aluno 6**
+**Renato Matos Alves Penna, renatomatosap@gmail.com
 
 ---
 
