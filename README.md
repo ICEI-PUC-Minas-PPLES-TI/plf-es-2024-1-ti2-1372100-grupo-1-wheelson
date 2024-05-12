@@ -5,12 +5,12 @@ No cenário atual, o aluguel de veículos se destaca como uma solução flexíve
 
 ## Integrantes
 
-* Gabrielle Lira Dantas Wanderley
-* Julia Gabriela de Resende
-* Leandra Costa Ramos
-* Luiz Victor Aldenucci
-* Pedro Araújo Franco
-* Renato Matos Alves Penna
+* Gabrielle Lira Dantas Wanderley [@GabiLira](https://github.com/GabiLira)
+* Julia Gabriela de Resende [@ju-rsende](https://github.com/ju-rsende)
+* Leandra Costa Ramos [@leeramss](https://github.com/leeramss)
+* Luiz Victor Aldenucci [@LuizVictorAldenucci](https://github.com/LuizVictorAldenucci)
+* Pedro Araújo Franco [@pedrofr1313](https://github.com/pedrofr1313)
+* Renato Matos Alves Penna [@renatomap77](https://github.com/renatomap77)
 
 ## Professor
 
