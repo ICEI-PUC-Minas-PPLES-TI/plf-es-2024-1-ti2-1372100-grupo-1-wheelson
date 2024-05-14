@@ -10,7 +10,7 @@ function initMultiStepForm() {
         const email = document.getElementById("email").value;
         const telefone = document.getElementById("telefone").value;
         const cpf = document.getElementById("cpf").value;
-        const dataNascimento = document.getElementById("dataNascimento").value;
+        const data_nascimento = document.getElementById("dataNascimento").value;
         const rua = document.getElementById("rua").value;
         const bairro = document.getElementById("bairro").value;
         const numero_resid = document.getElementById("numero").value;
@@ -32,9 +32,10 @@ function initMultiStepForm() {
         console.log(dataFormatada); // Saída: "2024-05-13"
 
         const data = {
+            //id: 0, // id é autoincrementado
             nome,
             cpf,
-            dataNascimento,
+            data_nascimento,
             email,
             telefone,
             rua,
