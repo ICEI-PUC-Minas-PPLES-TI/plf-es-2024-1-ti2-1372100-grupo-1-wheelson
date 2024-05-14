@@ -64,7 +64,6 @@ function initMultiStepForm() {
             cidade: document.getElementById("cidade").value,
             uf: document.getElementById("estado").value,
             status: false, // assumindo que o status seja sempre false
-            saldo: 0, // saldo inicial
             dataEntrada: new Date().toISOString(), // data atual
             senha: document.getElementById("senha").value
         };

@@ -28,7 +28,7 @@ const loginLocador = (nome, senha) => {
     }
 
     fetchLogin("locador", nome, senha).then(data => {
-        sessionStorage.setItem("usuario", JSON.stringify(data));
+        localStorage.setItem("usuario", JSON.stringify(data));
     }).catch(error => {
         console.error("Erro ao buscar login:", error);
     });

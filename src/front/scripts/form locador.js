@@ -6,7 +6,7 @@ function initMultiStepForm() {
 
         // Captura os valores dos campos no momento do clique
         const nome = document.getElementById("nome").value;
-        const sobrenome = document.getElementById("sobrenome").value; // Se necessário
+        
         const email = document.getElementById("email").value;
         const telefone = document.getElementById("telefone").value;
         const cpf = document.getElementById("cpf").value;
@@ -17,6 +17,19 @@ function initMultiStepForm() {
         const cidade = document.getElementById("cidade").value;
         const uf = document.getElementById("estado").value;
         const senha = document.getElementById("senha").value;
+        // Obter a data atual
+        const dataAtual = new Date();
+
+        // Extrair o ano, mês e dia
+        const ano = dataAtual.getFullYear();
+        // O mês é retornado de 0 a 11, então precisamos adicionar 1 para obter o valor correto
+        const mes = (dataAtual.getMonth() + 1).toString().padStart(2, '0'); // Adiciona zero à esquerda se for menor que 10
+        const dia = dataAtual.getDate().toString().padStart(2, '0'); // Adiciona zero à esquerda se for menor que 10
+
+        // Formatar a data no formato desejado "xxxx-yy-zz"
+        const dataFormatada = `${ano}-${mes}-${dia}`;
+
+        console.log(dataFormatada); // Saída: "2024-05-13"
 
         const data = {
             nome,
@@ -31,7 +44,7 @@ function initMultiStepForm() {
             uf,
             status: false, // assumindo que o status seja sempre false
             saldo: 0, // saldo inicial
-            dataEntrada: new Date(), // data atual
+            data_entrada: dataFormatada, // data atual
             senha
         };
 
@@ -57,8 +70,24 @@ function initMultiStepForm() {
         .catch(error => {
             console.error('Error:', error);
             // lidar com o erro aqui
-        });
+        })
     });
+}
+
+async function fetchCadastro(tipo, email, senha) {
+    try {
+        let response = await fetch(`http://localhost:8080/locador`);
+
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
+        }
+
+        let data = await response.json();
+        console.log(data);
+        return data;
+    } catch (error) {
+        console.error("Erro ao buscar login:", error);
+    }
 }
 
 // Chamada da função apenas uma vez quando a página é carregada
