@@ -22,3 +22,15 @@
 | POST  | `/locatario`                   | Cadastra um locatário                                           |
 | PUT  | `/locatario/{id}`                   | Altera os dados de um locatário                                           |
 | DELETE  | `/locatario/{id}`                   | Apaga o perfil de um Locatário                                        |
+
+## Carro
+| Método | Rota                       | Descrição                                                          |
+| ------ | -------------------------- | ------------------------------------------------------------------ |
+| GET   | `/carro/{id}`                   | Retorna um carro específico baseado no seu ID                                     |
+| GET   | `/carro/all`                   | Retorna uma lista com todos os carros|
+| GET  | `/carro/locador/{id}`                   |  Retorna uma lista de carros baseados no ID do locador                                           |
+| POST   | `/carro`                   | Cria um novo carro                                           |
+| PUT   | `/carro/{id}`                   | Atualiza um carro existente baseado no ID fornecido            |
+| DELETE   | `/carro/{id}`                   | Deleta um carro baseado no ID fornecido                                       |
+
+
