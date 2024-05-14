@@ -75,7 +75,7 @@ submitBtn.addEventListener("click", () => {
     const dataNascimento = document.getElementById("dataNascimento").value;
     const rua = document.getElementById("rua").value;
     const bairro = document.getElementById("bairro").value;
-    const numero_resid_Locatario = document.getElementById("numero_resid").value;
+    const numero_resid_locatario = document.getElementById("numero_resid").value;
     const cidade = document.getElementById("cidade").value;
     const uf = document.getElementById("uf").value;
     const cnh = document.getElementById("cnh").value;
@@ -102,7 +102,7 @@ submitBtn.addEventListener("click", () => {
         telefone,
         rua,
         bairro,
-        numero_resid_Locatario,
+        numero_resid_locatario,
         cidade,
         uf,
         status: false, // assumindo que o status seja sempre false

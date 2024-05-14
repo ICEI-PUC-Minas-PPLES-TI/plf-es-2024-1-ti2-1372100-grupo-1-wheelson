@@ -61,6 +61,7 @@ public class Locatario {
     @Column(name = "data_entrada")
     private Date data_entrada;
 
+    @Column(name = "senha", nullable = false)
     private String senha;
 
     public Long getId() {
