@@ -23,4 +23,5 @@ _Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou s
 | Deploy         | Github Pages    |
 | IDE            | VS Code         |
 | Construção de protótipos | Figma |
+| Documentação de rotas  | Swagger         |
 

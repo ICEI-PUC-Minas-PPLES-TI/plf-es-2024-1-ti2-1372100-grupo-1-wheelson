@@ -18,7 +18,13 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.renatomatos.wheelson.models.Locador;
 import com.renatomatos.wheelson.models.Locatario;
 import com.renatomatos.wheelson.services.LocadorService;
+
+import io.swagger.v3.oas.annotations.Operation;
+import io.swagger.v3.oas.annotations.responses.ApiResponse;
+import io.swagger.v3.oas.annotations.responses.ApiResponses;
+
 import org.springframework.web.bind.annotation.PutMapping;
+
 
 
 @RestController
@@ -30,18 +36,33 @@ public class LocadorController {
     private LocadorService locadorService;
 
     //localhost:8080/locador/1
+    @Operation(description = "Busca um locador pelo id")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Locador encontrado"),
+            @ApiResponse(responseCode = "404", description = "Locador não encontrado")
+    })
     @GetMapping("/{id}")
     public ResponseEntity<Locador> findById(@PathVariable Long id){
         Locador locador = this.locadorService.findById(id);
         return ResponseEntity.ok().body(locador);
     }
 
+    @Operation(description = "Busca todos os locadores")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Lista de locadores"),
+            @ApiResponse(responseCode = "404", description = "Nenhum locador encontrado")
+    })
     @GetMapping
     public ResponseEntity<Iterable<Locador>> findAll(){
         Iterable<Locador> locadores = this.locadorService.findAll();
         return ResponseEntity.ok().body(locadores);
     }
 
+    @Operation(description = "Cria um novo locador")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "201", description = "Locador criado com sucesso"),
+            @ApiResponse(responseCode = "500", description = "Erro interno do servidor")
+    })
     @PostMapping
     public ResponseEntity<Void> create( @RequestBody Locador locador){
          this.locadorService.create(locador);
@@ -50,6 +71,11 @@ public class LocadorController {
          return ResponseEntity.created(uri).build();
     }
 
+    @Operation(description = "Atualiza um locador existente")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "204", description = "Locador atualizado com sucesso"),
+            @ApiResponse(responseCode = "404", description = "Locador não encontrado")
+    })
     @PutMapping("/{id}")
     public ResponseEntity<Void> update(@PathVariable Long id, @RequestBody Locador locador) {
         locador.setId(id);
@@ -57,29 +83,47 @@ public class LocadorController {
         return ResponseEntity.noContent().build();
     }
 
+    @Operation(description = "Exclui um locador pelo id")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "204", description = "Locador excluído com sucesso"),
+            @ApiResponse(responseCode = "404", description = "Locador não encontrado")
+    })
     @DeleteMapping("/{id}")
     public ResponseEntity<Void> delete(@PathVariable Long id){
         this.locadorService.delete(id);
         return ResponseEntity.noContent().build();
     }
     
-      @GetMapping("/status/false")
-public ResponseEntity<List<Locador>> findAllByStatusFalse() {
-    List<Locador> locadores = (List<Locador>) this.locadorService.findAllByStatusFalse();
-    return ResponseEntity.ok().body(locadores);
-}
+    @Operation(description = "Busca todos os locadores com status falso")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Lista de locadores com status falso"),
+            @ApiResponse(responseCode = "404", description = "Nenhum locador com status falso encontrado")
+    })
+    @GetMapping("/status/false")
+    public ResponseEntity<List<Locador>> findAllByStatusFalse() {
+        List<Locador> locadores = (List<Locador>) this.locadorService.findAllByStatusFalse();
+        return ResponseEntity.ok().body(locadores);
+    }
 
-@GetMapping("/email/{email}")
-public ResponseEntity<Locador> findByEmail(@PathVariable String email) {
-    Locador locador = this.locadorService.findByEmail(email);
-    return ResponseEntity.ok().body(locador);
-}
+    @Operation(description = "Busca um locador pelo email")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Locador encontrado"),
+            @ApiResponse(responseCode = "404", description = "Locador não encontrado")
+    })
+    @GetMapping("/email/{email}")
+    public ResponseEntity<Locador> findByEmail(@PathVariable String email) {
+        Locador locador = this.locadorService.findByEmail(email);
+        return ResponseEntity.ok().body(locador);
+    }
 
-//login
-@GetMapping("login/{email}/{senha}")
-public ResponseEntity<Locador> findByEmailAndSenha(@PathVariable String email, @PathVariable String senha) {
-    Locador locador = this.locadorService.findByEmailAndSenha(email, senha);
-    return ResponseEntity.ok().body(locador);
-}
-    
+    @Operation(description = "Busca um locador pelo email e senha, rota para login")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Locador encontrado"),
+            @ApiResponse(responseCode = "404", description = "Locador não encontrado")
+    })
+    @GetMapping("login/{email}/{senha}")
+    public ResponseEntity<Locador> findByEmailAndSenha(@PathVariable String email, @PathVariable String senha) {
+        Locador locador = this.locadorService.findByEmailAndSenha(email, senha);
+        return ResponseEntity.ok().body(locador);
+    }
 }
