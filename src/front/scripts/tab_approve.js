@@ -19,8 +19,8 @@ function createTable(data){
             <td>${element.cnh}</td>
             <td>${element.cpf}</td>
             <td>
-                <input type="checkbox" class="big" data-toggle="modal" data-target="#modalEliminar">
-                </input> 
+            <input type="button" class="big" data-toggle="modal" data-target="#modalEliminar" value="Validar">
+            </input> 
             </td>
         </tr>
     
