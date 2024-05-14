@@ -129,12 +129,13 @@ submitBtn.addEventListener("click", () => {
     })
     .then(data => {
         console.log('Success:', data);
-        // lidar com a resposta de sucesso aqui
+        window.location.href = "http://localhost:8080/index.html";
     })
     .catch(error => {
         console.error('Error:', error);
         // lidar com o erro aqui
     });
+
 });
 
 function validateInputs(ths) {

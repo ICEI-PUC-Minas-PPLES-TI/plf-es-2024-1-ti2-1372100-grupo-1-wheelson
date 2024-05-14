@@ -48,7 +48,7 @@ function initMultiStepForm() {
             data_entrada: dataFormatada, // data atual
             senha
         };
-
+        
         console.log("data", data);
 
         fetch("http://localhost:8080/locador", {
@@ -72,7 +72,10 @@ function initMultiStepForm() {
             console.error('Error:', error);
             // lidar com o erro aqui
         })
+        window.location.href = "index.html";
     });
+    //a
+    
 }
 
 async function fetchCadastro(tipo, email, senha) {

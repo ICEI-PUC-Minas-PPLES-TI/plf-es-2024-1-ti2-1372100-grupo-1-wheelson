@@ -29,10 +29,10 @@ const loginLocador = (nome, senha) => {
 
     fetchLogin("locador", nome, senha).then(data => {
         localStorage.setItem("usuario", JSON.stringify(data));
+        window.location.href = "menu.html";
     }).catch(error => {
         console.error("Erro ao buscar login:", error);
     });
-    window.location.href = "index.html";
 };
 
 const loginLocatario = () => {
