@@ -4,12 +4,13 @@
   <meta charset="UTF-8">
   <title>Login Form</title>
   <link rel="stylesheet" href="/src/front/styles/login.css">
-
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>
 <!-- partial:index.partial.html -->
 <body>
-	<a class="btn-2" href="/src/front/pages/index.html">Voltar</a>
+	<a class="btn-2" href="/src/front/pages/index.html"><span class="material-symbols-outlined">
+		arrow_back_ios
+		</span></a>
 	<div class="login">
 		<div class="login-screen">
 			<div class="app-title">
@@ -18,8 +19,8 @@
 
 			<div class="login-form">
 				<div class="control-group">
-				<input type="text" class="login-field" value="" placeholder="Nome" id="login-name">
 				<label class="login-field-icon fui-user" for="login-name"></label>
+				<input type="text" class="login-field" value="" placeholder="Nome" id="login-name">
 				</div>
 
 				<div class="control-group">
@@ -27,13 +28,17 @@
 				<label class="login-field-icon fui-lock" for="login-pass"></label>
 				</div>
 
-				<a class="btn btn-primary btn-large btn-block" href="#">Acessar</a>
+				<select name="" id="login-type" class="select">
+					<option value="" disabled selected>Selecione</option>
+					<option value="locador">Locador</option>
+					<option value="locatario">Locatário</option>
+				</select>
+
+				<button class="btn btn-primary btn-large btn-block" id="login-btn">Acessar</button>
 				<!-- <a class="login-link" href="#">Lost your password?</a> -->
 			</div>
 		</div>
 	</div>
-</body>
-<!-- partial -->
-  
+	<script type="module" src="../scripts/login.js"></script>
 </body>
 </html>

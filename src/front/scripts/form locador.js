@@ -1,74 +1,56 @@
 function initMultiStepForm() {
-    const progressNumber = document.querySelectorAll(".step").length;
-    const slidePage = document.querySelector(".slide-page");
     const submitBtn = document.querySelector(".submit");
-    const progressText = document.querySelectorAll(".step p");
-    const progressCheck = document.querySelectorAll(".step .check");
-    const bullet = document.querySelectorAll(".step .bullet");
-    const pages = document.querySelectorAll(".page");
-    const nextButtons = document.querySelectorAll(".next");
-    const prevButtons = document.querySelectorAll(".prev");
-    const stepsNumber = pages.length;
 
-    if (progressNumber !== stepsNumber) {
-        console.warn(
-            "Error, number of steps in progress bar do not match number of pages"
-        );
-    }
+    submitBtn.addEventListener("click", function(event) {
+        event.preventDefault();
 
-    document.documentElement.style.setProperty("--stepNumber", stepsNumber);
+        // Captura os valores dos campos no momento do clique
+        const nome = document.getElementById("nome").value;
+        
+        const email = document.getElementById("email").value;
+        const telefone = document.getElementById("telefone").value;
+        const cpf = document.getElementById("cpf").value;
+        const data_nascimento = document.getElementById("dataNascimento").value;
+        const rua = document.getElementById("rua").value;
+        const bairro = document.getElementById("bairro").value;
+        const numero_resid = document.getElementById("numero").value;
+        const cidade = document.getElementById("cidade").value;
+        const uf = document.getElementById("estado").value;
+        const senha = document.getElementById("senha").value;
+        // Obter a data atual
+        const dataAtual = new Date();
 
-    let current = 1;
+        // Extrair o ano, mês e dia
+        const ano = dataAtual.getFullYear();
+        // O mês é retornado de 0 a 11, então precisamos adicionar 1 para obter o valor correto
+        const mes = (dataAtual.getMonth() + 1).toString().padStart(2, '0'); // Adiciona zero à esquerda se for menor que 10
+        const dia = dataAtual.getDate().toString().padStart(2, '0'); // Adiciona zero à esquerda se for menor que 10
 
-    for (let i = 0; i < nextButtons.length; i++) {
-        nextButtons[i].addEventListener("click", function (event) {
-            event.preventDefault();
+        // Formatar a data no formato desejado "xxxx-yy-zz"
+        const dataFormatada = `${ano}-${mes}-${dia}`;
 
-            inputsValid = validateInputs(this);
-            // inputsValid = true;
+        console.log(dataFormatada); // Saída: "2024-05-13"
 
-            if (inputsValid) {
-                slidePage.style.marginLeft = `-${
-                    (100 / stepsNumber) * current
-                }%`;
-                bullet[current - 1].classList.add("active");
-                progressCheck[current - 1].classList.add("active");
-                progressText[current - 1].classList.add("active");
-                current += 1;
-            }
-        });
-    }
-
-    for (let i = 0; i < prevButtons.length; i++) {
-        prevButtons[i].addEventListener("click", function (event) {
-            event.preventDefault();
-            slidePage.style.marginLeft = `-${
-                (100 / stepsNumber) * (current - 2)
-            }%`;
-            bullet[current - 2].classList.remove("active");
-            progressCheck[current - 2].classList.remove("active");
-            progressText[current - 2].classList.remove("active");
-            current -= 1;
-        });
-    }
-    submitBtn.addEventListener("click", () => {
         const data = {
-            nome: document.getElementById("nome").value,
-            cpf: document.getElementById("cpf").value,
-            dataNascimento: document.getElementById("dataNascimento").value,
-            email: document.getElementById("email").value,
-            telefone: document.getElementById("telefone").value,
-            rua: document.getElementById("rua").value,
-            bairro: document.getElementById("bairro").value,
-            numero_resid: document.getElementById("numero").value,
-            cidade: document.getElementById("cidade").value,
-            uf: document.getElementById("estado").value,
+            //id: 0, // id é autoincrementado
+            nome,
+            cpf,
+            data_nascimento,
+            email,
+            telefone,
+            rua,
+            bairro,
+            numero_resid,
+            cidade,
+            uf,
             status: false, // assumindo que o status seja sempre false
             saldo: 0, // saldo inicial
-            dataEntrada: new Date().toISOString(), // data atual
-            senha: document.getElementById("senha").value
+            data_entrada: dataFormatada, // data atual
+            senha
         };
-    
+
+        console.log("data", data);
+
         fetch("http://localhost:8080/locador", {
             method: "POST",
             headers: {
@@ -89,39 +71,28 @@ function initMultiStepForm() {
         .catch(error => {
             console.error('Error:', error);
             // lidar com o erro aqui
-        });
+        })
     });
-    
-    
-    console.log("submit form");
-    bullet[current - 1].classList.add("active");
-    progressCheck[current - 1].classList.add("active");
-    progressText[current - 1].classList.add("active");
-    current += 1;
+}
 
-    
+async function fetchCadastro(tipo, email, senha) {
+    try {
+        let response = await fetch(`http://localhost:8080/locador`);
 
-    
-};
-
-function validateInputs(ths) {
-    let inputsValid = true;
-
-    const inputs =
-        ths.parentElement.parentElement.querySelectorAll("input");
-    for (let i = 0; i < inputs.length; i++) {
-        const valid = inputs[i].checkValidity();
-        if (!valid) {
-            inputsValid = false;
-            inputs[i].classList.add("invalid-input");
-        } else {
-            inputs[i].classList.remove("invalid-input");
+        if (!response.ok) {
+            throw new Error(`HTTP error! status: ${response.status}`);
         }
+
+        let data = await response.json();
+        console.log(data);
+        return data;
+    } catch (error) {
+        console.error("Erro ao buscar login:", error);
     }
-    return inputsValid;
 }
 
 // Chamada da função apenas uma vez quando a página é carregada
 window.onload = function() {
     initMultiStepForm();
 };
+

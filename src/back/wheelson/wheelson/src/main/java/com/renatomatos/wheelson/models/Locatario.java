@@ -59,7 +59,7 @@ public class Locatario {
     private String cnh;
 
     @Column(name = "data_entrada")
-    private Date dataEntrada;
+    private Date data_entrada;
 
     private String senha;
 
@@ -168,11 +168,11 @@ public class Locatario {
     // }
 
     public Date getDataEntrada() {
-        return dataEntrada;
+        return data_entrada;
     }
 
-    public void setDataEntrada(Date dataEntrada) {
-        this.dataEntrada = dataEntrada;
+    public void setDataEntrada(Date data_entrada) {
+        this.data_entrada = data_entrada;
     }
 
     public String getSenha() {
