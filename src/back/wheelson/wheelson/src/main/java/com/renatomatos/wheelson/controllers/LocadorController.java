@@ -22,6 +22,7 @@ import com.renatomatos.wheelson.services.LocadorService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import jakarta.validation.Valid;
 
 import org.springframework.web.bind.annotation.PutMapping;
 
@@ -29,7 +30,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 
 @RestController
 @RequestMapping("/locador")
-//@Validated USAR ESSE VALIDATED CASO SEJA USADO VALIDACOES @NOTNULL, @NOTEMPTY, ETC NO MODELS
+@Validated //USAR ESSE VALIDATED CASO SEJA USADO VALIDACOES @NOTNULL, @NOTEMPTY, ETC NO MODELS
 public class LocadorController {
 
     @Autowired
@@ -64,7 +65,7 @@ public class LocadorController {
             @ApiResponse(responseCode = "500", description = "Erro interno do servidor")
     })
     @PostMapping
-    public ResponseEntity<Void> create( @RequestBody Locador locador){
+    public ResponseEntity<Void> create(@Valid @RequestBody Locador locador){
          this.locadorService.create(locador);
          URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
                     .path("/{id}").buildAndExpand(locador.getId()).toUri() ;
@@ -77,7 +78,7 @@ public class LocadorController {
             @ApiResponse(responseCode = "404", description = "Locador não encontrado")
     })
     @PutMapping("/{id}")
-    public ResponseEntity<Void> update(@PathVariable Long id, @RequestBody Locador locador) {
+    public ResponseEntity<Void> update(@PathVariable Long id,@Valid @RequestBody Locador locador) {
         locador.setId(id);
         this.locadorService.update(locador);
         return ResponseEntity.noContent().build();

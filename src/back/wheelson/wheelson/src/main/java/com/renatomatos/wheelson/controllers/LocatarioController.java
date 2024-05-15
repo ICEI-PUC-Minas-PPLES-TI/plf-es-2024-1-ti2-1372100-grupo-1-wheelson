@@ -6,6 +6,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -17,9 +18,11 @@ import com.renatomatos.wheelson.services.LocatarioService;
 import io.swagger.v3.oas.annotations.Operation;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
+import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/locatario")
+@Validated
 public class LocatarioController {
 
     @Autowired
@@ -53,7 +56,7 @@ public class LocatarioController {
             @ApiResponse(responseCode = "500", description = "Erro interno do servidor")
     })
     @PostMapping
-    public ResponseEntity<Void> create(@RequestBody Locatario locatario) {
+    public ResponseEntity<Void> create(@Valid @RequestBody Locatario locatario) {
         this.locatarioService.create(locatario);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
                    .path("/{id}").buildAndExpand(locatario.getId()).toUri();
@@ -66,7 +69,7 @@ public class LocatarioController {
             @ApiResponse(responseCode = "404", description = "Locatario não encontrado")
     })
     @PutMapping("/{id}")
-    public ResponseEntity<Void> update(@PathVariable Long id, @RequestBody Locatario locatario) {
+    public ResponseEntity<Void> update(@PathVariable Long id,@Valid @RequestBody Locatario locatario) {
         locatario.setId(id);
         this.locatarioService.update(locatario);
         return ResponseEntity.noContent().build();
