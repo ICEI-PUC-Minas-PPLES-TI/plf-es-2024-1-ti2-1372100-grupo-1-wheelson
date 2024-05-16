@@ -57,8 +57,11 @@ async function fetchLogin(tipo, email, senha) {
     }
 }
 document.addEventListener("DOMContentLoaded", function() {
+    const loginButton = document.getElementById("login-btn");
+loginButton.addEventListener('click', submitFort);
     const toggleButton = document.querySelector(".toggle-password");
     toggleButton.addEventListener("click", togglePasswordVisibility);
+    
   });
   
   function togglePasswordVisibility() {

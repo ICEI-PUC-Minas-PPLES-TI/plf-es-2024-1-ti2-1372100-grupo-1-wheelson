@@ -33,7 +33,7 @@ public class LocadorService {
         Optional<Locador> locador = locadorRepository.findByEmail(email);
         return locador.orElseThrow(() -> new RuntimeException("Locador não encontrado"));
     }
-
+    //login
     public Locador findByEmailAndSenha(String email, String senha) {
         Optional<Locador> locador = locadorRepository.findByEmail(email);
         if (locador.isPresent()) {
