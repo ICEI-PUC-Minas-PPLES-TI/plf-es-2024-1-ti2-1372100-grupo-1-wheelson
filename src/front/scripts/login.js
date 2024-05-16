@@ -56,6 +56,21 @@ async function fetchLogin(tipo, email, senha) {
         console.error("Erro ao buscar login:", error);
     }
 }
-
-const loginButton = document.getElementById("login-btn");
-loginButton.addEventListener('click', submitFort); // Removida a duplicação
+document.addEventListener("DOMContentLoaded", function() {
+    const toggleButton = document.querySelector(".toggle-password");
+    toggleButton.addEventListener("click", togglePasswordVisibility);
+  });
+  
+  function togglePasswordVisibility() {
+    const passwordField = document.getElementById("login-pass");
+    const toggleButton = document.querySelector(".toggle-password");
+    
+    if (passwordField.type === "password") {
+      passwordField.type = "text";
+      toggleButton.innerHTML = '<span class="material-symbols-outlined" alt="Hide Password">visibility_off</span>';
+    } else {
+      passwordField.type = "password";
+      toggleButton.innerHTML = '<span class="material-symbols-outlined" alt="Show Password">visibility</span>';
+    }
+  }
+  

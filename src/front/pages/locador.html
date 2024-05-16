@@ -17,7 +17,9 @@
   <title>Cadastro de Locador</title>
   <link rel="stylesheet" href="/src/front/styles/form.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <body>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />   
+</head>
+  <body>
         <div class="buttonv">
             <a href="/src/front/pages/index.html">
             <button class="buttonv" href="front/pages/index.html"> Voltar</button>
@@ -146,10 +148,18 @@
                             <input type="text" id="cpf" required />
                         </div>
                         
-                        <div class="field">
-                            <div class="label">Senha</div>
-                            <input type="password" id="senha" required />
+                        <div class="control-group">
+                            <div class="password-wrapper">
+                                <input type="password" class="login-field" value="" placeholder="Senha" id="login-pass">
+                                <button class="toggle-password button-password">
+                                    <span class="material-symbols-outlined">
+                                        visibility
+                                    </span>
+                                </button>
+                            </div>
+                            <label class="login-field-icon fui-lock" for="login-pass"></label>
                         </div>
+                        
                         <div class="field btns">
                             <button class="prev-1 prev">Voltar</button>
                             <button class="submit">Enviar</button>
