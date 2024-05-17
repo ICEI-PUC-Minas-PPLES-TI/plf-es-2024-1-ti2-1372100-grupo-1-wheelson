@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <title>Form-veiculo</title>
-  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
@@ -66,19 +66,24 @@
                     </div>
 
                     <div class="page">
-                        <div class="title">Proprietario</div>
+                        <div class="title">Proprietário</div>
                         <div class="field">
-                            <div class="label">Você é o dono do veiculo :</div>
-                            <div class="box">
-                            <button class="simnao">Não</button>
-                            <button class="simnao">Sim</button>
+                            <div class="label">Você é o dono do veículo:</div>
+                            <select name="" id="login-type" class="select">
+                                <option value="" disabled selected>Selecione</option>
+                                <option value="proprietario">Sim</option>
+                                <option value="naoproprietario">Não</option>
+                            </select>
                         </div>
+                        <div class="error-message" id="error-message">
+                            Você deve ser o proprietário do veículo para prosseguir.
                         </div>
                         <div class="field btns">
                             <button class="prev-1 prev">Voltar</button>
-                            <button class="next-1 next">Proximo</button>
+                            <button class="next-1 next">Próximo</button>
                         </div>
                     </div>
+                
                     
                     <div class="page">
                         <div class="title">Informações do carro:</div>
@@ -90,12 +95,15 @@
                         </div>
                         <div class="field">
                             <div class="label">Ano:</div>
-                            <input type="date" min="2015-01-01" max="2024-12-31" required />
+                            <input type="date" id="car-year" min="2014-01-01" max="2024-12-31" required />
                             <div class="label lado">Valor:</div>
                             <input type="text" required />
                         </div>
+                        <div class="error-message" id="year-error-message">
+                            O ano do carro deve ser 2014 ou posterior.
+                        </div>
                         <div class="field">
-                            <div class="label">Cor:</div>
+                            <div class="label">Ponto de encontro:</div>
                             <input type="text" required />
                         </div>
                        
@@ -109,11 +117,11 @@
                 </form>
             </div>
         </div>
-        <script src="/src/front/scripts/form.js"></script>
+        <script src="/src/front/scripts/form veiculo.js"></script>
     </body>
 </html>
 <!-- partial -->
-  <script  src="/src/front/scripts/form.js"></script>
+  <script  src="/src/front/scripts/form veiculo.js"></script>
 
 </body>
 </html>
