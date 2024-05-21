@@ -42,13 +42,13 @@ _* **Tabela** - campo formado por uma matriz de valores_
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-| Cadastrar CRV   | Arquivo          |                |                   |
+| Cadastrar RENAVAM  | Text          |                |                   |
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| Enviar CRV           | Validar documentação           |                   |
+| Enviar RENAVAM           | Validar documentação           |                   |
 
 
 
@@ -60,7 +60,7 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | Modelo          | Caixa de texto   |                |                   |
 | Ano de fabricação| Data            |                |                   |
 | Valor Diário| Número            |       R$00,00         |                   |
-| Cor   | Caixa de texto            |                |                   |
+
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
