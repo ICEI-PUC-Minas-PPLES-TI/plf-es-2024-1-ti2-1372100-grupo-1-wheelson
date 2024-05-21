@@ -32,7 +32,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 
 @RestController
 @RequestMapping("/carro")
-@Validated
+//@Validated
 public class CarroController {
 
     @Autowired
@@ -55,7 +55,7 @@ public class CarroController {
             @ApiResponse(responseCode = "500", description = "Erro interno do servidor")
     })
     @PostMapping
-    public ResponseEntity<Void> create(@Valid @RequestBody Carro carro) {
+    public ResponseEntity<Void> create(/*@Valid*/ @RequestBody Carro carro) {
          this.carroService.create(carro);
          URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
                     .path("/{id}").buildAndExpand(carro.getId()).toUri() ;
@@ -68,7 +68,7 @@ public class CarroController {
             @ApiResponse(responseCode = "404", description = "Carro não encontrado")
     })
     @PutMapping("/{id}")
-    public ResponseEntity<Void> update(@PathVariable Long id, @Valid @RequestBody Carro carro) {
+    public ResponseEntity<Void> update(@PathVariable Long id, /*@Valid*/ @RequestBody Carro carro) {
         carro.setId(id);
         this.carroService.update(carro);
         return ResponseEntity.noContent().build();
