@@ -99,3 +99,14 @@ window.onload = function() {
     initMultiStepForm();
 };
 
+
+
+
+// Mask
+$(document).ready(function(){
+
+$(".input-cpf").mask("999.999.999-99");
+$(".input-telefone").mask("(99) 99999-9999");
+$(".input-cep").mask("00000-000");
+
+});
