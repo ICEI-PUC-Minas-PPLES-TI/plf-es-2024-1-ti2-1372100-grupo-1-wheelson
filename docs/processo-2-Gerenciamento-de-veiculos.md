@@ -3,7 +3,7 @@
 Um processo eficiente de gerenciamento de veículos é fundamental para garantir a disponibilidade e qualidade da frota de uma locadora de veículos. O processo de Gerenciamento de Veículos visa controlar o cadastramento e a disponibilidade dos veículos para garantir que a locadora possa atender às demandas dos clientes de forma segura e eficaz.
 
 
-![diagram_2](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/d9d8cb00-2144-45b6-a242-e1ac2855b7f6)
+![gerenciamento de veiculo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/4b296ff4-0fd6-4f0e-9eb7-815acd36cdaa)
 
 
 
