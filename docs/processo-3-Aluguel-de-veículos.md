@@ -96,3 +96,15 @@ No processo de aluguel de veículos, o cliente inicialmente faz uma solicitaçã
 |         Aprovar          | Fim do processo                |                     |
 |         Reprovar         | Cancela processo               | cancel              |
 
+Wireframes:
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129970038/dd352e93-f1c3-4edb-8088-b5e4797c6a5f)
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129970038/010e0d28-d1e9-4ee5-8a57-7458ed42605f)
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129970038/570bd983-c8a5-4ad9-9f4f-74416e277082)
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129970038/3766a1ab-4642-44c2-9c0e-d2f4675569ce)
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129970038/837066f2-2422-4959-b820-f370094797f0)
+
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129970038/d5d548cf-09da-4b0a-9825-b8c3cbe21112)
