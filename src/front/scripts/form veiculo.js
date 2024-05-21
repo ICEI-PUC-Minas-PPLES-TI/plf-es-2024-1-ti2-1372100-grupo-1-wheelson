@@ -3,7 +3,7 @@ initMultiStepForm();
         function initMultiStepForm() {
             const progressNumber = document.querySelectorAll(".step").length;
             const slidePage = document.querySelector(".slide-page");
-            const submitBtn = document.querySelector(".submit");
+            const vehicleForm = document.querySelector("#vehicle-form");
             const progressText = document.querySelectorAll(".step p");
             const progressCheck = document.querySelectorAll(".step .check");
             const bullet = document.querySelectorAll(".step .bullet");
@@ -66,19 +66,34 @@ initMultiStepForm();
                 });
             }
 
-            submitBtn.addEventListener("click", function(event) {
+            vehicleForm.addEventListener("submit", async function(event) {
                 event.preventDefault();
                 const inputsValid = validateInputs(this);
 
+                const getValueById = id => document.getElementById(id)?.value;
+
                 if (inputsValid) {
-                    bullet[current - 1].classList.add("active");
-                    progressCheck[current - 1].classList.add("active");
-                    progressText[current - 1].classList.add("active");
-                    current += 1;
-                    setTimeout(function() {
+                    try{
+                        await fetch('http://localhost:8080/carro', { 
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json'
+                            },
+                            body: JSON.stringify({
+                                modelo: getValueById("model"),
+                                marca: "??",
+                                ano: getValueById("car-year"),
+                                valorDiario: getValueById("car-value"),
+                                renavam: getValueById("renavam"),
+                                placa: getValueById("car-id"),
+                                disponivel: "??",
+                                locador: {
+                                id: "??"
+                            }})})
                         alert("Your Form Successfully Signed up");
-                        location.reload();
-                    }, 800);
+                    }catch(error){
+                        console.error(error)
+                    }
                 }
             });
 

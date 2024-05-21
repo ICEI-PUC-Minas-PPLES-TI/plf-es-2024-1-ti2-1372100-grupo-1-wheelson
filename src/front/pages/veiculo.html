@@ -22,7 +22,7 @@
   <body>
         <div class="buttonv">
             <a href="/src/front/pages/index.html">
-            <button class="buttonv" href="front/pages/index.html"> Voltar</button>
+            <button type="button" class="buttonv" href="front/pages/index.html"> Voltar</button>
         </a>
             </div>
         <div class="container">
@@ -52,7 +52,7 @@
                
             </div>
             <div class="form-outer">
-                <form action="#">
+                <form id="vehicle-form" action="#">
                     <div class="page slide-page">
                         <div class="title">Documentos</div>
                         <div class="field">
@@ -61,7 +61,7 @@
                         </div>
                        
                         <div class="field">
-                            <button class="firstNext next">Proximo</button>
+                            <button type="button" class="firstNext next">Proximo</button>
                         </div>
                     </div>
 
@@ -79,8 +79,8 @@
                             Você deve ser o proprietário do veículo para prosseguir.
                         </div>
                         <div class="field btns">
-                            <button class="prev-1 prev">Voltar</button>
-                            <button class="next-1 next">Próximo</button>
+                            <button type="button" class="prev-1 prev">Voltar</button>
+                            <button type="button" class="next-1 next">Próximo</button>
                         </div>
                     </div>
                 
@@ -89,28 +89,28 @@
                         <div class="title">Informações do carro:</div>
                         <div class="field btns">
                             <div class="label">Placa:</div>
-                            <input type="text" required />
+                            <input id="car-id" type="text" required />
                             <div class="label lado">Modelo:</div>
-                            <input type="text" required />
+                            <input id="model" type="text" required />
                         </div>
                         <div class="field">
                             <div class="label">Ano:</div>
-                            <input type="date" id="car-year" min="2014-01-01" max="2024-12-31" required />
+                            <input id="car-year" type="number" id="year" min="2014" max="2024" step="1" required />
                             <div class="label lado">Valor:</div>
-                            <input type="text" required />
+                            <input id="car-value" type="text" required />
                         </div>
                         <div class="error-message" id="year-error-message">
                             O ano do carro deve ser 2014 ou posterior.
                         </div>
                         <div class="field">
                             <div class="label">Ponto de encontro:</div>
-                            <input type="text" required />
+                            <input id="meeting-place" type="text" required />
                         </div>
                        
 
                         <div class="field btns">
-                            <button class="prev-4 prev">Voltar</button>
-                            <button class="Submit">Submit</button>
+                            <button type="button" class="prev-4 prev">Voltar</button>
+                            <button type="submit" class="submit">Submit</button>
                         </div>
                     </div>
                     
