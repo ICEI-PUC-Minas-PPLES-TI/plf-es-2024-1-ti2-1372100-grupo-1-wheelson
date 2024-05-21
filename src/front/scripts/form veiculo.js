@@ -81,12 +81,12 @@ initMultiStepForm();
                             },
                             body: JSON.stringify({
                                 modelo: getValueById("model"),
-                                marca: "??",
+                                marca: getValueById("marca"),
                                 ano: getValueById("car-year"),
                                 valorDiario: getValueById("car-value"),
                                 renavam: getValueById("renavam"),
                                 placa: getValueById("car-id"),
-                                disponivel: "??",
+                                disponivel: "true",
                                 locador: {
                                 id: "??"
                             }})})
