@@ -12,7 +12,7 @@ import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
-
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import java.sql.Date;
 
@@ -24,6 +24,7 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Size;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -84,6 +85,9 @@ public class Locador {
     @Column(name = "data_entrada", nullable = false) //, columnDefinition = "date default current_date"
     Date data_entrada;
 
+    @NotEmpty
+    @NotNull
+    @Size(min = 6)
     @Column(name = "senha", nullable = false)
     String senha;
 
@@ -243,5 +247,8 @@ public class Locador {
         this.senha = senha;
     }
 
-
+    @JsonIgnore
+    public List<Carro> getCarros() {
+        return carros;
+    }
 }
