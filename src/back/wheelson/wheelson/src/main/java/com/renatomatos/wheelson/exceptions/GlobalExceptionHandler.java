@@ -1,7 +1,12 @@
 package com.renatomatos.wheelson.exceptions;
 
-import java.io.IOException;
-import jakarta.validation.ConstraintViolationException;
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import javax.validation.ConstraintViolationException;
+
+
+
 import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.dao.DataIntegrityViolationException;
@@ -9,13 +14,14 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
-import org.springframework.web.bind.MethodArgumentNotValidException;
+
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.web.bind.MethodArgumentNotValidException;
 
 @Slf4j(topic = "GLOBAL_EXCEPTION_HANDLER")
 @RestControllerAdvice
@@ -24,6 +30,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     @Value("${server.error.include-exception}")
     private boolean printStackTrace;
 
+    
     @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
             MethodArgumentNotValidException methodArgumentNotValidException,
@@ -55,11 +62,11 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(DataIntegrityViolationException.class)
     @ResponseStatus(HttpStatus.CONFLICT)
-    public ResponseEntity<Object> hadleDataIntegrityViolationException (
+    public ResponseEntity<Object> handleDataIntegrityViolationException (
         DataIntegrityViolationException dataIntegrityViolationException,
         WebRequest request) {
         final String errorMessage = dataIntegrityViolationException.getMostSpecificCause().getMessage();
-        log.error("Erro ao salvar entidade com problemas de integridade" + errorMessage, dataIntegrityViolationException);
+        log.error("Erro ao salvar entidade com problemas de integridade: " + errorMessage, dataIntegrityViolationException);
         return buildErrorResponse(
             dataIntegrityViolationException,
             errorMessage,
@@ -78,7 +85,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
             HttpStatus.UNPROCESSABLE_ENTITY,
             request);
     }
-    //Excecao de erro de email nao encontrado
+
     @ExceptionHandler(EmailNotFoundException.class)
     @ResponseStatus(HttpStatus.NOT_FOUND)
     public ResponseEntity<Object> handleEmailNotFoundException(
@@ -89,9 +96,8 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     }
 
     @ExceptionHandler(SenhaIncorretaException.class)
-    @ResponseStatus(HttpStatus.UNAUTHORIZED) 
+    @ResponseStatus(HttpStatus.UNAUTHORIZED)
     public ResponseEntity<Object> handleSenhaIncorretaException(SenhaIncorretaException exception, WebRequest request) {
-         
         log.warn("Invalid login attempt", exception);
         return buildErrorResponse(exception, exception.getMessage(), HttpStatus.UNAUTHORIZED, request);
     }
