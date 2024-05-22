@@ -19,8 +19,8 @@ public class Carro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idCarro")
-    Long idCarro;
+    @Column(name = "id_carro")
+    Long id_carro;
 
     // @NotEmpty
     // @NotNull
@@ -56,7 +56,7 @@ public class Carro {
     boolean disponivel;
 
     @ManyToOne
-    @JoinColumn(name = "id",nullable = false,updatable = false)
+    @JoinColumn(name = "id_locador",nullable = false,updatable = false)
     Locador locador;
 
     public Carro() {
@@ -73,11 +73,11 @@ public class Carro {
     }
 
     public Long getId() {
-        return idCarro;
+        return id_carro;
     }
 
-    public void setId(Long idCarro) {
-        this.idCarro = idCarro;
+    public void setId(Long id_carro) {
+        this.id_carro = id_carro;
     }
 
     public String getModelo() {

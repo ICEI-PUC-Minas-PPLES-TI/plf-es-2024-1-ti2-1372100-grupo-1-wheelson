@@ -36,9 +36,9 @@ import jakarta.persistence.Column;
 public class Locador {
 
     @Id
-    @Column(name = "id")
+    @Column(name = "id_locador")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    Long id;
+    Long id_locador;
 
     @NotEmpty
     @NotNull
@@ -98,12 +98,12 @@ public class Locador {
 
     
     public Long getId() {
-        return id;
+        return id_locador;
     }
 
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long id_locador) {
+        this.id_locador = id_locador;
     }
 
 
