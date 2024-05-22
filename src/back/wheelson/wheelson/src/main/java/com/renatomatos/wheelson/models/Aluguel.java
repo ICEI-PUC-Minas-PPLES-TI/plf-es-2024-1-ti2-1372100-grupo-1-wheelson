@@ -1,6 +1,6 @@
 package com.renatomatos.wheelson.models;
 
-import java.util.Date;
+import java.sql.Date;
 import jakarta.persistence.*;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;

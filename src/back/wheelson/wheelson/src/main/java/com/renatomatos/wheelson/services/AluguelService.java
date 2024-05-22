@@ -8,6 +8,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.renatomatos.wheelson.models.Aluguel;
+import com.renatomatos.wheelson.models.Carro;
+import com.renatomatos.wheelson.models.Locador;
+import com.renatomatos.wheelson.models.Locatario;
 import com.renatomatos.wheelson.repositories.AluguelRepository;
 
 import jakarta.transaction.Transactional;
@@ -38,10 +41,13 @@ public class AluguelService {
     @Transactional
     public Aluguel create(Aluguel aluguel){
         aluguel.setId_aluguel(null);
-        aluguel.setCarro(carroService.findById(aluguel.getCarro().getId()));
-        aluguel.setLocatario(locatarioService.findById(aluguel.getLocatario().getId()));
-        aluguel.setLocador(locadorService.findById(aluguel.getLocador().getId()));
-        aluguel = this.aluguelRepository.save(aluguel);
+        Locador locador = locadorService.findById(aluguel.getLocador().getId());
+        aluguel.setLocador(locador);
+        Locatario locatario = locatarioService.findById(aluguel.getLocatario().getId());
+        aluguel.setLocatario(locatario);
+        Carro carro = carroService.findById(aluguel.getCarro().getId());
+        aluguel.setCarro(carro);
+        aluguel = aluguelRepository.save(aluguel);
         return aluguel;
 }
 

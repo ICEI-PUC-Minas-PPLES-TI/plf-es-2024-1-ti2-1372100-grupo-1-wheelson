@@ -53,7 +53,8 @@ public class LocatarioController {
     @Operation(description = "Cria um novo locatario")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Locatario criado com sucesso"),
-            @ApiResponse(responseCode = "500", description = "Erro interno do servidor")
+            @ApiResponse(responseCode = "500", description = "Erro interno do servidor"),
+            @ApiResponse(responseCode = "409", description = "CNH inválida")
     })
     @PostMapping
     public ResponseEntity<Void> create(@Valid @RequestBody Locatario locatario) {
