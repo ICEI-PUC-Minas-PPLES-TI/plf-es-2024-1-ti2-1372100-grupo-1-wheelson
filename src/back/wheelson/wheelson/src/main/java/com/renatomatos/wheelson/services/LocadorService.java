@@ -8,6 +8,8 @@ import java.util.stream.StreamSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import com.renatomatos.wheelson.exceptions.EmailNotFoundException;
+import com.renatomatos.wheelson.exceptions.SenhaIncorretaException;
 import com.renatomatos.wheelson.models.Locador;
 import com.renatomatos.wheelson.models.Locatario;
 import com.renatomatos.wheelson.repositories.LocadorRepository;
@@ -40,9 +42,9 @@ public class LocadorService {
             if (locador.get().getSenha().equals(senha)) {
                 return locador.get();
             }
-            throw new RuntimeException("Senha incorreta");
+            throw new SenhaIncorretaException();
         }
-        throw new RuntimeException("Locador não encontrado");
+        throw new EmailNotFoundException(email);
     }
 
     @Transactional
