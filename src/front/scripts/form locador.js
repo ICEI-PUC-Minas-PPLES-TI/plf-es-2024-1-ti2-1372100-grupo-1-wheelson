@@ -99,3 +99,8 @@ window.onload = function() {
     initMultiStepForm();
 };
 
+// Mask 
+
+$(document).ready(function(){
+    $(".input-cpf").mask("000.000.000-00");
+});

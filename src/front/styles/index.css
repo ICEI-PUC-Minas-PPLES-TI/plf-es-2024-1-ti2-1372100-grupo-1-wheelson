@@ -135,7 +135,7 @@ ul {
   color: #5d5d5d;
 }
 .landing-page .content .info button {
-  border: 0;
+  border: 2px #fff;
   border-radius: 20px;
   padding: 12px 30px;
   margin-top: 30px;

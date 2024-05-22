@@ -125,3 +125,23 @@
     margin-right: -15px;
     margin-left: -15px;
 }
+
+.landing-page .content .info button {
+    border: 2px #fff;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #FFF;
+    background-color: #6c63ff;
+  }
+
+  .landing-page .content .info button :hover{
+    border: 2px #fff;
+    border-radius: 20px;
+    padding: 12px 30px;
+    margin-top: 30px;
+    cursor: pointer;
+    color: #000;
+    background-color: #fff;
+  }
