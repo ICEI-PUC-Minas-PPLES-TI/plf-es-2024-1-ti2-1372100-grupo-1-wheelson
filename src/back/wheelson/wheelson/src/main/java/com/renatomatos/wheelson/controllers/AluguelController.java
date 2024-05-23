@@ -77,4 +77,12 @@ public class AluguelController {
         List<Aluguel> alugueis = this.aluguelService.findByCarroId(id);
         return ResponseEntity.ok().body(alugueis);
     }
+
+    //finalizar o aluguel e atualizar o status de pagamento e atribuir saldo ao locador
+    // Método para finalizar o aluguel
+    @PatchMapping("/finalizar/{id}")
+    public ResponseEntity<Aluguel> finalizarAluguel(@PathVariable Long id) {
+        Aluguel aluguelFinalizado = aluguelService.finalizarAluguel(id);
+        return ResponseEntity.ok().body(aluguelFinalizado);
+    }
 }

@@ -105,4 +105,16 @@ public Aluguel updatePartial(Long id, Map<String, Object> updates) {
     }
 
 
+    @Transactional
+    public Aluguel finalizarAluguel(Long id) {
+        Aluguel aluguel = findById(id);
+        if (aluguel.isStatusPago()) {
+            throw new RuntimeException("O aluguel já foi finalizado!");
+        }
+        aluguel.setStatusPago(true);
+        Locador locador = aluguel.getLocador();
+        locador.setSaldo(aluguel.getValorTotal() *0.8);
+        locadorService.save(locador);
+        return aluguelRepository.save(aluguel);
+    }
 }

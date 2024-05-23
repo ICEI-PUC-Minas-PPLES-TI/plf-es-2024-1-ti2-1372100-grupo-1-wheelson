@@ -79,7 +79,7 @@ public class Locador {
 
     //Valor gerado após o aluguel concluido, deve semore começar com 0
     @Column(name = "saldo", nullable = false)//, columnDefinition = "float default 0"
-    float saldo;
+    double saldo;
 
     //Na hora que for cadastrado, deve puxar a data atual e colocar neste campo
     @Column(name = "data_entrada", nullable = false) //, columnDefinition = "date default current_date"
@@ -218,13 +218,13 @@ public class Locador {
     }
 
 
-    public float getSaldo() {
+    public double getSaldo() {
         return saldo;
     }
 
 
-    public void setSaldo(float saldo) {
-        this.saldo = saldo;
+    public void setSaldo(double d) {
+        this.saldo += d;
     }
 
 
