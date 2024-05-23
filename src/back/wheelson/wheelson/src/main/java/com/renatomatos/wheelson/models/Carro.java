@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -19,21 +20,18 @@ public class Carro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    @Column(name = "idCarro")
-    Long idCarro;
+    @Column(name = "id_carro")
+    Long id_carro;
 
-    // @NotEmpty
-    // @NotNull
+     @NotBlank
     @Column(name = "modelo", nullable = false, length = 20)
     String modelo;
 
-    // @NotEmpty
-    // @NotNull
+     @NotBlank
     @Column(name = "marca", nullable = false, length = 20)
     String marca;
 
-    // @NotEmpty
-    // @NotNull
+     @NotBlank
     @Column(name = "ano", nullable = false, length = 4)
     String ano;
 
@@ -41,13 +39,13 @@ public class Carro {
     @Column(name = "valorDiario", nullable = false)
     double valorDiario;
 
-    // @NotEmpty
-    // @NotNull
+     @NotEmpty
+     @NotNull
     @Column(name = "renavam", nullable = false, length = 11, unique = true)
     String renavam;
 
-    // @NotEmpty
-    // @NotNull
+     @NotEmpty
+     @NotNull
     // @Size(min = 7, max = 7)
     @Column(name = "placa", nullable = false, length = 7,unique = true)
     String placa;
@@ -56,7 +54,7 @@ public class Carro {
     boolean disponivel;
 
     @ManyToOne
-    @JoinColumn(name = "id",nullable = false,updatable = false)
+    @JoinColumn(name = "id_locador",nullable = false,updatable = false)
     Locador locador;
 
     public Carro() {
@@ -73,11 +71,11 @@ public class Carro {
     }
 
     public Long getId() {
-        return idCarro;
+        return id_carro;
     }
 
-    public void setId(Long idCarro) {
-        this.idCarro = idCarro;
+    public void setId(Long id_carro) {
+        this.id_carro = id_carro;
     }
 
     public String getModelo() {
