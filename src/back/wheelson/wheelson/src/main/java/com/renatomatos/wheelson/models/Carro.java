@@ -22,34 +22,33 @@ public class Carro {
     @Column(name = "idCarro")
     Long idCarro;
 
-    @NotEmpty
-    @NotNull
+    // @NotEmpty
+    // @NotNull
     @Column(name = "modelo", nullable = false, length = 20)
     String modelo;
 
-    @NotEmpty
-    @NotNull
+    // @NotEmpty
+    // @NotNull
     @Column(name = "marca", nullable = false, length = 20)
     String marca;
 
-    @NotEmpty
-    @NotNull
+    // @NotEmpty
+    // @NotNull
     @Column(name = "ano", nullable = false, length = 4)
     String ano;
 
-    @NotEmpty
-    @NotNull
+    
     @Column(name = "valorDiario", nullable = false)
     double valorDiario;
 
-    @NotEmpty
-    @NotNull
+    // @NotEmpty
+    // @NotNull
     @Column(name = "renavam", nullable = false, length = 11, unique = true)
     String renavam;
 
-    @NotEmpty
-    @NotNull
-    @Size(min = 7, max = 7)
+    // @NotEmpty
+    // @NotNull
+    // @Size(min = 7, max = 7)
     @Column(name = "placa", nullable = false, length = 7,unique = true)
     String placa;
 
