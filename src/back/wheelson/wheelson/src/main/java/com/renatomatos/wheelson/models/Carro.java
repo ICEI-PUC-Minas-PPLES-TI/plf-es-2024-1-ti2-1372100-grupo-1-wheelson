@@ -9,6 +9,7 @@ import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 import jakarta.validation.constraints.Size;
@@ -22,18 +23,15 @@ public class Carro {
     @Column(name = "id_carro")
     Long id_carro;
 
-    // @NotEmpty
-    // @NotNull
+     @NotBlank
     @Column(name = "modelo", nullable = false, length = 20)
     String modelo;
 
-    // @NotEmpty
-    // @NotNull
+     @NotBlank
     @Column(name = "marca", nullable = false, length = 20)
     String marca;
 
-    // @NotEmpty
-    // @NotNull
+     @NotBlank
     @Column(name = "ano", nullable = false, length = 4)
     String ano;
 
@@ -41,13 +39,13 @@ public class Carro {
     @Column(name = "valorDiario", nullable = false)
     double valorDiario;
 
-    // @NotEmpty
-    // @NotNull
+     @NotEmpty
+     @NotNull
     @Column(name = "renavam", nullable = false, length = 11, unique = true)
     String renavam;
 
-    // @NotEmpty
-    // @NotNull
+     @NotEmpty
+     @NotNull
     // @Size(min = 7, max = 7)
     @Column(name = "placa", nullable = false, length = 7,unique = true)
     String placa;

@@ -2,6 +2,9 @@ package com.renatomatos.wheelson.models;
 
 import java.sql.Date;
 import jakarta.persistence.*;
+import jakarta.validation.constraints.NotBlank;
+import jakarta.validation.constraints.NotEmpty;
+import jakarta.validation.constraints.NotNull;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -21,18 +24,23 @@ public class Aluguel {
     @Column(name = "id_aluguel")
     Long id_aluguel;
 
+    
     @Column(name = "dataInicio", nullable = false)
     Date dataInicio;
 
+    
     @Column(name = "dataFim", nullable = false)
     Date dataFim;
 
+    
     @Column(name = "valorTotal", nullable = false)
     double valorTotal;
 
+    
     @Column(name = "statusPago", nullable = false)
     boolean statusPago = false; // valor padrão
 
+    @NotBlank
     @Column(name = "horarioInicio", nullable = false)
     String horarioInicio;
 

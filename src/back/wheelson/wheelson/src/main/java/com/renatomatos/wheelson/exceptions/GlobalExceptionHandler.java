@@ -46,6 +46,26 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
         return ResponseEntity.unprocessableEntity().body(errorResponse);
     }
 
+    
+    // @ExceptionHandler(MethodArgumentNotValidException.class)
+    // public ProblemDetail handleMethodArgumentNotValidException(MethodArgumentNotValidException e){
+
+    //     var fieldErrors = e.getFieldErrors()
+    //     .stream()
+    //     .map( f -> new InvalidParam(f.getField(), f.getDefaultMessage()))
+    //     .toList();
+
+    //     var pb = ProblemDetail.forStatus(HttpStatus.BAD_REQUEST);
+
+    //     pb.setTitle("your request parameters didn't pass the validation");
+    //     pb.setProperty("invalid-params", fieldErrors);
+
+    //     return null;
+    // }
+
+    // private record InvalidParam(String fieldName, String reason){}
+
+
     @ExceptionHandler(Exception.class)
     @ResponseStatus(HttpStatus.INTERNAL_SERVER_ERROR)
     public ResponseEntity<Object> handleAllUncaughtException(

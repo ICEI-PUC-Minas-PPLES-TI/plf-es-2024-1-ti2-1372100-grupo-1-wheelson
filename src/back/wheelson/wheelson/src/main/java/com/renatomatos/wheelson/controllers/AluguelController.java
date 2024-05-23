@@ -20,8 +20,11 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.renatomatos.wheelson.models.Aluguel;
 import com.renatomatos.wheelson.services.AluguelService;
 
+import jakarta.validation.Valid;
+
 @RestController
 @RequestMapping("/aluguel")
+@Validated
 public class AluguelController {
     @Autowired
     private AluguelService aluguelService;
@@ -35,7 +38,7 @@ public class AluguelController {
 
     //Método para atualizar um aluguel por completo
     @PostMapping
-    public ResponseEntity<Void> create(@RequestBody Aluguel aluguel) {
+    public ResponseEntity<Void> create( @RequestBody @Valid Aluguel aluguel) {
         this.aluguelService.create(aluguel);
                  URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
                     .path("/{id}").buildAndExpand(aluguel.getId_aluguel()).toUri() ;
@@ -50,7 +53,7 @@ public class AluguelController {
 
     //Método para atualizar um aluguel parcialmente, seja o status de pagamento, ativo ou valor total
     @PatchMapping("/{id}")
-    public Aluguel patchAluguel(@PathVariable Long id, @RequestBody Map<String, Object> updates) {
+    public Aluguel patchAluguel(@PathVariable Long id, @RequestBody @Valid Map<String, Object> updates) {
         return aluguelService.updatePartial(id, updates);
     }
 
