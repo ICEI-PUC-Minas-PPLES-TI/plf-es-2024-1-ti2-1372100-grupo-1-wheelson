@@ -91,12 +91,14 @@
   
     .bio-info {
       display: none;
+      color: #fff;
     }
   }
   
   @media (max-width: 575px) {
     .bio-info {
       display: block;
+      color: #fff;
     }
   }
   
