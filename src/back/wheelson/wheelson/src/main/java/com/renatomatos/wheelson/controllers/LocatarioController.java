@@ -53,7 +53,8 @@ public class LocatarioController {
     @Operation(description = "Cria um novo locatario")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "201", description = "Locatario criado com sucesso"),
-            @ApiResponse(responseCode = "500", description = "Erro interno do servidor")
+            @ApiResponse(responseCode = "500", description = "Erro interno do servidor"),
+            @ApiResponse(responseCode = "409", description = "CNH inválida")
     })
     @PostMapping
     public ResponseEntity<Void> create(@Valid @RequestBody Locatario locatario) {
@@ -111,7 +112,8 @@ public class LocatarioController {
     @Operation(description = "Busca um locatario pelo email e senha, rota para login")
     @ApiResponses(value = {
             @ApiResponse(responseCode = "200", description = "Locatario encontrado"),
-            @ApiResponse(responseCode = "404", description = "Locatario não encontrado")
+            @ApiResponse(responseCode = "404", description = "Email não encontrado"),
+            @ApiResponse(responseCode = "401", description = "Senha incorreta")
     })
     @GetMapping("login/{email}/{senha}")
     public ResponseEntity<Locatario> findByEmailAndSenha(@PathVariable String email, @PathVariable String senha) {

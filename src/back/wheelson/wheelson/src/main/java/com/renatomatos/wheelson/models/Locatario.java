@@ -10,9 +10,9 @@ import java.sql.Date;
 @Table(name ="Locatario")
 public class Locatario {
     @Id
-    @Column(name = "id")
+    @Column(name = "id_locatario")
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long id_locatario;
 
     @NotEmpty
     @NotNull
@@ -65,11 +65,11 @@ public class Locatario {
     private String senha;
 
     public Long getId() {
-        return id;
+        return id_locatario;
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public void setId(Long id_locatario) {
+        this.id_locatario = id_locatario;
     }
 
     public String getNome() {
