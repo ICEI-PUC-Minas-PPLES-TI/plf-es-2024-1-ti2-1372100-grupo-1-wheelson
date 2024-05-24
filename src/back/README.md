@@ -37,4 +37,17 @@
 | PUT   | `/carro/{id}`                   | Atualiza um carro existente baseado no ID fornecido            |
 | DELETE   | `/carro/{id}`                   | Deleta um carro baseado no ID fornecido                                       |
 
+## Aluguel
+| Método | Rota                       | Descrição                                                          |
+| ------ | -------------------------- | ------------------------------------------------------------------ |
+| GET   | `/aluguel/{id}	`               | Busca um aluguel pelo seu ID. |
+| GET   | `/aluguel/alugueis`            | Busca todos os aluguéis.|
+| GET  | `/aluguel/alugueis/locador/{id}` |  Busca todos os aluguéis pelo ID do locador. |
+| GET   | `/aluguel/alugueis/locatario/{id}` | Busca todos os aluguéis pelo ID do locatário. |
+| GET   | `/aluguel/alugueis/carro/{id}` | Busca todos os aluguéis pelo ID do carro.           |
+| PATCH   | `/aluguel/{id}	`               | Atualiza parcialmente um aluguel (status de pagamento, ativo, valor total). |
+| PATCH   | `/aluguel/finalizar/{id}o` | Finaliza um aluguel e atualiza o status de pagamento, atribui saldo ao locador. |
+| POST   | `/aluguel`                  | Cria um novo aluguel.   |
+| DELETE   | `/aluguel/{id}	`          |Deleta um aluguel pelo seu ID. |
+
 

@@ -10,10 +10,10 @@
 
 
 .buttonv{
-    width: 100px;
-    height: calc(100% + 5px);
+    width: 40px;
+    height: 25px;
     border: none;
-    background: #e3e0e0;
+    background: #fff;
     margin-top: -650px;
     margin-right: 5px;
     border-radius: 5px;
