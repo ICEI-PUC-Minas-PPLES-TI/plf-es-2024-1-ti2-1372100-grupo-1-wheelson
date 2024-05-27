@@ -12,6 +12,7 @@ _Usar o seguinte modelo:_
 
 
 **Apagar o conteúdo acima após o preenchimento do documento.**
+PROCESSO 1:
 
 | **Indicador** | **Objetivos** | **Descrição** | **Fonte de dados** | **Fórmula de cálculo** |
 | ---           | ---           | ---           | ---             | ---             |
@@ -19,6 +20,7 @@ _Usar o seguinte modelo:_
 |Taxa de Aprovação de Usuários|	Avaliar a eficiência do processo de verificação|	Percentual de usuários aprovados em relação ao total de usuários cadastrados no mês|	Tabela Locador e Locatário|	(Número de usuários aprovados no mês / Número total de usuários cadastrados no mês) * 100|
 |Tempo Médio de Cadastro|	Melhorar a eficiência do processo de cadastro|	Média de tempo que um usuário leva desde o início do cadastro até a aprovação|	Tabela Locador e Locatário|	(Data de aprovação - Data de início do cadastro) / Número total de usuários cadastrados|
 
+PROCESSO 4:
 | **Indicador** | **Objetivos** | **Descrição** | **Fonte de dados** | **Fórmula de cálculo** |
 | ---           | ---           | ---           | ---             | ---             |
 | Percentual de devoluções  com danos  | Avaliar quantitativamente as devoluções de carros danificados| Percentual de devoluções com danos em relação ao total de devoluções  |Tabela problema|número total de devoluções com danos / número total de devoluções| 
