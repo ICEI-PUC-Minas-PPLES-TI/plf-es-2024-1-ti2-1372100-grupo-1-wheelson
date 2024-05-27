@@ -50,8 +50,13 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 function getLocadorId() {
-  // Suponha que o ID do locador seja armazenado em algum lugar, como no localStorage
-  return localStorage.getItem('locadorId');
+  const locadorData = localStorage.getItem('usuario');
+  if (locadorData) {
+    const locador = JSON.parse(locadorData);
+    return locador.id;
+  } else {
+    return null;
+  }
 }
 
 function deleteVehicle(vehicleId) {

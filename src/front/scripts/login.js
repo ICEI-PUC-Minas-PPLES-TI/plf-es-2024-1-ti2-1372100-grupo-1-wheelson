@@ -31,7 +31,7 @@ const loginLocador = (nome, senha) => {
         localStorage.clear();
         localStorage.setItem("usuario", JSON.stringify(data));
        
-        window.location.href = "menu.html";
+        window.location.href = "menuLocador.html";
     }).catch(error => {
         console.error("Erro ao buscar login:", error);
     });
