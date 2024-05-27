@@ -28,6 +28,14 @@ PROCESSO 2:
 | Tempo Médio de Cadastro de Veículo   | Reduzir o tempo necessário para o cadastro completo do veículo | Média de tempo desde o envio do código RENAVAN até o final do cadastro | Tabela Cadastro de Veículos       | (Somatório de (Data/hora de conclusão - Data/hora de início) / Número total de cadastros concluídos) |
 | Taxa de Comunicações de Erro         | Melhorar a comunicação em casos de erro durante o processo | Percentual de e-mails enviados em casos de não permissão para seguir com o processo em relação ao total de processos com erros | Tabela Comunicações de Erro      | (Número de e-mails enviados / Número total de processos com erros) * 100             |
 
+PROCESSO 3:
+| **Indicador**                        | **Objetivos**                                               | **Descrição**                                                              | **Fonte de Dados**                   | **Fórmula de Cálculo**                                                                 |
+| ------------------------------------ | ----------------------------------------------------------- | -------------------------------------------------------------------------- | ----------------------------------- | -------------------------------------------------------------------------------------- |
+| Taxa de Conversão de Reservas        | Melhorar a eficiência na conversão de interesses em reservas efetivas | Percentual de reservas completadas com sucesso em relação ao total de tentativas de reserva | Tabela de Reservas                 | (Número de reservas completadas / Número total de tentativas de reserva) * 100         |
+| Percentual de Falhas no Processo     | Minimizar as falhas operacionais durante o processo de reserva | Percentual de tentativas de reserva que falharam devido a erros no sistema ou entradas inválidas | Tabela de Logs de Erros           | (Número de falhas registradas / Número total de tentativas de reserva) * 100           |
+| Frequência de Aluguel por Veículo    | Avaliar a utilização do inventário de veículos               | Média de vezes que cada veículo é alugado em um determinado período        | Tabela de Histórico de Aluguel      | Total de aluguéis por veículo / Número total de veículos                                |
+
+
 PROCESSO 4:
 | **Indicador** | **Objetivos** | **Descrição** | **Fonte de dados** | **Fórmula de cálculo** |
 | ---           | ---           | ---           | ---             | ---             |
