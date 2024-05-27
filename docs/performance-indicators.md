@@ -31,8 +31,8 @@ PROCESSO 2:
 PROCESSO 3:
 | **Indicador**                        | **Objetivos**                                               | **Descrição**                                                              | **Fonte de Dados**                   | **Fórmula de Cálculo**                                                                 |
 | ------------------------------------ | ----------------------------------------------------------- | -------------------------------------------------------------------------- | ----------------------------------- | -------------------------------------------------------------------------------------- |
-| Taxa de Conversão de Reservas        | Melhorar a eficiência na conversão de interesses em reservas efetivas | Percentual de reservas completadas com sucesso em relação ao total de tentativas de reserva | Tabela de Reservas                 | (Número de reservas completadas / Número total de tentativas de reserva) * 100         |
-| Percentual de Falhas no Processo     | Minimizar as falhas operacionais durante o processo de reserva | Percentual de tentativas de reserva que falharam devido a erros no sistema ou entradas inválidas | Tabela de Logs de Erros           | (Número de falhas registradas / Número total de tentativas de reserva) * 100           |
+| Taxa de reservas feitas no mês        |Analisar alcance e efetividade do sistema | Percentual de reservas feitas no mês em relação com todas as outras reservas já efetuadas na vida útil do sistema | Tabela Aluguel               | (Número de reservas realizadas / Número total de reservas) * 100         |
+| Duração média das reservas | Avaliar a duração média dos alugueis realizados, analisando o tempo que usuários costumam alugar um veículo |Tempo médio entre o inicio e fim de um aluguel | Tabela Aluguel           | Média de (Data e hora da reserva / Data e hora do final da reserva)          |
 | Frequência de Aluguel por Veículo    | Avaliar a utilização do inventário de veículos               | Média de vezes que cada veículo é alugado em um determinado período        | Tabela de Histórico de Aluguel      | Total de aluguéis por veículo / Número total de veículos                                |
 
 
@@ -41,7 +41,7 @@ PROCESSO 4:
 | ---           | ---           | ---           | ---             | ---             |
 | Percentual de devoluções  com danos  | Avaliar quantitativamente as devoluções de carros danificados| Percentual de devoluções com danos em relação ao total de devoluções  |Tabela problema|número total de devoluções com danos / número total de devoluções| 
 | Percentual de devoluções sem problemas  |Avaliar quantitativamente as devoluções de carros devolvidos sem danos| Percentual de devoluções sem danos em relação ao total de devoluções  |Tabela aluguel|número total de devoluções sem danos / número total de devoluções| 
-|Percentual dos valores extras a serem pagos maiores que 1000 reais|Manter controle sobre os carros que foram devolvidos com danos significativos.|Mede % de problemas devolução com valor superior a 1000 reais   |Tabela problema|(numero de problemas com valor extra maior que 1000 reais / numero total de problemas| 
+|Percentual dos valores extras a serem pagos maiores que 1000 reais|Manter controle sobre os carros que foram devolvidos com danos significativos.|Mede % de problemas devolução com valor superior a 1000 reais   |Tabela problema| numero de problemas com valor extra maior que 1000 reais / numero total de problemas| 
 
 
 
