@@ -12,6 +12,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.dao.DataIntegrityViolationException;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
+import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
 import org.springframework.validation.FieldError;
 
@@ -30,12 +31,12 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     @Value("${server.error.include-exception}")
     private boolean printStackTrace;
 
-    
+    @Override
     @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
     protected ResponseEntity<Object> handleMethodArgumentNotValid(
             MethodArgumentNotValidException methodArgumentNotValidException,
             HttpHeaders headers,
-            HttpStatus status,
+            HttpStatusCode status,
             WebRequest request) {
         ErrorResponse errorResponse = new ErrorResponse(
                 HttpStatus.UNPROCESSABLE_ENTITY.value(),
