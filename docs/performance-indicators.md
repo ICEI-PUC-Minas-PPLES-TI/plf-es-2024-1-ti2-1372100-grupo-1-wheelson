@@ -16,7 +16,7 @@ _Usar o seguinte modelo:_
 | **Indicador** | **Objetivos** | **Descrição** | **Fonte de dados** | **Fórmula de cálculo** |
 | ---           | ---           | ---           | ---             | ---             |
 | Percentual de Usuários novos| Avaliar crescimento do Sistema | Percentual de usuários novos no mês em relação à todos os cadastrados | Tabela Locador e Locatário | (Locadores novos no mês + Locatários novos no mês) / Quantidade de usuários cadastrados(locador+locatário) * 100 |
-|Taxa de Aprovação de Usuários|	Avaliar a eficiência do processo de verificação	Percentual de usuários aprovados em relação ao total de usuários cadastrados no mês|	Tabela Locador e Locatário|	(Número de usuários aprovados no mês / Número total de usuários cadastrados no mês) * 100|
+|Taxa de Aprovação de Usuários|	Avaliar a eficiência do processo de verificação|	Percentual de usuários aprovados em relação ao total de usuários cadastrados no mês|	Tabela Locador e Locatário|	(Número de usuários aprovados no mês / Número total de usuários cadastrados no mês) * 100|
 |Tempo Médio de Cadastro|	Melhorar a eficiência do processo de cadastro|	Média de tempo que um usuário leva desde o início do cadastro até a aprovação|	Tabela Locador e Locatário|	(Data de aprovação - Data de início do cadastro) / Número total de usuários cadastrados|
 
 
