@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -127,5 +128,16 @@ public class LocadorController {
     public ResponseEntity<Locador> findByEmailAndSenha(@PathVariable String email, @PathVariable String senha) {
         Locador locador = this.locadorService.findByEmailAndSenha(email, senha);
         return ResponseEntity.ok().body(locador);
+    }
+
+    @Operation(description = "Atualiza o status de um locador")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "204", description = "Status do locador atualizado com sucesso"),
+            @ApiResponse(responseCode = "404", description = "Locador não encontrado")
+    })
+    @PatchMapping("/status/{id}")
+    public ResponseEntity<Void> updateStatus(@PathVariable Long id) {
+        this.locadorService.updateStatus(id);
+        return ResponseEntity.noContent().build();
     }
 }

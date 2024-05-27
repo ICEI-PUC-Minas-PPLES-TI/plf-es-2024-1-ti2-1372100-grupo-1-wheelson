@@ -12,9 +12,11 @@ import javax.validation.constraints.Size;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.boot.context.properties.bind.DefaultValue;
+
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
-import java.sql.Date;
+import java.util.Date;
 
 
 
@@ -76,6 +78,10 @@ public class Locador {
     //Aprovado no sistema ou nao, deve ser inicializado como false sempre
     @Column(name = "status", nullable = false ) //, columnDefinition = "boolean default false" 
     boolean status;
+
+    
+    @Column(name = "dataAprovacao", nullable = true)
+    Date dataAprovacao = null;
 
     //Valor gerado após o aluguel concluido, deve semore começar com 0
     @Column(name = "saldo", nullable = false)//, columnDefinition = "float default 0"
@@ -246,6 +252,17 @@ public class Locador {
     public void setSenha(String senha) {
         this.senha = senha;
     }
+
+    
+    public Date getDataAprovacao() {
+        return dataAprovacao;
+    }
+
+
+    public void setDataAprovacao(Date dataAprovacao) {
+        this.dataAprovacao = dataAprovacao;
+    }
+
 
     @JsonIgnore
     public List<Carro> getCarros() {

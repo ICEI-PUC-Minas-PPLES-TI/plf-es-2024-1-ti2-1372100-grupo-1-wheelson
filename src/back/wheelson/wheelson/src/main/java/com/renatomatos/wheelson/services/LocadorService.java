@@ -1,11 +1,15 @@
 package com.renatomatos.wheelson.services;
 
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cglib.core.Local;
 import org.springframework.stereotype.Service;
 
 import com.renatomatos.wheelson.exceptions.EmailNotFoundException;
@@ -67,6 +71,13 @@ public class LocadorService {
         newLocador.setSaldo(locador.getSaldo());
         return this.locadorRepository.save(newLocador);
         
+    }
+    @Transactional
+    public Locador updateStatus(Long id) {
+        Locador locador = findById(id);
+        locador.setStatus(true);
+        locador.setDataAprovacao(new Date());
+        return locadorRepository.save(locador);
     }
 
     @Transactional

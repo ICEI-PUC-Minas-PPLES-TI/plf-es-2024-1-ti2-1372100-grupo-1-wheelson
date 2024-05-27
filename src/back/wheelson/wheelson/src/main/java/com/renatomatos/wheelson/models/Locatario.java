@@ -4,7 +4,7 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.NotEmpty;
 import jakarta.validation.constraints.NotNull;
 
-import java.sql.Date;
+import java.util.Date;
 
 @Entity
 @Table(name ="Locatario")
@@ -50,6 +50,9 @@ public class Locatario {
     //Aprovado no sistema ou nao, deve ser inicializado como false sempre
     @Column(name = "status", nullable = false ) //, columnDefinition = "boolean default false" 
     boolean status;
+
+    @Column(name = "data_aprovacao", nullable = true)
+    Date data_aprovacao = null;
     
     // @Lob
     // @Column(name = "imagem_cnh")
@@ -186,6 +189,15 @@ public class Locatario {
 
     public String getCNH() {
         return cnh;
+    }
+
+    
+    public Date getData_aprovacao() {
+        return data_aprovacao;
+    }
+
+    public void setData_aprovacao(Date data_aprovacao) {
+        this.data_aprovacao = data_aprovacao;
     }
 
     public void setCNH(String CNH) {

@@ -120,6 +120,17 @@ public class LocatarioController {
         Locatario locatario = this.locatarioService.findByEmailAndSenha(email, senha);
         return ResponseEntity.ok().body(locatario);
     }
+
+    @Operation(description = "Atualiza o status de um locatario")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "204", description = "Locatario atualizado com sucesso"),
+            @ApiResponse(responseCode = "404", description = "Locatario não encontrado")
+    })
+    @PatchMapping("/{id}")
+    public ResponseEntity<Void> updateStatus(@PathVariable Long id) {
+        this.locatarioService.updateStatus(id);
+        return ResponseEntity.noContent().build();
+    }
 }
  // @PostMapping
     // public ResponseEntity<Void> create(@ModelAttribute Locatario locatario,

@@ -3,7 +3,7 @@ package com.renatomatos.wheelson.services;
 import java.util.Optional;
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
-
+import java.util.Date;
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -65,6 +65,14 @@ public class LocatarioService {
         
         return this.locatarioRepository.save(newLocador);
         
+    }
+
+    @Transactional
+    public Locatario updateStatus(Long id) {
+        Locatario locatario = findById(id);
+        locatario.setStatus(true);
+        locatario.setData_aprovacao(new Date());
+        return locatarioRepository.save(locatario);
     }
 
     @Transactional
