@@ -37,7 +37,9 @@ document.addEventListener("DOMContentLoaded", function() {
             <div class="buttons-options">
               <div class="row">
                 <div class="col-12">
+                <a href="/src/front/pages/formAluguel.html">
                   <button class="btn btn-outline-light btn-sm" onclick="rentVehicle(${vehicle.id}, ${locatarioId})">Alugar</button>
+                </a>
                 </div>
               </div>
             </div>
