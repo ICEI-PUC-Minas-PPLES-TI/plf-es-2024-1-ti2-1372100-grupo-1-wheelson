@@ -57,10 +57,15 @@ public class Carro {
     @JoinColumn(name = "id_locador",nullable = false,updatable = false)
     Locador locador;
 
+    @ManyToOne
+    @JoinColumn(name = "id_ponto",nullable = false)
+    PontoDeEncontro pontoDeEncontro;
+
+   
     public Carro() {
     }
 
-    public Carro(String modelo, String ano, double valorDiario, String renavam, String placa, boolean disponivel, Locador locador) {
+    public Carro(String modelo, String ano, double valorDiario, String renavam, String placa, boolean disponivel, Locador locador,PontoDeEncontro ponto) {
         this.modelo = modelo;
         this.ano = ano;
         this.valorDiario = valorDiario;
@@ -68,6 +73,7 @@ public class Carro {
         this.placa = placa;
         this.disponivel = disponivel;
         this.locador = locador;
+        this.pontoDeEncontro = ponto;
     }
 
     public Long getId() {
@@ -142,6 +148,13 @@ public class Carro {
         this.locador = locador;
     }
 
-    
+     public PontoDeEncontro getPontoDeEncontro() {
+        return pontoDeEncontro;
+    }
+
+    public void setPontoDeEncontro(PontoDeEncontro pontoDeEncontro) {
+        this.pontoDeEncontro = pontoDeEncontro;
+    }
+
     
 }

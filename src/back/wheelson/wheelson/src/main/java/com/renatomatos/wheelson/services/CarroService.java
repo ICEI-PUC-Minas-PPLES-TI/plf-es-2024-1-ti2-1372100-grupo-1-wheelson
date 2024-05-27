@@ -9,6 +9,7 @@ import org.springframework.stereotype.Service;
 
 import com.renatomatos.wheelson.models.Carro;
 import com.renatomatos.wheelson.models.Locador;
+import com.renatomatos.wheelson.models.PontoDeEncontro;
 import com.renatomatos.wheelson.repositories.CarroRepository;
 
 import jakarta.transaction.Transactional;
@@ -22,6 +23,9 @@ public class CarroService {
     @Autowired
     private LocadorService locadorService;
 
+    @Autowired
+    private PontoDeEncontroService pontoDeEncontroService;
+
     public Carro findById(Long id) {
         Optional<Carro> carro = this.carroRepository.findById(id);
         return carro.orElseThrow(() -> new RuntimeException("Carro  não encontrado: id: "+ id ));
@@ -30,8 +34,10 @@ public class CarroService {
     @Transactional
     public Carro create(Carro carro){
         Locador locador = locadorService.findById(carro.getLocador().getId());
+        PontoDeEncontro ponto= pontoDeEncontroService.findById(carro.getPontoDeEncontro().getId());
         carro.setId(null);
         carro.setLocador(locador);
+        carro.setPontoDeEncontro(ponto);
         carro = this.carroRepository.save(carro);
         return carro;
     }
