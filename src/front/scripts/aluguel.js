@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function() {
       vehicleCard.innerHTML = `
         <div class="profile-container">
           <div class="info-user">
-            <img class="profile-photo" src="${vehicle.image || '/src/front/images/car.png'}" alt="Vehicle Image">
+            <img class="profile-photo" src="/src/front/images/car.png" alt="Vehicle Image">
             <div class="name-user">
               <span class="name">${vehicle.model}</span>
               <span class="descrip">${vehicle.location}</span>
