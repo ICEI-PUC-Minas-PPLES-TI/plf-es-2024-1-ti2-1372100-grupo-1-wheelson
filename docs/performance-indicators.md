@@ -20,4 +20,10 @@ _Usar o seguinte modelo:_
 |Tempo Médio de Cadastro|	Melhorar a eficiência do processo de cadastro|	Média de tempo que um usuário leva desde o início do cadastro até a aprovação|	Tabela Locador e Locatário|	(Data de aprovação - Data de início do cadastro) / Número total de usuários cadastrados|
 
 
+| Percentual de devoluções  com danos  | Avaliar quantitativamente as devoluções de carros danificados| Percentual de devoluções com danos em relação ao total de devoluções  |Tabela problema|número total de devoluções com danos / número total de devoluções| 
+| Percentual de devoluções sem problemas  |Avaliar quantitativamente as devoluções de carros devolvidos sem danos| Percentual de devoluções sem danos em relação ao total de devoluções  |Tabela aluguel|número total de devoluções sem danos / número total de devoluções| 
+|Percentual dos valores extras a serem pagos maiores que 1000 reais|Manter controle sobre os carros que foram devolvidos com danos significativos.|Mede % de problemas devolução com valor superior a 1000 reais   |Tabela problema|(numero de problemas com valor extra maior que 1000 reais / numero total de problemas| 
+
+
+
 _Obs.: todas as informações para gerar os indicadores devem estar no modelo relacional._
