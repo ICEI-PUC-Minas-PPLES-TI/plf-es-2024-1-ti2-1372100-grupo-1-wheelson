@@ -11,7 +11,7 @@ _Usar o seguinte modelo:_
 | Taxa de entrega de material | Manter controle sobre os materiais que estão sendo entregues | Mede % de material entregue dentro do mês | Tabela pedidos | (número de pedidos entregues / número total de pedidos) * 100 |
 
 
-**Apagar o conteúdo acima após o preenchimento do documento.**
+
 PROCESSO 1:
 
 | **Indicador** | **Objetivos** | **Descrição** | **Fonte de dados** | **Fórmula de cálculo** |
