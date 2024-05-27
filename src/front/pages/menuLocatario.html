@@ -4,110 +4,51 @@
   <meta charset="UTF-8">
   <title>Menu Locatário</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'><link rel="stylesheet" href="/src/front/styles/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800&display=swap">
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css'>
+  <link rel="stylesheet" href="/src/front/styles/index.css">
   <link rel="stylesheet" href="/src/front/styles/card.css">
-  
-
 </head>
 <body>
-<!-- Start Landing Page -->
-      <div class="landing-page">
-        <header>
-          <div class="container">
-            <a href="#" class="logo">Wheels<b>On</b></a>
-            <ul class="links">
-              <!-- <li>Home</li>
-              <li>Sobre nos</li>
-              <li>Info</li> -->
-              <a href="/src/front/pages/login.html">
-              <li>Sair</li></a>
-            </ul>
-          </div>
-        </header>
-        <div class="content">
-          <div class="container">
-            <div class="info">
-              <h1>Bem Vindo </h1>
-              <p>Esse site irá te ajudar a alugar, locar e se movimentar no meio urbano. <br><strong>Abaixo você pode escolher qual área quer acessar.</strong></p>
-            <a>
-              <button type="button"  data-toggle="modal" data-target="#myModal">Buscar veiculo</button>
-            </a>
-            <h2>Alugueis em andamento:</h2>
+  <!-- Start Landing Page -->
+  <div class="landing-page">
+    <header>
+      <div class="container">
+        <a href="#" class="logo">Wheels<b>On</b></a>
+        <ul class="links">
+          <a href="/src/front/pages/login.html">
+          <li>Sair</li></a>
+        </ul>
+      </div>
+    </header>
+    <div class="content">
+      <div class="container">
+        <div class="info">
+          <h1>Bem Vindo </h1>
+          <p>Esse site irá te ajudar a alugar, locar e se movimentar no meio urbano. <br><strong>Abaixo você pode escolher qual área quer acessar.</strong></p>
+          <a>
+            <button type="button"  data-toggle="modal" data-target="#myModal">Buscar veiculo</button>
+          </a>
+          <h2>Alugueis em andamento:</h2>
 
-            <div class="container2">
-              <div class="row">
-
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-              <div class="profile-container">
-                <div class="info-user">
-                  <img class="profile-photo" src="/src/front/images/car.png">
-                  <div class="name-user">
-                    <span class="name">HB20</span>
-                    <span class="descrip">Belo Horizonte</span>
-                    <span class="fake">Detalhes</span>
-                  </div>
-                </div>
-                <div class="bio-user">
-                  <p class="bio-info">
-                    Marca: Hyundai
-                    <br>
-                    Valor diario: R$ 100
-                  </p>
-                  <div class="buttons-options">
-                    <div class="row">
-                      <div class="col-12 ">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
-              <div class="profile-container">
-                <div class="info-user">
-                  <img class="profile-photo" src="/src/front/images/car.png">
-                  <div class="name-user">
-                    <span class="name">HB20</span>
-                    <span class="descrip">Belo Horizonte</span>
-                    <span class="fake">Detalhes</span>
-                  </div>
-                </div>
-                <div class="bio-user">
-                  <p class="bio-info">
-                    Marca: Hyundai
-                    <br>
-                    Valor diario: R$ 100
-                  </p>
-                  <div class="buttons-options">
-                    <div class="row">
-                      <div class="col-12 ">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
+          <div class="container2">
+            <div class="row" id="rentals-container">
+              <!-- Os dados dos veículos serão inseridos aqui pelo JavaScript -->
             </div>
           </div>
         </div>
-
-
-            </div>
-           
-            <div class="image">
-              <!-- <img src="https://i.postimg.cc/65QxYYzh/001234.png"> -->
-              <img src="/src/front/images/img-1.png" width="500px" >
-            </div>
-          </div>
+        <div class="image">
+          <img src="/src/front/images/img-1.png" width="500px">
         </div>
       </div>
-      <!-- End Landing Page -->
+    </div>
+  </div>
+  <!-- End Landing Page -->
 
-
-      
-      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
-      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
-          integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
-          crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+      integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+      crossorigin="anonymous"></script>
+  <script src="../scripts/menuLocatario.js"></script>
 </body>
 </html>
