@@ -20,6 +20,14 @@ PROCESSO 1:
 |Taxa de Aprovação de Usuários|	Avaliar a eficiência do processo de verificação|	Percentual de usuários aprovados em relação ao total de usuários cadastrados no mês|	Tabela Locador e Locatário|	(Número de usuários aprovados no mês / Número total de usuários cadastrados no mês) * 100|
 |Tempo Médio de Cadastro|	Melhorar a eficiência do processo de cadastro|	Média de tempo que um usuário leva desde o início do cadastro até a aprovação|	Tabela Locador e Locatário|	(Data de aprovação - Data de início do cadastro) / Número total de usuários cadastrados|
 
+PROCESSO 2:
+
+| **Indicador**                        | **Objetivos**                                              | **Descrição**                                                            | **Fonte de Dados**                 | **Fórmula de Cálculo**                                                              |
+| ------------------------------------ | ---------------------------------------------------------- | ------------------------------------------------------------------------ | --------------------------------- | ------------------------------------------------------------------------------------ |
+| Taxa de Cadastros Bem-Sucedidos      | Assegurar eficácia do processo de verificação e cadastro do veículo | Percentual de veículos cadastrados após todas as verificações em relação ao total de tentativas de cadastro | Tabela Cadastro de Veículos       | (Número de cadastros bem-sucedidos / Número total de tentativas de cadastro) * 100   |
+| Tempo Médio de Cadastro de Veículo   | Reduzir o tempo necessário para o cadastro completo do veículo | Média de tempo desde o envio do código RENAVAN até o final do cadastro | Tabela Cadastro de Veículos       | (Somatório de (Data/hora de conclusão - Data/hora de início) / Número total de cadastros concluídos) |
+| Taxa de Comunicações de Erro         | Melhorar a comunicação em casos de erro durante o processo | Percentual de e-mails enviados em casos de não permissão para seguir com o processo em relação ao total de processos com erros | Tabela Comunicações de Erro      | (Número de e-mails enviados / Número total de processos com erros) * 100             |
+
 PROCESSO 4:
 | **Indicador** | **Objetivos** | **Descrição** | **Fonte de dados** | **Fórmula de cálculo** |
 | ---           | ---           | ---           | ---             | ---             |
