@@ -1,28 +1,16 @@
 package com.renatomatos.wheelson.models;
 
-import jakarta.annotation.Generated;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 
 @Entity
 @Table(name = "PontoDeEncontro")
-public class PontoDeEncontro{
+public class PontoDeEncontro {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id")
     Long id;
-
-    
 
     @NotEmpty
     @NotNull
@@ -39,13 +27,17 @@ public class PontoDeEncontro{
     @Column(name = "ponto_referencia", nullable = true, length = 20)
     String ponto_referencia;
 
-   
-    public PontoDeEncontro(Long id,String rua,  String bairro,
-             String ponto_referencia) {
+    @OneToOne
+    @JoinColumn(name = "id_carro", nullable = false)
+    Carro carro;
+
+    // Construtores, getters e setters
+    public PontoDeEncontro(Long id, String rua, String bairro, String ponto_referencia, Carro carro) {
         this.id = id;
         this.rua = rua;
         this.bairro = bairro;
         this.ponto_referencia = ponto_referencia;
+        this.carro = carro;
     }
 
     public PontoDeEncontro() {
@@ -82,6 +74,12 @@ public class PontoDeEncontro{
     public void setId(Long id) {
         this.id = id;
     }
-    
-    
+
+    public Carro getCarro() {
+        return carro;
+    }
+
+    public void setCarro(Carro carro) {
+        this.carro = carro;
+    }
 }

@@ -19,6 +19,9 @@ public class PontoDeEncontroService {
     @Autowired
     private PontoDeEncontroRepository PontoDeEncontroRepository;
 
+    @Autowired 
+    private CarroService carroService;
+
    
     public PontoDeEncontro findById(Long id) {
         Optional<PontoDeEncontro> pencontro = this.PontoDeEncontroRepository.findById(id);
@@ -28,6 +31,8 @@ public class PontoDeEncontroService {
     @Transactional
     public PontoDeEncontro create(PontoDeEncontro pencontro){
         pencontro.setId(null);
+        Carro carro = carroService.findById(pencontro.getCarro().getId());
+        pencontro.setCarro(carro);
         pencontro = this.PontoDeEncontroRepository.save(pencontro);
         return pencontro;
     }

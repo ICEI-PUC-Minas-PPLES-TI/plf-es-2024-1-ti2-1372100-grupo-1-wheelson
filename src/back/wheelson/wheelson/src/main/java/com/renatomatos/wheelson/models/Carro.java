@@ -1,18 +1,7 @@
 package com.renatomatos.wheelson.models;
 
-import jakarta.annotation.Generated;
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-import jakarta.persistence.JoinColumn;
-import jakarta.persistence.ManyToOne;
-import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotBlank;
-import jakarta.validation.constraints.NotEmpty;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
+import jakarta.persistence.*;
+import jakarta.validation.constraints.*;
 
 @Entity
 @Table(name = "Carro")
@@ -23,59 +12,42 @@ public class Carro {
     @Column(name = "id_carro")
     Long id_carro;
 
-     @NotBlank
+    @NotBlank
     @Column(name = "modelo", nullable = false, length = 20)
     String modelo;
 
-     @NotBlank
+    @NotBlank
     @Column(name = "marca", nullable = false, length = 20)
     String marca;
 
-     @NotBlank
+    @NotBlank
     @Column(name = "ano", nullable = false, length = 4)
     String ano;
 
-    
     @Column(name = "valorDiario", nullable = false)
     double valorDiario;
 
-     @NotEmpty
-     @NotNull
+    @NotEmpty
+    @NotNull
     @Column(name = "renavam", nullable = false, length = 11, unique = true)
     String renavam;
 
-     @NotEmpty
-     @NotNull
-    // @Size(min = 7, max = 7)
-    @Column(name = "placa", nullable = false, length = 7,unique = true)
+    @NotEmpty
+    @NotNull
+    @Column(name = "placa", nullable = false, length = 7, unique = true)
     String placa;
 
     @Column(name = "disponivel", nullable = false)
     boolean disponivel;
 
     @ManyToOne
-    @JoinColumn(name = "id_locador",nullable = false,updatable = false)
+    @JoinColumn(name = "id_locador", nullable = false, updatable = false)
     Locador locador;
 
-    @ManyToOne
-    @JoinColumn(name = "id_ponto",nullable = false)
+    @OneToOne(mappedBy = "carro", cascade = CascadeType.ALL, orphanRemoval = true)
     PontoDeEncontro pontoDeEncontro;
 
-   
-    public Carro() {
-    }
-
-    public Carro(String modelo, String ano, double valorDiario, String renavam, String placa, boolean disponivel, Locador locador,PontoDeEncontro ponto) {
-        this.modelo = modelo;
-        this.ano = ano;
-        this.valorDiario = valorDiario;
-        this.renavam = renavam;
-        this.placa = placa;
-        this.disponivel = disponivel;
-        this.locador = locador;
-        this.pontoDeEncontro = ponto;
-    }
-
+    // Getters and setters
     public Long getId() {
         return id_carro;
     }
@@ -92,12 +64,12 @@ public class Carro {
         this.modelo = modelo;
     }
 
-    public void setMarca(String marca){
-        this.marca = marca;
+    public String getMarca() {
+        return marca;
     }
 
-    public String getMarca(){
-        return marca;
+    public void setMarca(String marca) {
+        this.marca = marca;
     }
 
     public String getAno() {
@@ -147,14 +119,15 @@ public class Carro {
     public void setLocador(Locador locador) {
         this.locador = locador;
     }
-
-     public PontoDeEncontro getPontoDeEncontro() {
+    
+    public PontoDeEncontro getPontoDeEncontro() {
         return pontoDeEncontro;
     }
 
     public void setPontoDeEncontro(PontoDeEncontro pontoDeEncontro) {
         this.pontoDeEncontro = pontoDeEncontro;
+        if (pontoDeEncontro != null) {
+            pontoDeEncontro.setCarro(this);
+        }
     }
-
-    
 }
