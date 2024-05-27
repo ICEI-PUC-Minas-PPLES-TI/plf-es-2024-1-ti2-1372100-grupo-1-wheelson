@@ -55,11 +55,27 @@ document.addEventListener("DOMContentLoaded", function() {
         reviewDays.textContent = `Dias de aluguel: ${stepDetails.days}`;
         const totalCost = stepDetails.days * stepDetails.costPerDay;
         reviewCost.textContent = `Custo total: R$ ${totalCost}`;
+
+        
     }
 
     submitButton.addEventListener("click", (event) => {
         event.preventDefault();
-        // Aqui você pode adicionar a lógica para enviar o formulário
+
+        fetch("http://localhost:8080/aluguel", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(stepDetails)
+        })
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.json();
+        })
+        
         alert("Formulário enviado com sucesso!");
     });
 });
