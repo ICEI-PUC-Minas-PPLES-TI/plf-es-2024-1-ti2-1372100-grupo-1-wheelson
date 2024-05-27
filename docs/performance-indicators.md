@@ -25,5 +25,5 @@ _Usar o seguinte modelo:_
 |Percentual dos valores extras a serem pagos maiores que 1000 reais|Manter controle sobre os carros que foram devolvidos com danos significativos.|Mede % de problemas devolução com valor superior a 1000 reais   |Tabela problema|(numero de problemas com valor extra maior que 1000 reais / numero total de problemas| 
 
 
-
+| **Indicador** | **Objetivos** | **Descrição** | **Fonte de dados** | **Fórmula de cálculo** |
 _Obs.: todas as informações para gerar os indicadores devem estar no modelo relacional._
