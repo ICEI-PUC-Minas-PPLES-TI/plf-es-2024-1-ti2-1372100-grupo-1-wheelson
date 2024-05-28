@@ -29,7 +29,7 @@ public class PontoDeEncontro {
     @Column(name = "ponto_referencia", nullable = true, length = 20)
     String ponto_referencia;
 
-    @OneToOne
+    @ManyToOne
     @JoinColumn(name = "id_carro", nullable = false)
     Carro carro;
 

@@ -1,10 +1,10 @@
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
   const locatarioId = getLocatarioId();
   if (!locatarioId) {
     alert("ID do locatário não encontrado!");
     return;
   }
-
+*/
   fetchVehicles();
 
   function fetchVehicles() {
@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
 
   function createVehicleCards(vehicles) {
     const container = document.getElementById("vehicles-container");
-    vehicles.forEach(vehicle => {
+    vehicles.forEach(carro => {
+      console.log(carro);
       const vehicleCard = document.createElement('div');
       vehicleCard.className = 'col-xs-12 col-sm-6 col-md-6 col-lg-3';
       vehicleCard.innerHTML = `
@@ -24,21 +25,21 @@ document.addEventListener("DOMContentLoaded", function() {
           <div class="info-user">
             <img class="profile-photo" src="/src/front/images/car.png" alt="Vehicle Image">
             <div class="name-user">
-              <span class="name">${vehicle.model}</span>
-              <span class="descrip">${vehicle.location}</span>
+              <span class="name">${carro.modelo}</span>
+              
             </div>
           </div>
           <div class="bio-user">
             <p class="bio-info">
-              Marca: ${vehicle.brand}
+              Marca: ${carro.marca}
               <br>
-              Valor diário: R$ ${vehicle.dailyRate}
+              Valor diário: R$ ${carro.valorDiario}
             </p>
             <div class="buttons-options">
               <div class="row">
                 <div class="col-12">
                 <a href="/src/front/pages/formAluguel.html">
-                  <button class="btn btn-outline-light btn-sm" onclick="rentVehicle(${vehicle.id}, ${locatarioId})">Alugar</button>
+                  <button class="btn btn-outline-light btn-sm" onclick="rentVehicle(${carro.id})">Alugar</button>
                 </a>
                 </div>
               </div>
@@ -49,7 +50,7 @@ document.addEventListener("DOMContentLoaded", function() {
       container.appendChild(vehicleCard);
     });
   }
-});
+;
 
 function getLocatarioId() {
   // Suponha que o ID do locatário seja armazenado em algum lugar, como no localStorage

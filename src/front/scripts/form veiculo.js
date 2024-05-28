@@ -75,6 +75,9 @@ function initMultiStepForm() {
         if (inputsValid) {
             // Captura os valores antes do fetch
             const modelo = getValueById("model");
+            const Rua = getValueById("Rua");
+            const bairro = getValueById("bairro");
+            const preferencia = getValueById("referencia");
             const marca = getValueById("marca");
             const ano = getValueById("car-year");
             const valorDiario = parseFloat(getValueById("car-value")); // Converte para número
@@ -166,4 +169,6 @@ function initMultiStepForm() {
 
         return inputsValid;
     }
+
+    //function fetchPontoDeEncontro()
 }

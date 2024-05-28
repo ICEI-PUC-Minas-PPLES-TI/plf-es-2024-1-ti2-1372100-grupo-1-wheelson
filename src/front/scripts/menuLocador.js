@@ -32,15 +32,15 @@ document.addEventListener("DOMContentLoaded", function() {
           <div class="info-user">
             <img class="profile-photo" src="${vehicle.image || '/src/front/images/car.png'}" alt="Vehicle Image">
             <div class="name-user">
-              <span class="name">${vehicle.model}</span>
-              <span class="descrip">${vehicle.location}</span>
+              <span class="name">${vehicle.modelo}</span>
+              
             </div>
           </div>
           <div class="bio-user">
             <p class="bio-info">
-              Marca: ${vehicle.brand}
+              Marca: ${vehicle.marca}
               <br>
-              Valor diário: R$ ${vehicle.dailyRate}
+              Valor diário: R$ ${vehicle.valor_diario}
             </p>
             <div class="buttons-options">
               <div class="row">

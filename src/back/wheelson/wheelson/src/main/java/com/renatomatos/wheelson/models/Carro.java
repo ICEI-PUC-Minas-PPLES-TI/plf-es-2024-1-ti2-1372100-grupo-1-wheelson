@@ -2,6 +2,7 @@ package com.renatomatos.wheelson.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
+import java.util.List;
 
 @Entity
 @Table(name = "Carro")
@@ -44,8 +45,8 @@ public class Carro {
     @JoinColumn(name = "id_locador", nullable = false, updatable = false)
     Locador locador;
 
-    @OneToOne(mappedBy = "carro", cascade = CascadeType.ALL, orphanRemoval = true)
-    PontoDeEncontro pontoDeEncontro;
+    @OneToMany(mappedBy = "carro")
+    List<PontoDeEncontro> pontoDeEncontro;
 
     // Getters and setters
     public Long getId() {
@@ -120,14 +121,11 @@ public class Carro {
         this.locador = locador;
     }
     
-    public PontoDeEncontro getPontoDeEncontro() {
+    public List<PontoDeEncontro> getPontoDeEncontro() {
         return pontoDeEncontro;
     }
 
-    public void setPontoDeEncontro(PontoDeEncontro pontoDeEncontro) {
+    public void setPontoDeEncontro(List<PontoDeEncontro> pontoDeEncontro) {
         this.pontoDeEncontro = pontoDeEncontro;
-        if (pontoDeEncontro != null) {
-            pontoDeEncontro.setCarro(this);
-        }
     }
 }

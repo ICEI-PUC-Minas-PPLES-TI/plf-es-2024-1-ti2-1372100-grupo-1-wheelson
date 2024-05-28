@@ -32,7 +32,6 @@ public class CarroService {
         Locador locador = locadorService.findById(carro.getLocador().getId());
         carro.setId(null);
         carro.setDisponivel(true);
-        carro.setPontoDeEncontro(null);
         carro.setLocador(locador);
         carro = this.carroRepository.save(carro);
         return carro;
