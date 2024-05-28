@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     const nextButtons = document.querySelectorAll(".next");
     const submitButton = document.querySelector(".submit");
     const pages = document.querySelectorAll(".page");
@@ -9,10 +9,22 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let currentStep = 0;
     const stepDetails = {
-        time: "",
-        days: 0,
-        costPerDay: 100, // Exemplo de custo diário
-    };
+        dataInicio: "",
+        dataFim: "",
+        valorTotal: 1500.00,
+        statusPago: false,
+        horarioInicio: "10:00",
+        ativo: false,
+        carro: {
+            id: 1
+        },
+        locador: {
+            id: 1
+        },
+        locatario: {
+            id: 1
+        }
+    }
 
     nextButtons.forEach((button, index) => {
         button.addEventListener("click", (event) => {
@@ -43,23 +55,58 @@ document.addEventListener("DOMContentLoaded", function() {
 
     function collectData(index) {
         if (index === 0) {
-            stepDetails.time = document.getElementById("time").value;
+            let data = new Date(document.getElementById("time").value);
+            stepDetails.dataInicio = data.toISOString();
+            console.log(stepDetails.dataInicio);
         }
         if (index === 1) {
-            stepDetails.days = document.getElementById("days").value;
+            let numDias = parseInt(document.getElementById("days").value, 10);
+            let dataFim = new Date();
+            let tempInicio = new Date(stepDetails.dataInicio)
+            dataFim.setDate(tempInicio.getDate() + numDias);
+            stepDetails.dataFim = dataFim.toISOString();
+            console.log(stepDetails.dataFim)
+            console.log(stepDetails.dataInicio)
         }
     }
 
     function fillReview() {
-        reviewTime.textContent = `Horário de encontro: ${stepDetails.time}`;
-        reviewDays.textContent = `Dias de aluguel: ${stepDetails.days}`;
-        const totalCost = stepDetails.days * stepDetails.costPerDay;
-        reviewCost.textContent = `Custo total: R$ ${totalCost}`;
+        const dataInicio = new Date(stepDetails.dataInicio);
+        const dataFim = new Date(stepDetails.dataFim);
+
+        const diferencaMilissegundos = dataFim - dataInicio;
+
+        const diferencaDias = diferencaMilissegundos / (1000 * 60 * 60 * 24);
+
+        //TODO: altera o valor padrão
+        const totalCost = Math.round(diferencaDias * 100);
+        stepDetails.valorTotal = totalCost;
+
+        reviewTime.textContent = `Horário de encontro: ${dataInicio.toLocaleDateString()}`;
+        reviewDays.textContent = `Dias de aluguel: ${dataFim.toLocaleDateString()}`;
+        reviewCost.textContent = `Custo total: R$ ${totalCost.toFixed()}`;
+
     }
+
+
 
     submitButton.addEventListener("click", (event) => {
         event.preventDefault();
         // Aqui você pode adicionar a lógica para enviar o formulário
+
+        fetch("http://localhost:8080/aluguel", {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(stepDetails)
+        })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error('Network response was not ok');
+                }
+                return response.json();
+            })
         alert("Formulário enviado com sucesso!");
     });
 });
