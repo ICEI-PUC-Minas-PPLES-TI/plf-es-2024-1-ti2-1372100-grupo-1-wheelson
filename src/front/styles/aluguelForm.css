@@ -454,3 +454,7 @@ button:disabled {
     background: #c82333;
 }
 
+.revi {
+    display: block;
+    width: 200px;
+}
