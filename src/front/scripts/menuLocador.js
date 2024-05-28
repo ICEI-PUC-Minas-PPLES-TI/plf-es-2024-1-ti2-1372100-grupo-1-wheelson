@@ -5,17 +5,25 @@ document.addEventListener("DOMContentLoaded", function() {
     return;
   }
 
+  console.log("Locador ID:", locadorId); // Verificação do ID do locador
+
   fetchVehicles();
 
   function fetchVehicles() {
     fetch(`http://localhost:8080/carro/locador/${locadorId}`)
-      .then(response => response.json())
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok ' + response.statusText);
+        }
+        return response.json();
+      })
       .then(data => createVehicleCards(data))
       .catch(error => console.error('Error fetching vehicles:', error));
   }
 
   function createVehicleCards(vehicles) {
     const container = document.getElementById("vehicles-container");
+    container.innerHTML = ''; // Limpar o container antes de adicionar novos cartões
     vehicles.forEach(vehicle => {
       const vehicleCard = document.createElement('div');
       vehicleCard.className = 'col-xs-12 col-sm-6 col-md-6 col-lg-3';
@@ -52,8 +60,13 @@ document.addEventListener("DOMContentLoaded", function() {
 function getLocadorId() {
   const locadorData = localStorage.getItem('usuario');
   if (locadorData) {
-    const locador = JSON.parse(locadorData);
-    return locador.id;
+    try {
+      const locador = JSON.parse(locadorData);
+      return locador.id;
+    } catch (error) {
+      console.error('Error parsing locador data:', error);
+      return null;
+    }
   } else {
     return null;
   }
