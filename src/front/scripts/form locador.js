@@ -16,7 +16,7 @@ function initMultiStepForm() {
         const numero_resid = document.getElementById("numero").value;
         const cidade = document.getElementById("cidade").value;
         const uf = document.getElementById("estado").value;
-        const senha = document.getElementById("senha").value;
+        const senha = document.getElementById("login-pass").value;
         // Obter a data atual
         const dataAtual = new Date();
 
@@ -67,12 +67,12 @@ function initMultiStepForm() {
         .then(data => {
             console.log('Success:', data);
             // lidar com a resposta de sucesso aqui
+            window.location.href = "index.html";
         })
         .catch(error => {
             console.error('Error:', error);
             // lidar com o erro aqui
         })
-        window.location.href = "index.html";
     });
     //a
     
