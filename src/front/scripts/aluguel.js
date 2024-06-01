@@ -34,6 +34,7 @@
               Marca: ${carro.marca}
               <br>
               Valor diário: R$ ${carro.valorDiario}
+            //  Ponto de encontro entra aqui
             </p>
             <div class="buttons-options">
               <div class="row">
