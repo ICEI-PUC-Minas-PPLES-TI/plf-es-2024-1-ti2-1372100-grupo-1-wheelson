@@ -14,7 +14,7 @@ fetchRentalsData();
         <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
           <div class="profile-container">
             <div class="info-user">
-              <img class="profile-photo" src="front/images/car.png">
+              <img class="profile-photo" src="src/front/images/car.png">
               <div class="name-user">
                 <span class="name">${rental.name}</span>
                 <span class="descrip">${rental.location}</span>
@@ -30,6 +30,7 @@ fetchRentalsData();
               <div class="buttons-options">
                 <div class="row">
                   <div class="col-12">
+                  <a class="btn" onclick="()" href="src/front/pages/boleto.html">Pagar</a>
                   </div>
                 </div>
               </div>
@@ -39,4 +40,4 @@ fetchRentalsData();
       `;
     });
   }
-});
+

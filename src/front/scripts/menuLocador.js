@@ -46,6 +46,7 @@ document.addEventListener("DOMContentLoaded", function() {
               <div class="row">
                 <div class="col-12">
                   <a class="btn" onclick="deleteVehicle(${vehicle.id})">Apagar</a>
+                  <a class="btn" onclick="()">Registrar danos</a>
                 </div>
               </div>
             </div>
