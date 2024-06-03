@@ -12,7 +12,6 @@ import com.renatomatos.wheelson.repositories.ProblemaRepository;
 
 import jakarta.transaction.Transactional;
 
-
 @Service
 public class ProblemaService {
 
@@ -21,7 +20,7 @@ public class ProblemaService {
 
     @Autowired
     private AluguelService aluguelService;
-    
+
     public Problema findById(Long id) {
         Optional<Problema> problema = problemaRepository.findById(id);
         return problema.orElseThrow(() -> new RuntimeException("Problema não encontrado"));
@@ -32,17 +31,18 @@ public class ProblemaService {
         return problemas;
     }
 
-    public List<Problema> findByIdAluguel(Long id) {
-        List<Problema> problemas = this.problemaRepository.findByIdAluguel(id);
-        return problemas;
+    public List<Problema> findByAluguel(Long id) {
+        Aluguel aluguel = aluguelService.findById(id);
+        return problemaRepository.findByAluguel(aluguel);
     }
 
     @Transactional
-    public Problema create(  Problema problema) {
-        Aluguel aluguel = aluguelService.findById(problema.getAluguel().getId_aluguel());
+    public Problema create(Problema problema) {
         problema.setId_problema(null);
+        Aluguel aluguel = aluguelService.findById(problema.getAluguel().getId_aluguel());
         problema.setAluguel(aluguel);
-        return this.problemaRepository.save(problema);
+        problema = this.problemaRepository.save(problema);
+        return problema;
     }
 
     @Transactional
@@ -62,6 +62,4 @@ public class ProblemaService {
             throw new RuntimeException("Não foi possível deletar o problema pois há entidades relacionadas!");
         }
     }
-
-
 }

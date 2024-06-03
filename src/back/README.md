@@ -50,4 +50,7 @@
 | POST   | `/aluguel`                  | Cria um novo aluguel.   |
 | DELETE   | `/aluguel/{id}	`          |Deleta um aluguel pelo seu ID. |
 
-
+## Problema
+| Método | Rota                       | Descrição                                                          |
+| ------ | -------------------------- | ------------------------------------------------------------------ |
+| GET   | `/problema/{id}`                   | Recebe um problema pelo ID                                       |

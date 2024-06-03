@@ -63,7 +63,7 @@ public class Aluguel {
     Locatario locatario;
 
     @OneToMany(mappedBy = "aluguel")
-    List<Problema> problema = new ArrayList<Problema>();
+    List<Problema> problema;
 
    
     @PrePersist

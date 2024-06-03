@@ -3,6 +3,8 @@ package com.renatomatos.wheelson.exceptions;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
+import jakarta.validation.UnexpectedTypeException;
+
 import javax.validation.ConstraintViolationException;
 
 
@@ -72,7 +74,7 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
     public ResponseEntity<Object> handleAllUncaughtException(
             Exception exception,
             WebRequest request) {
-        final String errorMessage = "Unknown error occurred";
+        final String errorMessage = "Erro desconhecido";
         log.error(errorMessage, exception);
         return buildErrorResponse(
                 exception,
@@ -92,6 +94,19 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
             dataIntegrityViolationException,
             errorMessage,
             HttpStatus.CONFLICT,
+            request);
+    }
+
+    @ExceptionHandler(UnexpectedTypeException.class)
+    @ResponseStatus(HttpStatus.UNPROCESSABLE_ENTITY)
+    public ResponseEntity<Object> handleUnexpectedTypeException(
+            UnexpectedTypeException exception,
+            WebRequest request) {
+        log.error("Erro de tipo inesperado", exception);
+        
+        return buildErrorResponse(
+            exception,
+            HttpStatus.UNPROCESSABLE_ENTITY,
             request);
     }
 
