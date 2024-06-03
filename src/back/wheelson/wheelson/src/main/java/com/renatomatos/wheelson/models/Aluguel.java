@@ -1,6 +1,9 @@
 package com.renatomatos.wheelson.models;
 
 import java.sql.Date;
+import java.util.ArrayList;
+import java.util.List;
+
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
@@ -58,6 +61,9 @@ public class Aluguel {
     @ManyToOne
     @JoinColumn(name = "id_locatario", nullable = false, updatable = false)
     Locatario locatario;
+
+    @OneToMany(mappedBy = "aluguel")
+    List<Problema> problema;
 
    
     @PrePersist
