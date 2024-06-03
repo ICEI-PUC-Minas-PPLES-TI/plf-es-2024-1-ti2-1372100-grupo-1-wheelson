@@ -4,6 +4,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
 import com.renatomatos.wheelson.models.PontoDeEncontro;
+import com.renatomatos.wheelson.services.CarroService;
 import com.renatomatos.wheelson.services.PontoDeEncontroService;
 
 import io.swagger.v3.oas.annotations.Operation;
@@ -25,6 +26,9 @@ public class PontoDeEncontroController {
 
     @Autowired
     private PontoDeEncontroService pontoDeEncontroService;
+
+    @Autowired
+    private CarroService carroService;
 
     @Operation(description = "Busca um ponto de encontro pelo ID")
     @ApiResponses(value = {
@@ -82,5 +86,11 @@ public class PontoDeEncontroController {
     public ResponseEntity<Void> delete(@PathVariable Long id) {
         pontoDeEncontroService.delete(id);
         return ResponseEntity.noContent().build();
+    }
+
+    @GetMapping("/carro/{id}")
+    public ResponseEntity<List<PontoDeEncontro>> findByCarro(@PathVariable Long id) {
+        List<PontoDeEncontro> pontos = pontoDeEncontroService.findByCarro(carroService.findById(id));
+        return ResponseEntity.ok().body(pontos);
     }
 }

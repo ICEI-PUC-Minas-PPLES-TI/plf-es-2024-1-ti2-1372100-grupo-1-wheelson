@@ -76,7 +76,7 @@ public class PontoDeEncontro {
     public void setId(Long id) {
         this.id = id;
     }
-@JsonIgnore
+
     public Carro getCarro() {
         return carro;
     }

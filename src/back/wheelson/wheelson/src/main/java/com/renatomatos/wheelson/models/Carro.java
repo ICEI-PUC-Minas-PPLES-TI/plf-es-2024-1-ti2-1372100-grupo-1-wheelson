@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 @Entity
 @Table(name = "Carro")
 public class Carro {
@@ -120,7 +122,7 @@ public class Carro {
     public void setLocador(Locador locador) {
         this.locador = locador;
     }
-    
+    @JsonIgnore
     public List<PontoDeEncontro> getPontoDeEncontro() {
         return pontoDeEncontro;
     }

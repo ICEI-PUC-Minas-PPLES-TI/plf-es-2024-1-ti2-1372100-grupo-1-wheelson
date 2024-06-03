@@ -60,6 +60,11 @@ public class PontoDeEncontroService {
         return pontos;
     }
 
+    public List<PontoDeEncontro> findByCarro(Carro carro) {
+        List<PontoDeEncontro> pontos = this.PontoDeEncontroRepository.findByCarro(carro);
+        return pontos;
+    }
+
     
     // public ResponseEntity<List<Carro>> findByDisponivel(boolean disponivel) {
     //     List<Carro> carros = this.carroRepository.findByDisponivel(disponivel);
