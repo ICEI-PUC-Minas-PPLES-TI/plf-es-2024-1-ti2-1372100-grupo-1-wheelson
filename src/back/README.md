@@ -54,3 +54,8 @@
 | Método | Rota                       | Descrição                                                          |
 | ------ | -------------------------- | ------------------------------------------------------------------ |
 | GET   | `/problema/{id}`                   | Recebe um problema pelo ID                                       |
+| GET   | `/problema`                   | Recebe todos os problemas                                           |
+| GET   | `/problema/aluguel/{id}`                   | Recebe um problema pelo ID do aluguel                                       |
+| POST  | `/problema`                   | Cadastra um problema                                           |
+| PUT  | `/problema/{id}`                   | Altera os dados de um problema                                           |
+| DELETE  | `/problema/{id}`                   | Apaga o perfil de um problema                                        |
