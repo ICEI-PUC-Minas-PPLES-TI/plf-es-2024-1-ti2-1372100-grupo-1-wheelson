@@ -29,6 +29,7 @@ public class CarroService {
 
     @Transactional
     public Carro create(Carro carro) {
+        System.out.println(carro.toString());
         Locador locador = locadorService.findById(carro.getLocador().getId());
         carro.setId(null);
         carro.setDisponivel(true);

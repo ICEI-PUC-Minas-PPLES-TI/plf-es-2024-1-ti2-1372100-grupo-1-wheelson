@@ -27,8 +27,7 @@ public class ProblemaService {
     }
 
     public List<Problema> findAll() {
-        List<Problema> problemas = (List<Problema>) this.problemaRepository.findAll();
-        return problemas;
+        return problemaRepository.findAll();
     }
 
     public List<Problema> findByAluguel(Long id) {
@@ -41,16 +40,16 @@ public class ProblemaService {
         problema.setId_problema(null);
         Aluguel aluguel = aluguelService.findById(problema.getAluguel().getId_aluguel());
         problema.setAluguel(aluguel);
-        problema = this.problemaRepository.save(problema);
-        return problema;
+        return problemaRepository.save(problema);
     }
 
     @Transactional
     public Problema update(Problema problema) {
         Problema newProblema = findById(problema.getId_problema());
         newProblema.setDescricao(problema.getDescricao());
+        newProblema.setData(problema.getData());
         newProblema.setValorExtra(problema.getValorExtra());
-        return this.problemaRepository.save(newProblema);
+        return problemaRepository.save(newProblema);
     }
 
     @Transactional

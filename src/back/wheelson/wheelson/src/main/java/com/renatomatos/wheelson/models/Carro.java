@@ -2,12 +2,15 @@ package com.renatomatos.wheelson.models;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
+import lombok.ToString;
+
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
 @Entity
 @Table(name = "Carro")
+@ToString
 public class Carro {
 
     @Id
@@ -130,4 +133,5 @@ public class Carro {
     public void setPontoDeEncontro(List<PontoDeEncontro> pontoDeEncontro) {
         this.pontoDeEncontro = pontoDeEncontro;
     }
+
 }

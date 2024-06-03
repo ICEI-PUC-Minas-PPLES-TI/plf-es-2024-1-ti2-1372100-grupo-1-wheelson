@@ -4,6 +4,8 @@ import java.sql.Date;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.NotEmpty;
@@ -13,6 +15,7 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import lombok.Setter;
+import lombok.ToString;
 
 @Entity
 @Table(name = "Aluguel")
@@ -20,6 +23,7 @@ import lombok.Setter;
 @Setter
 @RequiredArgsConstructor
 @EqualsAndHashCode
+@ToString
 public class Aluguel {
     
     @Id
@@ -74,5 +78,12 @@ public class Aluguel {
         if (ativo == false) {
             ativo = true;
         }
+    }
+    @JsonIgnore
+    public List<Problema> getProblema() {
+        if (problema == null) {
+            problema = new ArrayList<>();
+        }
+        return problema;
     }
 }

@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
@@ -18,15 +19,13 @@ import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 import com.renatomatos.wheelson.models.Problema;
 import com.renatomatos.wheelson.services.ProblemaService;
 
-import io.swagger.v3.oas.annotations.parameters.RequestBody;
 import jakarta.validation.Valid;
 
 @RestController
 @RequestMapping("/problema")
-@Validated
+//@Validated
 public class ProblemaController {
     
-
     @Autowired
     private ProblemaService problemaService;
     
@@ -38,28 +37,31 @@ public class ProblemaController {
 
     @GetMapping
     public ResponseEntity<List<Problema>> findAll() {
-        List<Problema> problema = problemaService.findAll();
-        return ResponseEntity.ok().body(problema);
+        List<Problema> problemas = problemaService.findAll();
+        return ResponseEntity.ok().body(problemas);
     }
 
     @GetMapping("/aluguel/{id}")
     public ResponseEntity<List<Problema>> findByAluguel(@PathVariable Long id) {
-        List<Problema> problema = problemaService.findByAluguel(id);
-        return ResponseEntity.ok().body(problema);
+        List<Problema> problemas = problemaService.findByAluguel(id);
+        return ResponseEntity.ok().body(problemas);
     }
 
     @PostMapping
-    public ResponseEntity<Problema> create( @RequestBody Problema problema) {
-         this.problemaService.create(problema);
-         URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
-                    .path("/{id}").buildAndExpand(problema.getId_problema()).toUri() ;
-         return ResponseEntity.created(uri).build();
+    public ResponseEntity<Void> create(@RequestBody /*@Valid*/ Problema problema) {
+        this.problemaService.create(problema);
+        URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
+                                             .path("/{id}")
+                                             .buildAndExpand(problema.getId_problema())
+                                             .toUri();
+        return ResponseEntity.created(uri).build();
     }
 
-    @PutMapping
-    public ResponseEntity<Problema> update(Problema problema) {
-        Problema newProblema = problemaService.update(problema);
-        return ResponseEntity.ok().body(newProblema);
+    @PutMapping("/{id}")
+    public ResponseEntity<Problema> update(@PathVariable Long id, @RequestBody /*@Valid*/ Problema problema) {
+        problema.setId_problema(id);
+        Problema updatedProblema = problemaService.update(problema);
+        return ResponseEntity.ok().body(updatedProblema);
     }
 
     @DeleteMapping("/{id}")
