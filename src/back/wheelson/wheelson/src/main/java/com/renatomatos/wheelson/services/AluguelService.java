@@ -46,6 +46,7 @@ public class AluguelService {
         Locatario locatario = locatarioService.findById(aluguel.getLocatario().getId());
         aluguel.setLocatario(locatario);
         Carro carro = carroService.findById(aluguel.getCarro().getId());
+        carro.setDisponivel(false);
         aluguel.setCarro(carro);
         aluguel = aluguelRepository.save(aluguel);
         return aluguel;
