@@ -62,7 +62,7 @@ function initMultiStepForm() {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
             }
-            return response.json();
+            //return response.json();
         })
         .then(data => {
             console.log('Success:', data);
@@ -78,21 +78,21 @@ function initMultiStepForm() {
     
 }
 
-async function fetchCadastro(tipo, email, senha) {
-    try {
-        let response = await fetch(`http://localhost:8080/locador`);
+// async function fetchCadastro(tipo, email, senha) {
+//     try {
+//         let response = await fetch(`http://localhost:8080/locador`);
 
-        if (!response.ok) {
-            throw new Error(`HTTP error! status: ${response.status}`);
-        }
+//         if (!response.ok) {
+//             throw new Error(`HTTP error! status: ${response.status}`);
+//         }
 
-        let data = await response.json();
-        console.log(data);
-        return data;
-    } catch (error) {
-        console.error("Erro ao buscar login:", error);
-    }
-}
+//         let data = await response.json();
+//         console.log("galo:",data);
+//         return data;
+//     } catch (error) {
+//         console.error("Erro ao buscar login:", error);
+//     }
+// }
 
 // Chamada da função apenas uma vez quando a página é carregada
 window.onload = function() {

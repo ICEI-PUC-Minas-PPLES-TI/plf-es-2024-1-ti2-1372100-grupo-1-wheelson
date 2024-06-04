@@ -97,6 +97,9 @@ function initMultiStepForm() {
 
             // Log dos valores
             console.log({
+                Rua,
+                bairro,
+                preferencia,
                 modelo,
                 marca,
                 ano,
@@ -133,6 +136,7 @@ function initMultiStepForm() {
                 }
 
                 alert("Your Form Successfully Signed up");
+                fetchPegarVeiculo(Rua,bairro,preferencia,locadorId);
             } catch (error) {
                 console.error('Erro ao enviar formulário:', error);
                 alert('Erro ao enviar formulário. Tente novamente mais tarde.');
@@ -170,5 +174,59 @@ function initMultiStepForm() {
         return inputsValid;
     }
 
-    //function fetchPontoDeEncontro()
+    
+}
+function fetchPegarVeiculo( Rua, bairro, preferencia,locadorId)
+{
+    fetch(`http://localhost:8080/carro/locador/${locadorId}`)
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok ' + response.statusText);
+      }
+      return response.json();
+    })
+    .then(data =>{ 
+        //console.log("carro:",data);
+        fetchPontodeEncontro(data,Rua,bairro,preferencia)
+
+    })
+    
+
+}
+function fetchPontodeEncontro(veiculo,Rua,bairro,preferencia)
+{
+    console.log(veiculo[veiculo.length-1]);
+    const veiculo2 = veiculo[veiculo.length-1]
+    try {console.log({
+        Rua,
+        bairro,
+        preferencia,
+        carro: {
+            id: veiculo2.id
+        }
+    });
+           fetch('http://localhost:8080/pontoDeEncontro', { 
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                rua: Rua,
+                bairro: bairro,
+                ponto_referencia: preferencia,
+                carro:{
+                  id: veiculo2.id
+                }
+                
+            })
+        }).then( 
+           
+        alert("Ponto de encontro enviado com sucesso"))
+        window.location.href = "menuLocador.html"
+        
+      
+    } catch (error) {
+        console.error('Erro ao enviar formulário:', error);
+        alert('Erro ao enviar formulário. Tente novamente mais tarde.');
+    }
 }
