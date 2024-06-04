@@ -32,9 +32,9 @@ PROCESSO 2:
 PROCESSO 3:
 | **Indicador**                        | **Objetivos**                                               | **Descrição**                                                              | **Fonte de Dados**                   | **Fórmula de Cálculo**                                                                 |
 | ------------------------------------ | ----------------------------------------------------------- | -------------------------------------------------------------------------- | ----------------------------------- | -------------------------------------------------------------------------------------- |
-| Taxa de reservas feitas no mês        |Analisar alcance e efetividade do sistema | Percentual de reservas feitas no mês em relação com todas as outras reservas já efetuadas na vida útil do sistema | Tabela Aluguel               | (Número de reservas realizadas / Número total de reservas) * 100         |
+| Taxa de alugueis feitas no mês        |Analisar alcance e efetividade do sistema | Percentual de alugueis feitas no mês em relação com todas os outros reservas já efetuadas na vida útil do sistema | Tabela Aluguel               | (Número de reservas realizadas / Número total de reservas) * 100         |
 | Duração média das reservas | Avaliar a duração média dos alugueis realizados, analisando o tempo que usuários costumam alugar um veículo |Tempo médio entre o inicio e fim de um aluguel | Tabela Aluguel           | Média de (Data e hora da reserva / Data e hora do final da reserva)          |
-| Frequência de Aluguel por Veículo    | Avaliar a utilização do inventário de veículos               | Média de vezes que cada veículo é alugado em um determinado período        | Tabela de Histórico de Aluguel      | Total de aluguéis por veículo / Número total de veículos                                |
+| Frequência de Aluguel por Veículo    | Avaliar a utilização do inventário de veículos               | Média de vezes que cada veículo é alugado em um determinado período        | Tabela de Histórico de Aluguel      | Total de aluguéis por veículo / Número total de alugueis                                |
 
 <!--
 PROCESSO 4:
