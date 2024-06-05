@@ -14,6 +14,9 @@ const submitFort = () => {
         case 'locatario':
             loginLocatario();
             break;
+            case 'adm':
+                loginAdm(nomeField, passwordField);
+                break;
         default:
             alert("Seleciona o seu tipo de login!!");
             break;
@@ -42,6 +45,33 @@ const loginLocatario = () => {
     console.log("locatario");
 
 };
+
+const loginAdm = (nome,senha) => {
+    
+    console.log("function call");
+    if (isNillOrBlank(nome) || isNillOrBlank(senha)) {
+        alert("Email ou senha não podem estar em branco.");
+        return;
+    }
+
+    fetchLogin("adm", nome, senha).then(data => {
+        localStorage.clear();
+        //localStorage.setItem("usuario", JSON.stringify(data));
+       if (data===true) {
+           alert("Login efetuado com sucesso");
+       }
+         else{
+              alert("Email ou senha incorretos");
+            }
+        //window.location.href = "menuAdm.html";
+    }).catch(error => {
+        console.error("Erro ao buscar login:", error);
+    });
+    
+    }
+
+
+
 
 async function fetchLogin(tipo, email, senha) {
     try {

@@ -337,3 +337,17 @@ h2{
   font-size: 25px;
   margin-top: 15px;
 }
+/* Estilo para o botão "Aprovar" */
+#botaoAprovar {
+  background-color: green;
+}
+
+/* Estilo para o botão "Indicadores" */
+#botaoIndicadores {
+  background-color: blue;
+}
+
+/* Estilo para o botão "Problemas" */
+#botaoProblemas {
+  background-color: red;
+}
