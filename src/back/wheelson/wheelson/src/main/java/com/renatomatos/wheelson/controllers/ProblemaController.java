@@ -41,6 +41,18 @@ public class ProblemaController {
         return ResponseEntity.ok().body(problemas);
     }
 
+    @GetMapping("/resolvido")
+    public ResponseEntity<List<Problema>> findAllByResolvido() {
+        List<Problema> problemas = problemaService.findAllByResolvido();
+        return ResponseEntity.ok().body(problemas);
+    }
+
+    @GetMapping("/naoResolvido")
+    public ResponseEntity<List<Problema>> findAllByNotResolvido() {
+        List<Problema> problemas = problemaService.findAllByNotResolvido();
+        return ResponseEntity.ok().body(problemas);
+    }
+
     @GetMapping("/aluguel/{id}")
     public ResponseEntity<List<Problema>> findByAluguel(@PathVariable Long id) {
         List<Problema> problemas = problemaService.findByAluguel(id);

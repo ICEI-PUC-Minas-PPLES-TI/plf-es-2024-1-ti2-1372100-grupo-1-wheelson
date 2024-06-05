@@ -9,6 +9,7 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
+import jakarta.persistence.PrePersist;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotEmpty;
 
@@ -43,7 +44,17 @@ public class Problema {
     @Column(name = "valorExtra", nullable = true)
     private double valorExtra;
 
+    @Column(name = "resolvido")
+    //ao iniciar um problema, ele não está resolvido
+    private boolean resolvido = false;
+
     @ManyToOne
     @JoinColumn(name = "id_aluguel", nullable = false, updatable = false)
     private Aluguel aluguel;
+
+    @PrePersist
+    protected void onCreate() {
+        resolvido = false;
+        
+    }
 }

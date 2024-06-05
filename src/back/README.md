@@ -55,6 +55,8 @@
 | ------ | -------------------------- | ------------------------------------------------------------------ |
 | GET   | `/problema/{id}`                   | Recebe um problema pelo ID                                       |
 | GET   | `/problema`                   | Recebe todos os problemas                                           |
+| GET   | `/problema/resolvido`  |  Recebe todos os problemas resolvidos                                           |
+| GET   | `/problema/naoResolvido`  |  Recebe todos os problemas não resolvidos                                           |
 | GET   | `/problema/aluguel/{id}`                   | Recebe um problema pelo ID do aluguel                                       |
 | POST  | `/problema`                   | Cadastra um problema                                           |
 | PUT  | `/problema/{id}`                   | Altera os dados de um problema                                           |

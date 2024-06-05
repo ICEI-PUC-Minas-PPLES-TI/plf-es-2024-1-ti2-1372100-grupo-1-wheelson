@@ -2,6 +2,7 @@ package com.renatomatos.wheelson.services;
 
 import java.util.List;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -29,6 +30,22 @@ public class ProblemaService {
     public List<Problema> findAll() {
         return problemaRepository.findAll();
     }
+
+    public List<Problema> findAllByResolvido(){
+        List <Problema> problemas = problemaRepository.findAll().stream()
+            .filter(problema -> problema.isResolvido())
+            .collect(Collectors.toList());
+        return problemas;
+    }
+
+    public List<Problema> findAllByNotResolvido(){
+         List <Problema> problemas = problemaRepository.findAll().stream()
+            .filter(problema -> !problema.isResolvido())
+            .collect(Collectors.toList());
+        return problemas;
+    }
+
+
 
     public List<Problema> findByAluguel(Long id) {
         Aluguel aluguel = aluguelService.findById(id);

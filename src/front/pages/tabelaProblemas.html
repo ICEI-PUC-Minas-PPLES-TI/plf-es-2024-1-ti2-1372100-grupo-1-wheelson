@@ -2,33 +2,39 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Menu Aluguel</title>
+  <title>Tabela Problemas</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;1,300&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="/src/front/styles/aluguel.css">
+  <link rel="stylesheet" href="../styles/tabelaProblemas.css">
 </head>
 <body>
   <div class="landing-page">
     <header>
       <div class="container2">
-        <a href="#" class="logo">Wheels<b>On</b></a>
+        <a href="menuAdm.html" class="logo">Wheels<b>On</b></a>
         <ul class="links">
-          <a href="/src/front/pages/menuLocatario.html"><li>Home</li></a>
+          <a href="/src/front/pages/menuAdm.html"><li>Home</li></a>
           <a href="/src/front/pages/login.html"><li>Sair</li></a>
         </ul>
       </div>
     </header>
   </div>
+
   <div class="container">
-    <h1>Veículos disponíveis</h1>
-    <div class="row" id="vehicles-container">
-      <!-- Os dados dos veículos serão inseridos aqui pelo JavaScript -->
+    <h1>Problemas cadastrados</h1>
+    <div class="row" id="problemasNaoResolvidos-container">
+      <!-- Os dados dos problemas serão inseridos aqui pelo JavaScript -->
     </div>
+
+    <h1> Problemas resolvidos</h1>
+    <div class="row" id="problemasResolvidos-container">
+      <!-- Os dados dos problemas serão inseridos aqui pelo JavaScript -->
+      </div>
   </div>
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="../scripts/aluguel.js"></script>
+  <script src="../scripts/tabelaProblemas.js"></script>
 </body>
 </html>
