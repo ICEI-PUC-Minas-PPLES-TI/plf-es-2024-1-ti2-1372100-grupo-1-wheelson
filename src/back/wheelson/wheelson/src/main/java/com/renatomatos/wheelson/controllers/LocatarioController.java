@@ -58,6 +58,10 @@ public class LocatarioController {
     })
     @PostMapping
     public ResponseEntity<Void> create(@Valid @RequestBody Locatario locatario) {
+        System.out.println("Locatario recebido: "+ locatario.getCNH()+ ", "
+        + locatario.getNome() + ", "
+        + locatario.getEmail() +". "
+        );
         this.locatarioService.create(locatario);
         URI uri = ServletUriComponentsBuilder.fromCurrentRequest()
                    .path("/{id}").buildAndExpand(locatario.getId()).toUri();

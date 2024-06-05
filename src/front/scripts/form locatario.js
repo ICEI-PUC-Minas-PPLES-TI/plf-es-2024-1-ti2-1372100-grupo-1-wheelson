@@ -93,6 +93,11 @@ submitBtn.addEventListener("click", () => {
     const dataFormatada = `${ano}-${mes}-${dia}`;
 
     console.log(dataFormatada); // Saída: "2024-05-13"
+    // var verificaCNH = validaCNH(cnh) 
+    // if (verificaCNH === false) {
+    //     alert("Utilize uma CNH válida!")
+    //     return;
+    // }
     const data = {
         
         nome,
@@ -102,7 +107,7 @@ submitBtn.addEventListener("click", () => {
         telefone,
         rua,
         bairro,
-        numero_resid_locatario,
+        numero_resid_locatario:numero_resid_locatario,
         cidade,
         uf,
         status: false, // assumindo que o status seja sempre false
@@ -113,6 +118,7 @@ submitBtn.addEventListener("click", () => {
 
         
     };
+    console.log(data);
 
     fetch("http://localhost:8080/locatario", {
         method: "POST",
@@ -125,11 +131,11 @@ submitBtn.addEventListener("click", () => {
         if (!response.ok) {
             throw new Error('Network response was not ok');
         }
-        return response.json();
+        
     })
     .then(data => {
         console.log('Success:', data);
-        window.location.href = "http://localhost:8080/index.html";
+        window.location.href = "index.html";
     })
     .catch(error => {
         console.error('Error:', error);
@@ -137,6 +143,37 @@ submitBtn.addEventListener("click", () => {
     });
 
 });
+
+function validaCNH(cnh) {
+    if (cnh.replace(/\D+/g, '').length !== 11 || cnh.split('').every(char => char === cnh[0])) {
+        return false;
+    }
+
+    let v = 0, j = 9;
+
+    for (let i = 0; i < 9; ++i, --j) {
+        v += ((cnh.charAt(i) - 48) * j);
+    }
+
+    let dsc = 0, vl1 = v % 11;
+
+    if (vl1 >= 10) {
+        vl1 = 0;
+        dsc = 2;
+    }
+
+    v = 0;
+    j = 1;
+
+    for (let i = 0; i < 9; ++i, ++j) {
+        v += ((cnh.charAt(i) - 48) * j);
+    }
+
+    let x = v % 11;
+    let vl2 = (x >= 10) ? 0 : x - dsc;
+
+    return (String(vl1) + String(vl2)) === cnh.substring(cnh.length - 2);
+}
 
 function validateInputs(ths) {
     let inputsValid = true;
