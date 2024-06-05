@@ -7,16 +7,25 @@
 */
   fetchVehicles();
 
-  function fetchVehicles() {
-    fetch('http://localhost:8080/carro/all')
-      .then(response => response.json())
-      .then(data => createVehicleCards(data))
-      .catch(error => console.error('Error fetching vehicles:', error));
+  async function fetchVehicles() {
+    try {
+      const response = await fetch('http://localhost:8080/carro/all');
+      const data = await response.json();
+      await createVehicleCards(data);
+    } catch (error) {
+      console.error('Error fetching vehicles:', error);
+    }
+    // fetch('http://localhost:8080/carro/all')
+    //   .then(response => response.json())
+    //   .then(data =>  await createVehicleCards(data))
+    //   .catch(error => console.error('Error fetching vehicles:', error));
   }
 
-  function createVehicleCards(vehicles) {
+  async function createVehicleCards(vehicles) {
     const container = document.getElementById("vehicles-container");
-    vehicles.forEach(carro => {
+    for (const carro of vehicles) {
+      const ponto = await fetchPontodeEncontro(carro)
+      console.log(ponto);
       console.log(carro);
       const vehicleCard = document.createElement('div');
       vehicleCard.className = 'col-xs-12 col-sm-6 col-md-6 col-lg-3';
@@ -34,7 +43,8 @@
               Marca: ${carro.marca}
               <br>
               Valor diário: R$ ${carro.valorDiario}
-            //  Ponto de encontro entra aqui
+              <br>
+              Ponto de encontro: ${ponto.rua}, bairro ${ponto.bairro}. Ponto de referência: ${ponto.ponto_referencia}
             </p>
             <div class="buttons-options">
               <div class="row">
@@ -49,7 +59,7 @@
         </div>
       `;
       container.appendChild(vehicleCard);
-    });
+    };
   }
 ;
 
@@ -80,4 +90,20 @@ function rentVehicle(vehicleId, locatarioId) {
     console.log('Success:', data);
   })
   .catch(error => console.error('Error:', error));
+}
+async function fetchPontodeEncontro(veiculo)
+{
+  try {
+    const res = await fetch(`http://localhost:8080/pontoDeEncontro/carro/${veiculo.id}`);
+    const data = await res.json();
+    return data[0];
+  } catch (error) {
+    console.error('Error fetching ponto de encontro:', error);
+    return null;
+  }
+  // fetch(`http://localhost:8080/pontoDeEncontro/carro/${veiculo.id}`)
+  // .then(res => res.json())
+  // .then(data => {
+  //   console.log(data)
+  //   return data[0]})
 }
