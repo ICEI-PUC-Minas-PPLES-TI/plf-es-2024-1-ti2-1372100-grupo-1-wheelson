@@ -59,3 +59,9 @@
 | POST  | `/problema`                   | Cadastra um problema                                           |
 | PUT  | `/problema/{id}`                   | Altera os dados de um problema                                           |
 | DELETE  | `/problema/{id}`                   | Apaga o perfil de um problema                                        |
+
+## Adm
+| Método | Rota                       | Descrição                                                          |
+| ------ | -------------------------- | ------------------------------------------------------------------ |
+| GET    | `/adm/login/{email}/{senha}`                   | Recebe true caso tenha um perfil de adm com esses dados no servidor, falso caso não tenha                              |
+| POST   | `/adm`                   | Cadastra um adm                                           |
