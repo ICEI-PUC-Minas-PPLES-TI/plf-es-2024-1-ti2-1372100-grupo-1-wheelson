@@ -1,15 +1,15 @@
 package com.renatomatos.wheelson.services;
 
 import java.util.Optional;
-import java.util.stream.Collectors;
+
 import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.ResponseEntity;
+
 import org.springframework.stereotype.Service;
 import com.renatomatos.wheelson.models.PontoDeEncontro;
 import com.renatomatos.wheelson.repositories.PontoDeEncontroRepository;
 import com.renatomatos.wheelson.models.Carro;
-import com.renatomatos.wheelson.models.Locador;
+
 
 import jakarta.transaction.Transactional;
 

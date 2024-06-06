@@ -8,7 +8,7 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.renatomatos.wheelson.models.Locador;
+
 import com.renatomatos.wheelson.models.Locatario;
 import com.renatomatos.wheelson.repositories.LocatarioRepository;
 

@@ -108,7 +108,7 @@ public Aluguel updatePartial(Long id, Map<String, Object> updates) {
         return alugueis;
     }
 
-
+    
     @Transactional
     public Aluguel finalizarAluguel(Long id) {
         Aluguel aluguel = findById(id);
