@@ -1,0 +1,33 @@
+.tabs{
+    border-radius: 18px 18px 0px 0px;
+}
+
+.tabs-1{
+  margin: 10px 0px 0px 0px;
+
+}
+.tabs-2{
+    margin: 10px  10px 0px 10px;
+}
+
+.tabs-tabla button:focus{
+    outline: none;
+    box-shadow: none;  
+}
+.tabs-active{
+    background-color: black;
+    color: white;
+}
+
+
+#tabla1{
+  
+}
+
+#tabla2{
+    display: none;
+}
+
+.tabla-responsive{
+    width: 19%;
+}
