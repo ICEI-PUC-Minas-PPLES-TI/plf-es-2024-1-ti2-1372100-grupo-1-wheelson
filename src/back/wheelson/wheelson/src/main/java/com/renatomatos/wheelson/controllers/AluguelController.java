@@ -88,4 +88,10 @@ public class AluguelController {
         Aluguel aluguelFinalizado = aluguelService.finalizarAluguel(id);
         return ResponseEntity.ok().body(aluguelFinalizado);
     }
+
+    @GetMapping("/taxa-mensal")
+    public ResponseEntity<Map<Integer, Double>> getMonthlyBookingRates() {
+        Map<Integer, Double> monthlyRates = aluguelService.getMonthlyBookingRates();
+        return ResponseEntity.ok().body(monthlyRates);
+    }
 }

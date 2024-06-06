@@ -49,6 +49,7 @@
 | PATCH   | `/aluguel/finalizar/{id}o` | Finaliza um aluguel e atualiza o status de pagamento, atribui saldo ao locador. |
 | POST   | `/aluguel`                  | Cria um novo aluguel.   |
 | DELETE   | `/aluguel/{id}	`          |Deleta um aluguel pelo seu ID. |
+| GET    | `/aluguel/taxa-mensal`|Recebe um MAP<Mês,taxa>, referente ao indicador de desempenho "Taxa de alugueis feitas no mês"    |
 
 ## Problema
 | Método | Rota                       | Descrição                                                          |

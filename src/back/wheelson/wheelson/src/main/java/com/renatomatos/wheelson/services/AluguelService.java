@@ -1,8 +1,11 @@
 package com.renatomatos.wheelson.services;
 
+import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.Optional;
+import java.util.stream.Collectors;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -117,5 +120,33 @@ public Aluguel updatePartial(Long id, Map<String, Object> updates) {
         locador.setSaldo(aluguel.getValorTotal() *0.8);
         locadorService.save(locador);
         return aluguelRepository.save(aluguel);
+    }
+
+    //| Taxa de alugueis feitas no mês        |Analisar alcance e efetividade do sistema | Percentual de alugueis feitas no mês em relação com todas os outros reservas já efetuadas na vida útil do sistema | Tabela Aluguel               | (Número de reservas realizadas / Número total de reservas) * 100         |
+    @Transactional
+    public Map<Integer, Double> getMonthlyBookingRates() {
+        List<Aluguel> alugueis = aluguelRepository.findAll();
+        
+        
+        int totalReservas = alugueis.size();
+
+        if (totalReservas == 0) {
+            return Collections.emptyMap();
+        }
+
+        
+        Map<Integer, Long> reservasPorMes = alugueis.stream()
+                .collect(Collectors.groupingBy(aluguel -> aluguel.getDataInicio().toLocalDate().getMonthValue(), Collectors.counting()));
+
+        
+        Map<Integer, Double> taxaReservasPorMes = new HashMap<>();
+        for (Map.Entry<Integer, Long> entry : reservasPorMes.entrySet()) {
+            int mes = entry.getKey();
+            long reservasNoMes = entry.getValue();
+            double taxa = (double) reservasNoMes / totalReservas * 100;
+            taxaReservasPorMes.put(mes, taxa);
+        }
+
+        return taxaReservasPorMes;
     }
 }

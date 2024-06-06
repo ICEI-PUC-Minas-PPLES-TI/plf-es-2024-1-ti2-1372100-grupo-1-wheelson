@@ -29,7 +29,7 @@ PROCESSO 2:
 | Taxa de Comunicações de Erro         | Melhorar a comunicação em casos de erro durante o processo | Percentual de e-mails enviados em casos de não permissão para seguir com o processo em relação ao total de processos com erros | Tabela Comunicações de Erro      | (Número de e-mails enviados / Número total de processos com erros) * 100             |
 -->
 
-PROCESSO 3:
+
 | **Indicador**                        | **Objetivos**                                               | **Descrição**                                                              | **Fonte de Dados**                   | **Fórmula de Cálculo**                                                                 |
 | ------------------------------------ | ----------------------------------------------------------- | -------------------------------------------------------------------------- | ----------------------------------- | -------------------------------------------------------------------------------------- |
 | Taxa de alugueis feitas no mês        |Analisar alcance e efetividade do sistema | Percentual de alugueis feitas no mês em relação com todas os outros reservas já efetuadas na vida útil do sistema | Tabela Aluguel               | (Número de reservas realizadas / Número total de reservas) * 100         |
