@@ -12,7 +12,7 @@ const submitFort = () => {
             loginLocador(nomeField, passwordField);
             break;
         case 'locatario':
-            loginLocatario();
+            loginLocatario(nomeField,passwordField);
             break;
             case 'adm':
                 loginAdm(nomeField, passwordField);
@@ -40,9 +40,23 @@ const loginLocador = (nome, senha) => {
     });
 };
 
-const loginLocatario = () => {
+const loginLocatario = (nome,senha) => {
 
     console.log("locatario");
+    console.log("function call");
+    if (isNillOrBlank(nome) || isNillOrBlank(senha)) {
+        alert("Nome ou senha não podem estar em branco.");
+        return;
+    }
+
+    fetchLogin("locatario", nome, senha).then(data => {
+        localStorage.clear();
+        localStorage.setItem("usuario", JSON.stringify(data));
+       
+        window.location.href = "menuLocatario.html";
+    }).catch(error => {
+        console.error("Erro ao buscar login:", error);
+    });
 
 };
 
