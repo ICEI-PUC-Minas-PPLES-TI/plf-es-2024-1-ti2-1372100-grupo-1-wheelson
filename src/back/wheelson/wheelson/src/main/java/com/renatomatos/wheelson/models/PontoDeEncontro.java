@@ -26,7 +26,7 @@ public class PontoDeEncontro {
 
     @NotEmpty
     @NotNull
-    @Column(name = "ponto_referencia", nullable = true, length = 20)
+    @Column(name = "ponto_referencia", nullable = true, length = 50)
     String ponto_referencia;
 
     @ManyToOne
