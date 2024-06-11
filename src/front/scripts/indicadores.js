@@ -1,3 +1,5 @@
+import Dashboards from 'src/front/scripts/dashboards.src.js';
+
 const plotLines = [{
     label: {
         text: 'Today',
