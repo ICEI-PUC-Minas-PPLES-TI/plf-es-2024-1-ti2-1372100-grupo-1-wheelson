@@ -57,6 +57,7 @@ Dashboards.board('container', {
                     ['Car 9', 90],
                     ['Car 10', 100]
                 ]
+                
             }
         }, {
             id: 'frequenciaAluguelPorVeiculo',
