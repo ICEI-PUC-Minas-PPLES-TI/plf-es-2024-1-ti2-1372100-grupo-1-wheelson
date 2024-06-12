@@ -49,8 +49,8 @@
             <div class="buttons-options">
               <div class="row">
                 <div class="col-12">
-                <a href="/src/front/pages/formAluguel.html">
-                  <button class="btn btn-outline-light btn-sm" onclick="rentVehicle(${carro.id})">Alugar</button>
+                <a href="/src/front/pages/formAluguel.html?vehicleId=${carro.id}&idLocador=${carro.locador.id}">
+                  <button class="btn btn-outline-light btn-sm">Alugar</button>
                 </a>
                 </div>
               </div>
@@ -68,29 +68,29 @@ function getLocatarioId() {
   return localStorage.getItem('locatarioId');
 }
 
-function rentVehicle(vehicleId, locatarioId) {
-  const aluguelData = {
-    locatarioId: locatarioId,
-    carroId: vehicleId,
-    statusPagamento: false,
-    ativo: true,
-    valorTotal: 0 // Defina o valor total conforme necessário
-  };
+// function rentVehicle(vehicleId, locatarioId) {
+//   const aluguelData = {
+//     locatarioId: locatarioId,
+//     carroId: vehicleId,
+//     statusPagamento: false,
+//     ativo: true,
+//     valorTotal: 0 // Defina o valor total conforme necessário
+//   };
 
-  fetch('http://localhost:8080/aluguel', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: JSON.stringify(aluguelData)
-  })
-  .then(response => response.json())
-  .then(data => {
-    alert('Aluguel realizado com sucesso!');
-    console.log('Success:', data);
-  })
-  .catch(error => console.error('Error:', error));
-}
+//   fetch('http://localhost:8080/aluguel', {
+//     method: 'POST',
+//     headers: {
+//       'Content-Type': 'application/json'
+//     },
+//     body: JSON.stringify(aluguelData)
+//   })
+//   .then(response => response.json())
+//   .then(data => {
+//     alert('Aluguel realizado com sucesso!');
+//     console.log('Success:', data);
+//   })
+//   .catch(error => console.error('Error:', error));
+// }
 async function fetchPontodeEncontro(veiculo)
 {
   try {
