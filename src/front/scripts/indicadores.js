@@ -1,3 +1,5 @@
+import Dashboards from 'src/front/scripts/dashboards.src.js';
+
 const plotLines = [{
     label: {
         text: 'Today',
@@ -62,20 +64,23 @@ Dashboards.board('container', {
         }, {
             id: 'frequenciaAluguelPorVeiculo',
             type: 'JSON',
-            options: {
-                data: [
-                    ['Car', 'Frequency'],
-                    ['Car 1', 5],
-                    ['Car 2', 10],
-                    ['Car 3', 15],
-                    ['Car 4', 20],
-                    ['Car 5', 25],
-                    ['Car 6', 30],
-                    ['Car 7', 35],
-                    ['Car 8', 40],
-                    ['Car 9', 45],
-                    ['Car 10', 50]
-                ]
+            dataProcessor: function(connector) {
+                return new Promise((resolve, reject) => {
+                    fetch('/aluguel/alugueis')
+                        .then(response => response.json())
+                        .then(data => {
+                            const totalAlugueis = data.length;
+                            const alugueisPorCarro = data.reduce((acc, aluguel) => {
+                                acc[aluguel.carroId] = (acc[aluguel.carroId] || 0) + 1;
+                                return acc;
+                            }, {});
+                            const frequenciaAluguel = Object.keys(alugueisPorCarro).map(carroId => [`Car ${carroId}`, alugueisPorCarro[carroId] / totalAlugueis]);
+                            resolve({
+                                data: [['Car', 'Frequency'], ...frequenciaAluguel]
+                            });
+                        })
+                        .catch(error => reject(error));
+                });
             }
         }]
     },
@@ -130,24 +135,6 @@ Dashboards.board('container', {
             legend: {
                 enabled: false
             }
-        },
-        dataProcessor: function(connector) {
-            return new Promise((resolve, reject) => {
-                fetch('/aluguel')
-                    .then(response => response.json())
-                    .then(data => {
-                        const durations = data.map(aluguel => {
-                            const inicio = new Date(aluguel.inicio);
-                            const fim = new Date(aluguel.fim);
-                            return (fim - inicio) / (1000 * 60 * 60); // Duração em horas
-                        });
-                        const averageDuration = durations.reduce((acc, duration) => acc + duration, 0) / durations.length;
-                        resolve({
-                            data: [['Car', 'Average Duration'], ...durations.map((duration, index) => [`Car ${index + 1}`, duration])]
-                        });
-                    })
-                    .catch(error => reject(error));
-            });
         }
     }, {
         renderTo: 'dashboard-chart-3',
@@ -174,26 +161,8 @@ Dashboards.board('container', {
             legend: {
                 enabled: false
             }
-        },
-        dataProcessor: function(connector) {
-            return new Promise((resolve, reject) => {
-                fetch('/aluguel/alugueis')
-                    .then(response => response.json())
-                    .then(data => {
-                        const totalAlugueis = data.length;
-                        const alugueisPorCarro = data.reduce((acc, aluguel) => {
-                            acc[aluguel.carroId] = (acc[aluguel.carroId] || 0) + 1;
-                            return acc;
-                        }, {});
-                        const frequenciaAluguel = Object.keys(alugueisPorCarro).map(carroId => [`Car ${carroId}`, alugueisPorCarro[carroId] / totalAlugueis]);
-                        resolve({
-                            data: [['Car', 'Frequency'], ...frequenciaAluguel]
-                        });
-                    })
-                    .catch(error => reject(error));
-            });
         }
     }]
 }, true).then(dashboard => {
-    // Implementação final do dashboard
+    console.log('Dashboard initialized successfully');
 });

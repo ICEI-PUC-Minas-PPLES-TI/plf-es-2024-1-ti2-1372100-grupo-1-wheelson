@@ -15,7 +15,7 @@
       <div class="container2">
         <a href="menuAdm.html" class="logo">Wheels<b>On</b></a>
         <ul class="links">
-          <a href="/src/front/pages/menuAdm.html"><li>Home</li></a>
+         
           <a href="/src/front/pages/login.html"><li>Sair</li></a>
         </ul>
       </div>
@@ -25,14 +25,44 @@
   <div class="container">
     <h1>Problemas cadastrados</h1>
     <div class="row" id="problemasNaoResolvidos-container">
-      <!-- Os dados dos problemas serão inseridos aqui pelo JavaScript -->
+      <table class="table table-bordered table-striped table-sm">
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Data</th>
+                    <th>Carro</th>
+                    <th>Placa do veiculo</th>
+                    <th>Detalhes</th>
+                  </tr>
+                </thead>
+                <tbody id="tabelaNresolvidos">
+                 
+
+                </tbody>
+              </table>
     </div>
 
     <h1> Problemas resolvidos</h1>
     <div class="row" id="problemasResolvidos-container">
       <!-- Os dados dos problemas serão inseridos aqui pelo JavaScript -->
+      <table class="table table-bordered table-striped table-sm">
+        <thead>
+          <tr>
+            <th>ID</th>
+            <th>Data</th>
+            <th>Carro</th>
+            <th>Placa do veiculo</th>
+            <th>Valor Extra</th>
+          </tr>
+        </thead>
+        <tbody id="tabelaResolvidos">
+          
+
+        </tbody>
+      </table>
       </div>
   </div>
+  
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script src="../scripts/tabelaProblemas.js"></script>

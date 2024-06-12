@@ -26,6 +26,7 @@
 | POST  | `/locatario`                   | Cadastra um locatário                                           |
 | PUT  | `/locatario/{id}`                   | Altera os dados de um locatário                                           |
 | DELETE  | `/locatario/{id}`                   | Apaga o perfil de um Locatário                                        |
+| PATCH | `/locatario/{id}` | Atualiza o status do locatário para true |
 
 ## Carro
 | Método | Rota                       | Descrição                                                          |

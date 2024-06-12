@@ -40,7 +40,7 @@ public class Carro {
 
     @NotEmpty
     @NotNull
-    @Column(name = "placa", nullable = false, length = 7, unique = true)
+    @Column(name = "placa", nullable = false, length = 8, unique = true)
     String placa;
 
     @Column(name = "disponivel", nullable = false)
