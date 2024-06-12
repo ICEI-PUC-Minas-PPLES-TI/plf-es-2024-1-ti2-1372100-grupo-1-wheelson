@@ -25,38 +25,41 @@ Dashboards.board('container', {
         connectors: [{
             id: 'taxaMensalAlugueis',
             type: 'JSON',
-            dataProcessor: function(connector) {
-                return new Promise((resolve, reject) => {
-                    fetch('/aluguel/taxaMensal')
-                        .then(response => response.json())
-                        .then(data => {
-                            resolve({
-                                data: data.map(item => [item.mes, item.taxa])
-                            });
-                        })
-                        .catch(error => reject(error));
-                });
+            options: {
+                data: [
+                    ['Month', 'Taxa'],
+                    ['Jan', 5],
+                    ['Feb', 8],
+                    ['Mar', 40],
+                    ['Apr', 15],
+                    ['May', 45],
+                    ['Jun', 38],
+                    ['Jul', 40],
+                    ['Aug', 10],
+                    ['Sep', 54],
+                    ['Oct', 10],
+                    ['Nov', 11],
+                    ['Dec', 0]
+                ]
             }
         }, {
             id: 'duracaoMediaReservas',
             type: 'JSON',
-            dataProcessor: function(connector) {
-                return new Promise((resolve, reject) => {
-                    fetch('/aluguel')
-                        .then(response => response.json())
-                        .then(data => {
-                            const durations = data.map(aluguel => {
-                                const inicio = new Date(aluguel.inicio);
-                                const fim = new Date(aluguel.fim);
-                                return (fim - inicio) / (1000 * 60 * 60); // Duração em horas
-                            });
-                            const averageDuration = durations.reduce((acc, duration) => acc + duration, 0) / durations.length;
-                            resolve({
-                                data: [['Car', 'Average Duration'], ...durations.map((duration, index) => [`Car ${index + 1}`, duration])]
-                            });
-                        })
-                        .catch(error => reject(error));
-                });
+            options: {
+                data: [
+                    ['Car', 'Average Duration'],
+                    ['HB20', 10],
+                    ['ARGO', 20],
+                    ['SW4', 30],
+                    ['STRADA', 40],
+                    ['MINI', 50],
+                    ['POLO', 60],
+                    ['UNO', 70],
+                    ['CORSA', 80],
+                    ['HRV', 90],
+                    ['IDEA', 100]
+                ]
+                
             }
         }, {
             id: 'frequenciaAluguelPorVeiculo',
