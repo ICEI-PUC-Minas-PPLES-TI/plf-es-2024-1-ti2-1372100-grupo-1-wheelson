@@ -16,23 +16,33 @@
       <h1 class="title">
         Descrição do problema
       </h1>
-      <p class="subtitle">
-        Descriçao do dano
+      <p class="subtitle" id=" problemaDescription">
+        Descriçao: <span id="problemaDescricao"></span><br>
       </p>
       <br>
+      
       <h2 class="title">
         Locador
       </h2>
-      <p class="subtitle">
-        Descriçao do locador
+      <p class="subtitle" id="locadorDescription">
+        Nome: <span id="locadorNome"></span><br>
+        CPF: <span id="locadorCNH"></span>
       </p>
       <br>
       <h2 class="title">
         Locatario
       </h2>
       <p class="subtitle">
-        Descriçao do locatario
+        Nome: <span id="locatarioNome"></span><br>
+        CNH: <span id="locatarioCNH"></span>
       </p>
+      <br>
+      <h2 class="title">
+        Carro
+      </h2>
+      <p class="subtitle">
+        Modelo: <span id="carroModelo"></span><br>
+        Placa: <span id="carroPlaca"></span>
     </div>
     <form class="feedback-form">
       <input class="feedback-form__email" placeholder="Valor" required="" /><textarea class="feedback-form__message"
@@ -43,5 +53,5 @@
   <!-- partial -->
 
 </body>
-
+<script src="../scripts/detalhesDanos.js"></script>
 </html>
