@@ -26,18 +26,18 @@ Dashboards.board('container', {
             options: {
                 data: [
                     ['Month', 'Taxa'],
-                    ['Jan', 20],
-                    ['Feb', 30],
+                    ['Jan', 5],
+                    ['Feb', 8],
                     ['Mar', 40],
-                    ['Apr', 50],
-                    ['May', 60],
-                    ['Jun', 70],
-                    ['Jul', 80],
-                    ['Aug', 90],
-                    ['Sep', 100],
-                    ['Oct', 110],
-                    ['Nov', 120],
-                    ['Dec', 130]
+                    ['Apr', 15],
+                    ['May', 45],
+                    ['Jun', 38],
+                    ['Jul', 40],
+                    ['Aug', 10],
+                    ['Sep', 54],
+                    ['Oct', 10],
+                    ['Nov', 11],
+                    ['Dec', 0]
                 ]
             }
         }, {
@@ -46,16 +46,16 @@ Dashboards.board('container', {
             options: {
                 data: [
                     ['Car', 'Average Duration'],
-                    ['Car 1', 10],
-                    ['Car 2', 20],
-                    ['Car 3', 30],
-                    ['Car 4', 40],
-                    ['Car 5', 50],
-                    ['Car 6', 60],
-                    ['Car 7', 70],
-                    ['Car 8', 80],
-                    ['Car 9', 90],
-                    ['Car 10', 100]
+                    ['HB20', 10],
+                    ['ARGO', 20],
+                    ['SW4', 30],
+                    ['STRADA', 40],
+                    ['MINI', 50],
+                    ['POLO', 60],
+                    ['UNO', 70],
+                    ['CORSA', 80],
+                    ['HRV', 90],
+                    ['IDEA', 100]
                 ]
                 
             }
