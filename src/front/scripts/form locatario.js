@@ -61,10 +61,6 @@ function initMultiStepForm() {
     current += 1;
 
     
-
-    
-};
-
 const submitBtn = document.querySelector(".submit");
 submitBtn.addEventListener("click", () => {
 
@@ -191,6 +187,10 @@ function validateInputs(ths) {
     }
     return inputsValid;
 }
+
+
+    
+};
 
 // Chamada da função apenas uma vez quando a página é carregada
 window.onload = function() {

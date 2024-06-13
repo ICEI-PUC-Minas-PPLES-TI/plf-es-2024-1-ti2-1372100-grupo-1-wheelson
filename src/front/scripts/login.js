@@ -77,7 +77,7 @@ const loginAdm = (nome,senha) => {
          else{
               alert("Email ou senha incorretos");
             }
-        //window.location.href = "menuAdm.html";
+        window.location.href = "menuAdm.html";
     }).catch(error => {
         console.error("Erro ao buscar login:", error);
     });
