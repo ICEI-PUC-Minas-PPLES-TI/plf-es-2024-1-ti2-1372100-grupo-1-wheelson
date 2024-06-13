@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.renatomatos.wheelson.util.StateAluguelEnum;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.NotBlank;
@@ -51,8 +52,8 @@ public class Aluguel {
     @Column(name = "horarioInicio", nullable = false)
     String horarioInicio;
 
-    @Column(name = "ativo", nullable = false)
-    boolean ativo = true; // valor padrão
+    @Column(name = "estado", nullable = false)
+    StateAluguelEnum  estado = StateAluguelEnum.ATIVO; // valor padrão
 
     @ManyToOne
     @JoinColumn(name = "id_carro", nullable = false, updatable = false)
@@ -75,9 +76,9 @@ public class Aluguel {
         if (statusPago == false) {
             statusPago = false;
         }
-        if (ativo == false) {
-            ativo = true;
-        }
+        
+            estado = StateAluguelEnum.ATIVO;
+        
     }
     @JsonIgnore
     public List<Problema> getProblema() {

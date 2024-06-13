@@ -14,7 +14,9 @@ import com.renatomatos.wheelson.models.Aluguel;
 import com.renatomatos.wheelson.models.Carro;
 import com.renatomatos.wheelson.models.Locador;
 import com.renatomatos.wheelson.models.Locatario;
+import com.renatomatos.wheelson.models.Problema;
 import com.renatomatos.wheelson.repositories.AluguelRepository;
+import com.renatomatos.wheelson.util.StateAluguelEnum;
 
 import jakarta.transaction.Transactional;
 
@@ -63,8 +65,8 @@ public Aluguel updatePartial(Long id, Map<String, Object> updates) {
             case "statusPago":
                 aluguel.setStatusPago((Boolean) value);
                 break;
-            case "ativo":
-                aluguel.setAtivo((Boolean) value);
+            case "estado":
+                aluguel.setEstado((StateAluguelEnum) value);
                 break;
                 case "valorTotal":
                 aluguel.setValorTotal((Double) value);
@@ -112,10 +114,15 @@ public Aluguel updatePartial(Long id, Map<String, Object> updates) {
     @Transactional
     public Aluguel finalizarAluguel(Long id) {
         Aluguel aluguel = findById(id);
-        if (aluguel.isStatusPago()) {
+        if (aluguel.isStatusPago()|| aluguel.getEstado() == StateAluguelEnum.FINALIZADO) {
             throw new RuntimeException("O aluguel já foi finalizado!");
         }
+        
+        for (Problema problema : aluguel.getProblema()) {    
+            aluguel.setValorTotal(aluguel.getValorTotal() +problema.getValorExtra()); 
+        }
         aluguel.setStatusPago(true);
+        aluguel.setEstado(StateAluguelEnum.FINALIZADO);
         Locador locador = aluguel.getLocador();
         locador.setSaldo(aluguel.getValorTotal() *0.8);
         locadorService.save(locador);
