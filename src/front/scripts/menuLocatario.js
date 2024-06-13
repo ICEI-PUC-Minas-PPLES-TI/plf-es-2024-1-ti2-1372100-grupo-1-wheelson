@@ -1,18 +1,21 @@
 document.addEventListener("DOMContentLoaded", function() {
-  const locadorId = getLocatarioId();
+  const locador= getLocatario();
+  const locadorId = locador.id;
   if (!locadorId) {
     alert("ID do locatario não encontrado!");
     return;
   }
+  var nomeLocatario = document.getElementById("nomeUser");
+  nomeLocatario.innerHTML = locador.nome;
   fetchRentalsData(locadorId);
 })
 
-  function getLocatarioId() {
+  function getLocatario() {
     const locadorData = localStorage.getItem('usuario');
     if (locadorData) {
       try {
         const locador = JSON.parse(locadorData);
-        return locador.id;
+        return locador;
       } catch (error) {
         console.error('Error parsing locador data:', error);
         return null;
@@ -37,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const container = document.getElementById("rentals-container");
     data.forEach(aluguel => {
       container.innerHTML += `
-        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-3 mb-3  ">
           <div class="profile-container">
           <div class="info-user">
             <img class="profile-photo" src="${aluguel.carro.image || '/src/front/images/car.png'}" alt="Vehicle Image">

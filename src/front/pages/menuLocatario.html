@@ -25,12 +25,12 @@
     <div class="content">
       <div class="container">
         <div class="info">
-          <h1>Bem Vindo </h1>
+          <h1>Bem Vindo, <span id="nomeUser"></span> </h1>
           <p>Esse site irá te ajudar a alugar, locar e se movimentar no meio urbano. <br><strong>Abaixo você pode escolher qual área quer acessar.</strong></p>
           <a href="/src/front/pages/aluguel.html">
             <button type="button"  data-toggle="modal" data-target="#myModal">Buscar veiculo</button>
           </a>
-          <h2>Alugueis em andamento:</h2>
+          <h2 class="mt-2">Alugueis em andamento:</h2>
           
 
           <div class="container2">
@@ -38,11 +38,17 @@
               <!-- Os dados dos veículos serão inseridos aqui pelo JavaScript -->
             </div>
           </div>
+
+          <h2>Alugueis em devolução</h2>
+          <div class="container2">
+            <div class="row" id="rentals-container">
+              <!-- Os dados dos veículos serão inseridos aqui pelo JavaScript -->
+            </div>
+        </div>
         </div>
         <div class="image">
           <img src="/src/front/images/img-1.png" width="500px">
         </div>
-      </div>
     </div>
   </div>
   <!-- End Landing Page -->
