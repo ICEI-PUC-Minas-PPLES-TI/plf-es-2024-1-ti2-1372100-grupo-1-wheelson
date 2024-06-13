@@ -62,6 +62,7 @@
 | GET   | `/problema/aluguel/{id}`                   | Recebe um problema pelo ID do aluguel                                       |
 | POST  | `/problema`                   | Cadastra um problema                                           |
 | PUT  | `/problema/{id}`                   | Altera os dados de um problema                                           |
+| PUT | `/problema/resolver/{id}`                   | Altera o status de um problema para resolvido                                           |
 | DELETE  | `/problema/{id}`                   | Apaga o perfil de um problema                                        |
 
 ## Adm

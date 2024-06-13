@@ -8,6 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.validation.annotation.Validated;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
@@ -74,6 +75,12 @@ public class ProblemaController {
         problema.setId_problema(id);
         Problema updatedProblema = problemaService.update(problema);
         return ResponseEntity.ok().body(updatedProblema);
+    }
+
+    @PutMapping("/resolver/{id}/{valor}")
+    public ResponseEntity<Problema> resolverProblema(@PathVariable Long id, @PathVariable double valor) {
+        Problema problema = problemaService.resolverProblema(valor, id);
+        return ResponseEntity.ok().body(problema);
     }
 
     @DeleteMapping("/{id}")

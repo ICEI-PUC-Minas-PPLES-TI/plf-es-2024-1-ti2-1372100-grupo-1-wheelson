@@ -70,6 +70,14 @@ public class ProblemaService {
     }
 
     @Transactional
+    public Problema resolverProblema(double valor, Long id) {
+        Problema problema = findById(id);
+        problema.setResolvido(true);
+        problema.setValorExtra(valor);
+        return problemaRepository.save(problema);
+    }
+
+    @Transactional
     public void delete(Long id) {
         findById(id);
         try {

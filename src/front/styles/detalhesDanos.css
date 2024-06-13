@@ -99,3 +99,12 @@
   h2 {
     font-size: 23px;
   }
+  .campos-desc{
+    font-size: 17px;
+
+  }
+  .subtitle{
+    
+    /*Bold*/
+    font-weight: 700;
+  }
