@@ -40,7 +40,7 @@ document.addEventListener("DOMContentLoaded", function() {
     rents.forEach(aluguel => {
       if(aluguel.estado === "EM_DEVOLUCAO"){
         createDevolutionCards(aluguel);
-        // return;
+        return;
       }
       else if (aluguel.estado ==="FINALIZADO")
         {
