@@ -34,6 +34,7 @@
 | GET   | `/carro/{id}`                   | Retorna um carro específico baseado no seu ID                                     |
 | GET   | `/carro/all`                   | Retorna uma lista com todos os carros|
 | GET  | `/carro/locador/{id}`                   |  Retorna uma lista de carros baseados no ID do locador                                           |
+| GET  | `/carro/disponiveis` | Retorna uma lista de carros disponíveis para aluguel                                           |
 | POST   | `/carro`                   | Cria um novo carro                                           |
 | PUT   | `/carro/{id}`                   | Atualiza um carro existente baseado no ID fornecido            |
 | DELETE   | `/carro/{id}`                   | Deleta um carro baseado no ID fornecido                                       |
@@ -47,7 +48,8 @@
 | GET   | `/aluguel/alugueis/locatario/{id}` | Busca todos os aluguéis pelo ID do locatário. |
 | GET   | `/aluguel/alugueis/carro/{id}` | Busca todos os aluguéis pelo ID do carro.           |
 | PATCH   | `/aluguel/{id}	`               | Atualiza parcialmente um aluguel (status de pagamento, ativo, valor total). |
-| PATCH   | `/aluguel/finalizar/{id}o` | Finaliza um aluguel e atualiza o status de pagamento, atribui saldo ao locador. |
+| PATCH   | `/aluguel/finalizar/{id}` | Finaliza um aluguel e atualiza o status de pagamento, atribui saldo ao locador. |
+| PATCH   | `/aluguel/devolver/{id}`  | Inicia o processo de devolução de um aluguel. |
 | POST   | `/aluguel`                  | Cria um novo aluguel.   |
 | DELETE   | `/aluguel/{id}	`          |Deleta um aluguel pelo seu ID. |
 | GET    | `/aluguel/taxa-mensal`|Recebe um MAP<Mês,taxa>, referente ao indicador de desempenho "Taxa de alugueis feitas no mês"    |

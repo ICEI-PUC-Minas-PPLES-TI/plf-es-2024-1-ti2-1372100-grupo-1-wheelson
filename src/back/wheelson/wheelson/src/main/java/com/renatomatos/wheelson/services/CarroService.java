@@ -26,6 +26,11 @@ public class CarroService {
         Optional<Carro> carro = this.carroRepository.findById(id);
         return carro.orElseThrow(() -> new RuntimeException("Carro não encontrado: id: " + id));
     }
+    
+    public void save(Carro carro) {
+        carroRepository.save(carro);
+    }
+
 
     @Transactional
     public Carro create(Carro carro) {
@@ -61,6 +66,13 @@ public class CarroService {
         List<Carro> carros = (List<Carro>) this.carroRepository.findAll();
         return carros.stream()
                 .sorted((c1, c2) -> Boolean.compare(c2.isDisponivel(), c1.isDisponivel()))
+                .collect(Collectors.toList());
+    }
+    @Transactional
+    public List<Carro> findAllByDisponivel(){
+        List<Carro> carros = (List<Carro>) this.carroRepository.findAll();
+        return carros.stream()
+                .filter(Carro::isDisponivel)
                 .collect(Collectors.toList());
     }
 

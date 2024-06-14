@@ -110,6 +110,15 @@ public Aluguel updatePartial(Long id, Map<String, Object> updates) {
         return alugueis;
     }
 
+    public Aluguel iniciarDevolucao(Long id) {
+        Aluguel aluguel = findById(id);
+        if (aluguel.getEstado() != StateAluguelEnum.ATIVO) {
+            throw new RuntimeException("O aluguel não está em andamento!");
+        }
+        aluguel.setEstado(StateAluguelEnum.EM_DEVOLUCAO);
+        save(aluguel);
+        return aluguel;
+    }
     
     @Transactional
     public Aluguel finalizarAluguel(Long id) {
@@ -123,6 +132,9 @@ public Aluguel updatePartial(Long id, Map<String, Object> updates) {
         }
         aluguel.setStatusPago(true);
         aluguel.setEstado(StateAluguelEnum.FINALIZADO);
+        Carro carro = aluguel.getCarro();
+        carro.setDisponivel(true);
+        carroService.save(carro);
         Locador locador = aluguel.getLocador();
         locador.setSaldo(aluguel.getValorTotal() *0.8);
         locadorService.save(locador);

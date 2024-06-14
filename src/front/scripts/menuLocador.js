@@ -35,15 +35,57 @@ document.addEventListener("DOMContentLoaded", function() {
   }
 
   function createRentCards(rents) {
-    const container = document.getElementById("aluguel-container");
+    var container = document.getElementById("aluguel-container");
     container.innerHTML = ''; // Limpar o container antes de adicionar novos cartões
     rents.forEach(aluguel => {
+      if(aluguel.estado === "EM_DEVOLUCAO"){
+        createDevolutionCards(aluguel);
+        // return;
+      }
+      else if (aluguel.estado ==="FINALIZADO")
+        {
+          return;
+        }
+
       
-      const janela = `<a class="btn" href="/src/front/pages/danos.html?aluguel=${aluguel.id_aluguel}">Danos</a>`;
+      
       const vehicleCard = document.createElement('div');
       vehicleCard.className = 'col-xs-12 col-sm-6 col-md-6 col-lg-3';
       vehicleCard.innerHTML = `
-        <div class="profile-container">
+         <div class="profile-container">
+        <div class="info-user">
+          <img class="profile-photo" src="${aluguel.carro.image || '/src/front/images/car.png'}" alt="Vehicle Image">
+          <div class="name-user">
+            <span class="name">${aluguel.carro.modelo}</span>
+            
+          </div>
+        </div>
+        <div class="bio-user">
+          <p class="bio-info" style="font-weight: bold;">
+            Marca: ${aluguel.carro.marca}
+            <br>
+            Valor diário: R$ ${aluguel.carro.valorDiario}
+            <br>
+            Placa: ${aluguel.carro.placa}
+            <br>
+            Data de início: ${aluguel.dataInicio}
+            <br>
+            Data de término: ${aluguel.dataFim}
+          </p>
+          
+        </div>
+      </div>
+      `;
+      container.appendChild(vehicleCard);
+    });}
+
+
+    function createDevolutionCards(aluguel) {
+      var container = document.getElementById("devolution-container");
+      const janela = `<a class="btn" href="/src/front/pages/danos.html?aluguel=${aluguel.id_aluguel}">Danos</a>`;
+      container.innerHTML += `
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-3 mt-3 mb-3   ">
+          <div class="profile-container">
           <div class="info-user">
             <img class="profile-photo" src="${aluguel.carro.image || '/src/front/images/car.png'}" alt="Vehicle Image">
             <div class="name-user">
@@ -52,27 +94,40 @@ document.addEventListener("DOMContentLoaded", function() {
             </div>
           </div>
           <div class="bio-user">
-            <p class="bio-info">
+            <p class="bio-info" style="font-weight: bold;">
               Marca: ${aluguel.carro.marca}
               <br>
               Valor diário: R$ ${aluguel.carro.valorDiario}
+              <br>
+              Placa: ${aluguel.carro.placa}
+              <br>
+              Data de início: ${aluguel.dataInicio}
+              <br>
+              Data de término: ${aluguel.dataFim}
             </p>
             <div class="buttons-options">
               <div class="row">
+                <div class="col-12" >
+                  <a class="btn" onclick="confirmarDevolucao(${aluguel.id_aluguel})" >Confirmar Devolução</a>
+                  
+                </div>
+              </div>
+              <div class="row">
                 <div class="col-12">
-                  <a class="btn" onclick="deleteVehicle(${aluguel.carro.id})">Apagar</a>
-                  ${janela}
+                ${janela}
+                  
                 </div>
               </div>
             </div>
           </div>
         </div>
+        </div>
       `;
-      container.appendChild(vehicleCard);
-    });}
+    }
 
+    
   function createVehicleCards(vehicles) {
-    const container = document.getElementById("vehicles-container");
+    var container = document.getElementById("vehicles-container");
     container.innerHTML = ''; // Limpar o container antes de adicionar novos cartões
     vehicles.forEach(vehicle => {
       if (vehicle.disponivel === false) {
@@ -142,3 +197,24 @@ function deleteVehicle(vehicleId) {
   })
   .catch(error => console.error('Error:', error));
 }
+
+
+function confirmarDevolucao(id_aluguel) {
+  fetch(`http://localhost:8080/aluguel/finalizar/${id_aluguel}`, {
+    method: 'PATCH',
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  })
+  .then(response => {
+    if (response.ok) {
+      alert('Devolução confirmada com sucesso!');
+      location.reload(); 
+    } else {
+      alert('Falha ao confirmar a devolução.');
+    }
+  })
+  .catch(error => console.error('Error:', error)
+  )
+}
+

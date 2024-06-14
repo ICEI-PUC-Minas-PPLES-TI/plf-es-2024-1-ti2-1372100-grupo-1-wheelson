@@ -51,6 +51,12 @@ public class AluguelController {
         return ResponseEntity.noContent().build();
     }
 
+    @PatchMapping("/devolver/{id}")
+    public ResponseEntity<Aluguel> iniciarDevolucao(@PathVariable Long id) {
+        Aluguel aluguel = this.aluguelService.iniciarDevolucao(id);
+        return ResponseEntity.ok().body(aluguel);
+    }
+
     //Método para atualizar um aluguel parcialmente, seja o status de pagamento, ativo ou valor total
     @PatchMapping("/{id}")
     public Aluguel patchAluguel(@PathVariable Long id, @RequestBody @Valid Map<String, Object> updates) {

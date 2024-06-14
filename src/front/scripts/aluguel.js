@@ -9,7 +9,7 @@
 
   async function fetchVehicles() {
     try {
-      const response = await fetch('http://localhost:8080/carro/all');
+      const response = await fetch('http://localhost:8080/carro/disponiveis');
       const data = await response.json();
       await createVehicleCards(data);
     } catch (error) {

@@ -107,5 +107,16 @@ public class CarroController {
         List<Carro> carros = this.carroService.findByLocadorId(id);
         return ResponseEntity.ok().body(carros);
     }
+
+    @Operation(description = "Busca todos os carros disponíveis")
+    @ApiResponses(value = {
+            @ApiResponse(responseCode = "200", description = "Lista de carros disponíveis"),
+            @ApiResponse(responseCode = "404", description = "Nenhum carro disponível")
+    })
+    @GetMapping("/disponiveis")
+    public ResponseEntity<List<Carro>> findAllByDisponivel() {
+        List<Carro> carros = this.carroService.findAllByDisponivel();
+        return ResponseEntity.ok().body(carros);
+    }
     
 }
