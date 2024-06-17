@@ -11,6 +11,10 @@ _Visão geral da interação do usuário por meio das telas do sistema. Apresent
 
 ## 6.2. Telas do processo 1
 
+### Descrição do processo
+
+É essencial para qualquer software deseja sempre se manter ativo, que seus usuários sejam identificados e verificados, assim mantendo uma boa segurança para seu sistema. Tendo em vista isso, o processo Gerenciamento de clientes visa controlar essa admissão dos usuários para uma plataforma mais segura e eficiente.
+
 [`Telas do processo 1`]![2](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/135463549/33b341a8-ffa4-4a1d-b1dc-236582cc7a97)
 
 ![IMG-20240617-WA0020](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/135463549/8bd64806-58ec-4fbb-b8ff-2d018055e1d8)
