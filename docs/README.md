@@ -128,7 +128,7 @@ _O WheelsOn é uma plataforma inovadora que conecta proprietários de veículos 
 
 _Com grande potencial de crescimento, o WheelsOn pode se expandir para outras cidades e oferecer novos serviços, como seguro e assistência. O WheelsOn é um projeto promissor que transforma o mercado de aluguel de veículos, aliando tecnologia, sustentabilidade e economia compartilhada para um futuro mais verde e acessível._
 
-### Observações pessoais de cada membro do grupo:
+### 7.1 Observações pessoais de cada membro do grupo:
 
 **Gabrielle Lira Dantas Wanderley**
 
