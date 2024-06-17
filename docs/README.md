@@ -9,7 +9,7 @@
 
 **Luiz Victor Aldenucci, luizvictoraldenucci@gmail.com**
 
-**Pedro Araújo Franco, email do aluno 5**
+**Pedro Araújo Franco, pedroaraujofranco@live.com**
 
 **Renato Matos Alves Penna, renatomatosap@gmail.com**
 
