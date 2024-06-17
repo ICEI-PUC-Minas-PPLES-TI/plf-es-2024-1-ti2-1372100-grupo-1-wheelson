@@ -44,6 +44,7 @@ _No cenário atual, o aluguel de veículos se destaca como uma solução flexív
 ### 1.1 Contextualização
 
 _No cenário atual, o aluguel de automóveis se destaca como uma solução flexível e acessível para atender às necessidades de viagens. O projeto propõe uma plataforma intuitiva para conectar proprietários de automóveis com consumidores, oferecendo múltiplas opções para diferentes necessidades. Com foco na praticidade e transparência, os clientes podem fazer reservas online, garantindo segurança e qualidade, com rigorosas medidas de higiene. Além de proporcionar comodidade, o projeto promove práticas sustentáveis, incentivando o compartilhamento de veículos, promovendo viagens mais eficientes e ecologicamente corretas._
+
 Referências:
 https://mobilidade.estadao.com.br/mobilidade-para-que/4-vantagens-de-alugar-um-carro-no-dia-a-dia/
 https://portal.fgv.br/artigos/aumento-locacoes-veiculos-brasil
