@@ -3,7 +3,7 @@
 
 **Gabrielle Lira Dantas Wanderley, gabrielle.lira.d.w@gmail.com**
 
-**Julia Gabriela de Resende, email do aluno 2**
+**Julia Gabriela de Resende, juliarsende@hotmail.com**
 
 **Leandra Costa Ramos, email do aluno 3**
 
