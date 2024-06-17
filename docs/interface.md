@@ -65,7 +65,7 @@ _Um processo eficiente de gerenciamento de veículos é fundamental para garanti
 
 _No processo de aluguel de veículos, o cliente inicialmente faz uma solicitação, e a agência verifica a disponibilidade do veículo desejado. Uma vez confirmada a disponibilidade, o cliente fornece informações pessoais e de pagamento, e a agência emite a confirmação da reserva junto com os detalhes do aluguel. Após receber as instruções, o cliente retira o veículo no local e data combinados. Ao término do período de uso, o cliente devolve o veículo no local previamente descrito._
 
-## 6.3. Telas do processo 4
+## 6.4. Telas do processo 4
 
 ### Descrição do processo
 
