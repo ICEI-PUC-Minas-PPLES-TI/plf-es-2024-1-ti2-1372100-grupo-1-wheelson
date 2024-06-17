@@ -13,7 +13,7 @@ _Visão geral da interação do usuário por meio das telas do sistema. Apresent
 
 ### Descrição do processo
 
-É essencial para qualquer software deseja sempre se manter ativo, que seus usuários sejam identificados e verificados, assim mantendo uma boa segurança para seu sistema. Tendo em vista isso, o processo Gerenciamento de clientes visa controlar essa admissão dos usuários para uma plataforma mais segura e eficiente.
+_É essencial para qualquer software deseja sempre se manter ativo, que seus usuários sejam identificados e verificados, assim mantendo uma boa segurança para seu sistema. Tendo em vista isso, o processo Gerenciamento de clientes visa controlar essa admissão dos usuários para uma plataforma mais segura e eficiente._
 
 [`Telas do processo 1`]![2](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/135463549/33b341a8-ffa4-4a1d-b1dc-236582cc7a97)
 
@@ -41,6 +41,10 @@ _Visão geral da interação do usuário por meio das telas do sistema. Apresent
 
 
 ## 6.3. Telas do processo 2
+
+### Descrição do processo
+
+_Um processo eficiente de gerenciamento de veículos é fundamental para garantir a disponibilidade e qualidade da frota de uma locadora de veículos. O processo de Gerenciamento de Veículos visa controlar o cadastramento e a disponibilidade dos veículos para garantir que a locadora possa atender às demandas dos clientes de forma segura e eficaz._
 
 [`Tela do processo 2`]![Imagem do WhatsApp de 2024-06-17 à(s) 15 54 24_a443c430](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/135463549/e45879bf-c09e-4a3e-9836-0c18ac5db2c3)
 
