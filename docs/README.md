@@ -29,8 +29,9 @@ _Instituto de Informática e Ciências Exatas – Pontifícia Universidade Cató
 
 ---
 
-_**Resumo**. Escrever aqui o resumo. O resumo deve contextualizar rapidamente o trabalho, descrever seu objetivo e, ao final, 
-mostrar algum resultado relevante do trabalho (até 10 linhas)._
+## Resumo
+
+_No cenário atual, o aluguel de veículos se destaca como uma solução flexível e acessível para atender às crescentes demandas de mobilidade. Este projeto propõe a criação de uma plataforma intuitiva que conecta proprietários de veículos com consumidores, oferecendo uma gama de opções para diferentes necessidades. Com foco na praticidade e transparência, a plataforma permitirá que os clientes façam reservas online, garantindo segurança e qualidade por meio de rigorosas medidas de higiene e segurança. Além de proporcionar conveniência, o projeto promove práticas sustentáveis, incentivando o compartilhamento de veículos e contribuindo para uma mobilidade mais eficiente e ecologicamente correta. Como resultado relevante, espera-se uma significativa melhoria na gestão da frota e na agilidade dos processos de reserva e devolução, aumentando a satisfação dos clientes e a eficiência operacional das empresas de aluguel de veículos.
 
 ---
 
