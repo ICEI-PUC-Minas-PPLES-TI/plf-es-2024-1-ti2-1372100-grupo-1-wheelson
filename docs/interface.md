@@ -65,5 +65,7 @@ _Um processo eficiente de gerenciamento de veículos é fundamental para garanti
 
 ## 6.3. Telas do processo 4
 
+### Descrição do processo
 
+_Se consiste no processo de devoução de um veículo para o locador. Trata as medidas necessarias em caso de entrega do automóvel em condições piores do que na data inicial de aluguel._
 
