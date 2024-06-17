@@ -143,10 +143,13 @@ public Aluguel updatePartial(Long id, Map<String, Object> updates) {
         locador.setSaldo(aluguel.getValorTotal() *0.8);
         locadorService.save(locador);
          //ENVIAR BOLETO PARA O LOCATARIO
-        //  Email email = new Email();
-        //     email.setTo(aluguel.getLocatario().getEmail());
-        //     email.setSubject("Boleto de pagamento");
-        //     //Colocar body html aqui
+         Email email = new Email();
+            email.setTo(aluguel.getLocatario().getEmail());
+            email.setSubject("Boleto de pagamento");
+            email.setBody("Olá, " + aluguel.getLocatario().getNome() + "!<br><br>"
+                    + "O aluguel do carro " + aluguel.getCarro().getModelo() + " foi finalizado com sucesso.<br>"
+                    + "O valor total do aluguel foi de R$ " + aluguel.getValorTotal() + ".<br>");
+            emailService.sendEmail(email, aluguel.getLocatario().getNome(), aluguel.getLocatario().getCpf(), aluguel.getValorTotal());
         return aluguelRepository.save(aluguel);
     }
 

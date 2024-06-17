@@ -24,15 +24,27 @@ public class EmailTestingController {
     @Autowired
     private EmailService emailService;
 
-    @GetMapping
-    public String sendEmailTest( @RequestBody Email email) {
+    
+    @GetMapping("/test/{nomeSacado}/{cpfSacado}/{valorAluguel}")
+    public String sendEmailTest( @RequestBody Email email, @PathVariable String nomeSacado, @PathVariable String cpfSacado, @PathVariable double valorAluguel) {
         
         System.out.println("Email: " + email.getTo() + " - " + email.getSubject() + " - " + email.getBody());
+        System.out.println("Nome: " + nomeSacado + " - CPF: " + cpfSacado + " - Valor: " + valorAluguel);
         if (email == null || email.getTo() == null || email.getSubject() == null || email.getBody() == null) {
             return "Erro: Parâmetros de e-mail inválidos";
         }
+        if (email.getTo().isEmpty() || email.getSubject().isEmpty() || email.getBody().isEmpty()) {
+            return "Erro: Parâmetros de e-mail vazios";
+        }
+        if (nomeSacado == null || cpfSacado == null) {
+            return "Erro: Parâmetros de boleto inválidos";
+        }
+        if (nomeSacado.isEmpty() || cpfSacado.isEmpty()) {
+            return "Erro: Parâmetros de boleto vazios";
+        }
 
-        emailService.sendEmail(email.getTo(), email.getSubject(), email.getBody());
+
+        emailService.sendEmail(email, nomeSacado, cpfSacado, valorAluguel);
         return "Email enviado com sucesso";
     }
 }

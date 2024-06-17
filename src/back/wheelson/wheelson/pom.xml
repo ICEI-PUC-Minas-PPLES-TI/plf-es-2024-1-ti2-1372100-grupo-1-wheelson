@@ -93,9 +93,36 @@
 	<artifactId>spring-boot-starter-mail</artifactId>
    </dependency>
 
-   
+   <!--Gerador de Boleto-->
+   <dependency>
+    <groupId>br.com.caelum.stella</groupId>
+    <artifactId>caelum-stella-boleto</artifactId>
+    <version>2.1.6</version>
+</dependency>
+
+<dependency>
+    <groupId>jakarta.servlet</groupId>
+    <artifactId>jakarta.servlet-api</artifactId>
+    <version>5.0.0</version>
+    <scope>provided</scope>
+</dependency>
+
+<dependency>
+        <groupId>com.itextpdf</groupId>
+        <artifactId>itextpdf</artifactId>
+        <version>5.5.13.3</version>
+    </dependency>
+
+
+
 
 	</dependencies>
+<repositories>
+    <repository>
+        <id>caelum-stella-repo</id>
+        <url>https://repository.caelum.com.br</url>
+    </repository>
+</repositories>
 
 	<build>
 		<plugins>
