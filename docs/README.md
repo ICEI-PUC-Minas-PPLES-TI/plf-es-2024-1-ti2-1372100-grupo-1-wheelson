@@ -77,7 +77,8 @@ https://turo.com/
 ## 2. Participantes do processo
 
 Os participantes dos processos deste sistema se consistem em:
--Usuários (Locadores e/ou Locatários).
+
+°Usuários (Locadores e/ou Locatários).
 -Equipe de gestão WheelsOn.
 
 ## 3. Modelagem do processo de negócio
