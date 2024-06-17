@@ -50,7 +50,7 @@ https://portal.fgv.br/artigos/aumento-locacoes-veiculos-brasil
 
 ### 1.2 Problema
 
-_ No setor de aluguel de carros, há dificuldades em gerenciar adequadamente a frota e agilizar os processos de reserva e devolução. Isso leva a problemas como falta ou excesso de veículos em certas localidades e atrasos nas transações, afetando tanto a empresa quanto a experiência do cliente. Uma solução automatizada e eficiente é necessária para resolver essas questões._
+_No setor de aluguel de carros, há dificuldades em gerenciar adequadamente a frota e agilizar os processos de reserva e devolução. Isso leva a problemas como falta ou excesso de veículos em certas localidades e atrasos nas transações, afetando tanto a empresa quanto a experiência do cliente. Uma solução automatizada e eficiente é necessária para resolver essas questões._
 
 ### 1.3 Objetivo geral
 
