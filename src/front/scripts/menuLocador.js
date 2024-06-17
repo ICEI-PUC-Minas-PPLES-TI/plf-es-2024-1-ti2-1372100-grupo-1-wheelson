@@ -1,10 +1,14 @@
 document.addEventListener("DOMContentLoaded", function() {
+  const locador = getLocador();
   const locadorId = getLocadorId();
   if (!locadorId) {
     alert("ID do locador não encontrado!");
     return;
+    
   }
 
+  var nomeLocador = document.getElementById("nomeUser");
+  nomeLocador.innerHTML = locador.nome;
   console.log("Locador ID:", locadorId); // Verificação do ID do locador
 
   fetchVehicles();
@@ -179,6 +183,22 @@ function getLocadorId() {
     return null;
   }
 }
+
+function getLocador() {
+  const locadorData = localStorage.getItem('usuario');
+  if (locadorData) {
+    try {
+      const locador = JSON.parse(locadorData);
+      return locador;
+    } catch (error) {
+      console.error('Error parsing locador data:', error);
+      return null;
+    }
+  } else {
+    return null;
+  }
+}
+
 
 function deleteVehicle(vehicleId) {
   fetch(`http://localhost:8080/carro/${vehicleId}`, {
