@@ -9,7 +9,7 @@
 
 **Luiz Victor Aldenucci, luizvictoraldenucci@gmail.com**
 
-**Pedro Araújo Franco, email do aluno 5**
+**Pedro Araújo Franco, pedroaraujofranco@live.com**
 
 **Renato Matos Alves Penna, renatomatosap@gmail.com**
 
@@ -98,7 +98,7 @@ _O projeto WheelsOn visa preencher esta lacuna deixada pelo mercado, unindo prop
 
 [PROCESSO 2 - Gerenciamento de veiculos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-2-Gerenciamento-de-veiculos.md )
 
-[PROCESSO 3 - Reserva de veículo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-3-Reserva-de-ve%C3%ADculo.md)
+[PROCESSO 3 - Reserva de veículo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-3-Aluguel-de-ve%C3%ADculos.md)
 
 [PROCESSO 4 - Nome do Processo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-4-Devolu%C3%A7%C3%A3o-de-ve%C3%ADculo.md)
 
@@ -124,7 +124,25 @@ _A sessão a seguir apresenta a descrição do produto de software desenvolvido.
 
 ## 7. Conclusão
 
-_Apresente aqui a conclusão do seu trabalho. Discussão dos resultados obtidos no trabalho, onde se verifica as observações pessoais de cada aluno. Poderá também apresentar sugestões de novas linhas de estudo._
+_O WheelsOn é uma plataforma inovadora que conecta proprietários de veículos com consumidores, oferecendo um sistema de compartilhamento eficiente, seguro e sustentável. Através da automação e praticidade, o WheelsOn otimiza a experiência do cliente e garante a gestão eficiente da frota, beneficiando tanto proprietários quanto locatários. O projeto impulsiona a economia local, gera renda extra para proprietários e contribui para a redução de emissões e congestionamentos._
+
+_Com grande potencial de crescimento, o WheelsOn pode se expandir para outras cidades e oferecer novos serviços, como seguro e assistência. O WheelsOn é um projeto promissor que transforma o mercado de aluguel de veículos, aliando tecnologia, sustentabilidade e economia compartilhada para um futuro mais verde e acessível._
+
+### 7.1 Observações pessoais de cada membro do grupo:
+
+**Gabrielle Lira Dantas Wanderley**
+
+**Julia Gabriela de Resende**
+
+_O WheelsOn é um projeto promissor com o potencial de revolucionar o mercado de aluguel de veículos no Brasil. Com uma execução cuidadosa e adaptação às necessidades do mercado, o projeto pode alcançar um grande sucesso e gerar um impacto positivo na sociedade. Me sinto muito grata a toda a nossa equipe, que se dedicou muito para que essa plataforma pudesse nascer._
+
+**Leandra Costa Ramos**
+
+**Luiz Victor Aldenucci**
+
+**Pedro Araújo Franco**
+
+**Renato Matos Alves Penna**
 
 # REFERÊNCIAS
 

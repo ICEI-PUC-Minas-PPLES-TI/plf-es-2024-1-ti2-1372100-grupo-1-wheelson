@@ -25,4 +25,5 @@ _Descreva qual(is) tecnologias você vai usar para resolver o seu problema, ou s
 | IDE            | VS Code         |
 | Construção de protótipos | Figma |
 | Documentação de rotas  | Swagger         |
+| Envio de emails | MailTrap        |
 
