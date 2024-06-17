@@ -16,6 +16,7 @@ import com.renatomatos.wheelson.models.Locador;
 import com.renatomatos.wheelson.models.Locatario;
 import com.renatomatos.wheelson.models.Problema;
 import com.renatomatos.wheelson.repositories.AluguelRepository;
+import com.renatomatos.wheelson.util.Email;
 import com.renatomatos.wheelson.util.StateAluguelEnum;
 
 import jakarta.transaction.Transactional;
@@ -33,6 +34,9 @@ public class AluguelService {
 
     @Autowired
     private LocadorService locadorService;
+
+    @Autowired
+    private EmailService emailService;
 
     public void save(Aluguel aluguel) {
         aluguelRepository.save(aluguel);
@@ -138,6 +142,11 @@ public Aluguel updatePartial(Long id, Map<String, Object> updates) {
         Locador locador = aluguel.getLocador();
         locador.setSaldo(aluguel.getValorTotal() *0.8);
         locadorService.save(locador);
+         //ENVIAR BOLETO PARA O LOCATARIO
+        //  Email email = new Email();
+        //     email.setTo(aluguel.getLocatario().getEmail());
+        //     email.setSubject("Boleto de pagamento");
+        //     //Colocar body html aqui
         return aluguelRepository.save(aluguel);
     }
 
