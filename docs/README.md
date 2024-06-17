@@ -154,7 +154,7 @@ _Atualizar os links e adicionar novos links para que a estrutura do código este
 
 [Código do front-end](../src/front) -- [repositório do código do front-end](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/tree/main/src/front)
 
-[Código do back-end](../src/back)  -- repositório do código do back-end
+[Código do back-end](../src/back)  -- [repositório do código do back-end](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/tree/main/src/back)
 
 
 ## Apêndice B - Apresentação final
