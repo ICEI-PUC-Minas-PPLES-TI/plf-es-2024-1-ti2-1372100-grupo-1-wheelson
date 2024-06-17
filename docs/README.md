@@ -96,7 +96,7 @@ _O projeto WheelsOn visa preencher esta lacuna deixada pelo mercado, unindo prop
 
 [PROCESSO 2 - Gerenciamento de veiculos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-2-Gerenciamento-de-veiculos.md )
 
-[PROCESSO 3 - Reserva de veículo]([processo-3-Reserva-de-veículo.md "Detalhamento do Processo 3."](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-3-Reserva-de-ve%C3%ADculo.md))
+[PROCESSO 3 - Reserva de veículo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-3-Reserva-de-ve%C3%ADculo.md))
 
 [PROCESSO 4 - Nome do Processo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-4-Devolu%C3%A7%C3%A3o-de-ve%C3%ADculo.md)
 
