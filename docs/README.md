@@ -3,7 +3,7 @@
 
 **Gabrielle Lira Dantas Wanderley, gabrielle.lira.d.w@gmail.com**
 
-**Julia Gabriela de Resende, email do aluno 2**
+**Julia Gabriela de Resende, juliarsende@hotmail.com**
 
 **Leandra Costa Ramos, email do aluno 3**
 
@@ -15,22 +15,23 @@
 
 ---
 
-Professores:
+## Professores:
 
-** Eveline Alonso Veloso **
+**Eveline Alonso Veloso**
 
-** Juliana Amaral Baroni de Carvalho **
+**Juliana Amaral Baroni de Carvalho**
 
 ---
 
-_Curso de Engenharia de Software
+_Curso de Engenharia de Software_
 
 _Instituto de Informática e Ciências Exatas – Pontifícia Universidade Católica de Minas Gerais (PUC MINAS), Belo Horizonte – MG – Brasil_
 
 ---
 
-_**Resumo**. Escrever aqui o resumo. O resumo deve contextualizar rapidamente o trabalho, descrever seu objetivo e, ao final, 
-mostrar algum resultado relevante do trabalho (até 10 linhas)._
+## Resumo
+
+_No cenário atual, o aluguel de veículos se destaca como uma solução flexível e acessível para atender às crescentes demandas de mobilidade. Este projeto propõe a criação de uma plataforma intuitiva que conecta proprietários de veículos com consumidores, oferecendo uma gama de opções para diferentes necessidades. Com foco na praticidade e transparência, a plataforma permitirá que os clientes façam reservas online, garantindo segurança e qualidade por meio de rigorosas medidas de higiene e segurança. Além de proporcionar conveniência, o projeto promove práticas sustentáveis, incentivando o compartilhamento de veículos e contribuindo para uma mobilidade mais eficiente e ecologicamente correta. Como resultado relevante, espera-se uma significativa melhoria na gestão da frota e na agilidade dos processos de reserva e devolução, aumentando a satisfação dos clientes e a eficiência operacional das empresas de aluguel de veículos._
 
 ---
 
@@ -42,53 +43,54 @@ _No cenário atual, o aluguel de veículos se destaca como uma solução flexív
 
 ### 1.1 Contextualização
 
-_No cenário atual, o aluguel de automóveis se destaca como uma solução flexível e acessível para atender às necessidades de viagens. O projeto propõe uma plataforma intuitiva para conectar proprietários de automóveis com consumidores, oferecendo múltiplas opções para diferentes necessidades. Com foco na praticidade e transparência, os clientes podem fazer reservas online, garantindo segurança e qualidade, com rigorosas medidas de higiene. Além de proporcionar comodidade, o projeto promove práticas sustentáveis, incentivando o compartilhamento de veículos, promovendo viagens mais eficientes e ecologicamente corretas.
+_No cenário atual, o aluguel de automóveis se destaca como uma solução flexível e acessível para atender às necessidades de viagens. O projeto propõe uma plataforma intuitiva para conectar proprietários de automóveis com consumidores, oferecendo múltiplas opções para diferentes necessidades. Com foco na praticidade e transparência, os clientes podem fazer reservas online, garantindo segurança e qualidade, com rigorosas medidas de higiene. Além de proporcionar comodidade, o projeto promove práticas sustentáveis, incentivando o compartilhamento de veículos, promovendo viagens mais eficientes e ecologicamente corretas._
+
 Referências:
 https://mobilidade.estadao.com.br/mobilidade-para-que/4-vantagens-de-alugar-um-carro-no-dia-a-dia/
 https://portal.fgv.br/artigos/aumento-locacoes-veiculos-brasil
 
 ### 1.2 Problema
 
-_ No setor de aluguel de carros, há dificuldades em gerenciar adequadamente a frota e agilizar os processos de reserva e devolução. Isso leva a problemas como falta ou excesso de veículos em certas localidades e atrasos nas transações, afetando tanto a empresa quanto a experiência do cliente. Uma solução automatizada e eficiente é necessária para resolver essas questões._
+_No setor de aluguel de carros, há dificuldades em gerenciar adequadamente a frota e agilizar os processos de reserva e devolução. Isso leva a problemas como falta ou excesso de veículos em certas localidades e atrasos nas transações, afetando tanto a empresa quanto a experiência do cliente. Uma solução automatizada e eficiente é necessária para resolver essas questões._
 
 ### 1.3 Objetivo geral
 
-Desenvolver um sistema para automação dos processos de aluguel de um veículo.
+_Desenvolver um sistema para automação dos processos de aluguel de um veículo._
 
 #### 1.3.1 Objetivos específicos
 
-_Elaborar mecanismos de pesquisa e filtragem de veículos disponiveis para aluguel ._
+-_Elaborar mecanismos de pesquisa e filtragem de veículos disponiveis para aluguel ._
 
-_Desenvolver requisitos que visem a gerência dos veículos registrados e seus status correntes (disponível ou alugado)._
+-_Desenvolver requisitos que visem a gerência dos veículos registrados e seus status correntes (disponível ou alugado)._
 
-_Desenvolver um sistema interno de pagamentos._
+-_Desenvolver um sistema interno de pagamentos._
 
-_Desenvolver funcionalidade própria para que clientes escolham entre se cadastrar como locadores ou locatários de veículos._
+-_Desenvolver funcionalidade própria para que clientes escolham entre se cadastrar como locadores ou locatários de veículos._
 
-_Desenvolver funcionalidades apropriadas para aluguel e devolução de veículos alugados, auxiliando a comunicação entre locador e locatário._
+-_Desenvolver funcionalidades apropriadas para aluguel e devolução de veículos alugados, auxiliando a comunicação entre locador e locatário._
 ### 1.4 Justificativas
 
-_Alugar um carro pode se tornar um processo trabalhoso, estressante e extremamente burocrático. Os sistemas disponíveis no mercado brasileiro que suprem a necessidade da população de alugar veículos hoje não é comparável, em relação à praticidade, rapidez e dinamismo, aos disponíveis em países de primeiro mundo. Com isso em mente, nosso projeto visa unificar, simplificar e abrir novas oportunidades para aqueles que desejam alugar veículos ou disponibilizá-los para aluguel.
+_Alugar um carro pode se tornar um processo trabalhoso, estressante e extremamente burocrático. Os sistemas disponíveis no mercado brasileiro que suprem a necessidade da população de alugar veículos hoje não é comparável, em relação à praticidade, rapidez e dinamismo, aos disponíveis em países de primeiro mundo. Com isso em mente, nosso projeto visa unificar, simplificar e abrir novas oportunidades para aqueles que desejam alugar veículos ou disponibilizá-los para aluguel._
 Como referência, um serviço de compartilhamento de veículos norte-americano, disponibilizado nos Estados Unidos e Canadá:
 https://turo.com/
 
 ## 2. Participantes do processo
 
 Os participantes dos processos deste sistema se consistem em:
+
 -Usuários (Locadores e/ou Locatários).
+
 -Equipe de gestão WheelsOn.
 
 ## 3. Modelagem do processo de negócio
 
 ### 3.1. Análise da situação atual
 
-Hoje, caso alguém precise se deslocar para algum local, é possível utilizar aplicativos de motoristas de aluguel, como Uber, 99, dentre outros. Também existe a possibilidade de o cliente alugar um veículo para utilizá-lo pelo período desejado, porém, diferentemente de alguns países, não possuímos em nossa região um sistema que possibilite a disponibilização de seu própio carro para aluguel.
+_Hoje, caso alguém precise se deslocar para algum local, é possível utilizar aplicativos de motoristas de aluguel, como Uber, 99, dentre outros. Também existe a possibilidade de o cliente alugar um veículo para utilizá-lo pelo período desejado, porém, diferentemente de alguns países, não possuímos em nossa região um sistema que possibilite a disponibilização de seu própio carro para aluguel._
 
 ### 3.2. Descrição geral da proposta
 
-
-O projeto WheelsOn visa preencher esta lacuna deixada pelo mercado, unindo proprietarios de veiculos e locatários, facilitando o processo de aluguel autonômo. Usuários poderão se cadastrar tanto como locador ou locatário, realizar aluguéis de veículos ou então, disponibilizar os própios automóveis para aluguel. O processo de pagamento será todo realizado pelo aplicativo, evitando assim contato com terceiros.
-
+_O projeto WheelsOn visa preencher esta lacuna deixada pelo mercado, unindo proprietarios de veiculos e locatários, facilitando o processo de aluguel autonômo. Usuários poderão se cadastrar tanto como locador ou locatário, realizar aluguéis de veículos ou então, disponibilizar os própios automóveis para aluguel. O processo de pagamento será todo realizado pelo aplicativo, evitando assim contato com terceiros._
 
 ### 3.3. Modelagem dos processos
 
@@ -96,27 +98,27 @@ O projeto WheelsOn visa preencher esta lacuna deixada pelo mercado, unindo propr
 
 [PROCESSO 2 - Gerenciamento de veiculos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-2-Gerenciamento-de-veiculos.md )
 
-[PROCESSO 3 - Reserva de veículo]([processo-3-Reserva-de-veículo.md "Detalhamento do Processo 3."](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-3-Reserva-de-ve%C3%ADculo.md))
+[PROCESSO 3 - Reserva de veículo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-3-Reserva-de-ve%C3%ADculo.md)
 
 [PROCESSO 4 - Nome do Processo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-4-Devolu%C3%A7%C3%A3o-de-ve%C3%ADculo.md)
 
 ## 4. Projeto da solução
 
-O documento a seguir apresenta o detalhamento do projeto da solução. São apresentadas duas seções que descrevem, respectivamente: modelo relacional e tecnologias.
+_O documento a seguir apresenta o detalhamento do projeto da solução. São apresentadas duas seções que descrevem, respectivamente: modelo relacional e tecnologias._
 
 [Projeto da solução](solution-design.md "Detalhamento do projeto da solução: modelo relacional e tecnologias.")
 
 
 ## 5. Indicadores de desempenho
 
-O documento a seguir apresenta os indicadores de desempenho dos processos.
+_O documento a seguir apresenta os indicadores de desempenho dos processos._
 
 [Indicadores de desempenho dos processos](performance-indicators.md)
 
 
 ## 6. Interface do sistema
 
-A sessão a seguir apresenta a descrição do produto de software desenvolvido. 
+_A sessão a seguir apresenta a descrição do produto de software desenvolvido._
 
 [Documentação da interface do sistema](interface.md)
 
@@ -152,9 +154,9 @@ _Atualizar os links e adicionar novos links para que a estrutura do código este
 
 ## Apêndice A - Código fonte
 
-[Código do front-end](../src/front) -- repositório do código do front-end
+[Código do front-end](../src/front) -- [repositório do código do front-end](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/tree/main/src/front)
 
-[Código do back-end](../src/back)  -- repositório do código do back-end
+[Código do back-end](../src/back)  -- [repositório do código do back-end](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/tree/main/src/back)
 
 
 ## Apêndice B - Apresentação final
