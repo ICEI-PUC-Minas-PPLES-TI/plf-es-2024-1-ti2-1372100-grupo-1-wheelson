@@ -7,7 +7,8 @@ _Visão geral da interação do usuário por meio das telas do sistema. Apresent
 
 _Descrição da tela principal do sistema._
 
-[`Tela principal do sistema`](images/)
+[`Tela principal do sistema`]![1](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/135463549/49a444a9-e92d-4b44-a756-5f6051bb9a06)
+
 
 
 ## 6.2. Telas do processo 1
