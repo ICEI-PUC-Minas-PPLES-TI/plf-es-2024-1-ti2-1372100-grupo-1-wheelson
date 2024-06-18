@@ -2,16 +2,18 @@ cff-version: 1.0.1
 message: Please cite this software using these metadata.
 title: 
 authors:
-  - family-names: sobrenome do aluno 1
-    given-names: Nome do aluno 1 
-  - family-names: sobrenome do aluno 2
-    given-names: Nome do aluno 2 
-  - family-names: sobrenome do aluno 3
-    given-names: Nome do aluno 3 
-  - family-names: sobrenome do aluno 4
-    given-names: Nome do aluno 4 
-  - family-names: sobrenome do aluno 5
-    given-names: Nome do aluno 5 
+  - family-names: Matos Alves Penna
+    given-names: Renato
+  - family-names: Araújo Franco
+    given-names: Pedro
+  - family-names: Lira Dantas Wanderley
+    given-names: Gabrielle
+  - family-names: Aldenucci
+    given-names: Luiz Victor
+  - family-names: Gabriela de Resende
+    given-names: Julia
+      - family-names: Costa Ramos
+    given-names: Leandra
 
   - name-suffix: Professor
     affiliation: PUC Minas

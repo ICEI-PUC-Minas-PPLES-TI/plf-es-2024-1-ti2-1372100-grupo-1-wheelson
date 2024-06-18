@@ -130,8 +130,12 @@ _Com grande potencial de crescimento, o WheelsOn pode se expandir para outras ci
 
 ### 7.1 Observações pessoais de cada membro do grupo:
 
-**Gabrielle Lira Dantas Wanderley**
+**Renato Matos Alves Penna**
 
+    WheelsOn se finalizou como um projeto bem sucedido, em um mercado não muito explorado no Brasil. Foi aplicado com excelência o conhecimento adquirido ao longo do curso de Engenharia de Software, utilizando metodologias ágeis, tecnologias modernas e modelagem de processos de negócios. O projeto se baseou em tecnologias como Java Spring Boot, e tecnologias front-end com HTML, CSS e JavaScript.
+    
+    Caso o projeto fosse continuado, seria interessante a implementação de um sistema de avaliação dos veículos e locadores, para que os locatários possam ter uma experiência mais segura e confiável. Também gostaria de aprimorar a interface e a segurança do sistema. Tornando-o mais próximo de um aplicativo de aluguel de veículos de sucesso.
+    
 **Julia Gabriela de Resende**
 
 _O WheelsOn é um projeto promissor com o potencial de revolucionar o mercado de aluguel de veículos no Brasil. Com uma execução cuidadosa e adaptação às necessidades do mercado, o projeto pode alcançar um grande sucesso e gerar um impacto positivo na sociedade. Me sinto muito grata a toda a nossa equipe, que se dedicou muito para que essa plataforma pudesse nascer._
@@ -142,7 +146,7 @@ _O WheelsOn é um projeto promissor com o potencial de revolucionar o mercado de
 
 **Pedro Araújo Franco**
 
-**Renato Matos Alves Penna**
+**Gabrielle Lira Dantas Wanderley**
 
 # REFERÊNCIAS
 
