@@ -113,15 +113,13 @@ document.addEventListener("DOMContentLoaded", function() {
               <div class="row">
                 <div class="col-12" >
                   <a class="btn" onclick="confirmarDevolucao(${aluguel.id_aluguel})" >Confirmar Devolução</a>
-                  
+                  </div>
+                  </br>
+                   <div class="col-12">
+                ${janela}   
                 </div>
               </div>
-              <div class="row">
-                <div class="col-12">
-                ${janela}
-                  
-                </div>
-              </div>
+              
             </div>
           </div>
         </div>
