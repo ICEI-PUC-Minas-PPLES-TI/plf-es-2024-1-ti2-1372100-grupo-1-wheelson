@@ -91,3 +91,13 @@ _Se consiste no processo de devoução de um veículo para o locador. Trata as m
 
 
 ![WhatsApp Image 2024-06-18 at 11 11 35 (2)](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/3a80459f-6026-440a-854a-140114b37449)
+
+##6.5 Telas do Adm
+
+
+![WhatsApp Image 2024-06-18 at 11 13 20 (1)](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/fd6faa08-2d26-4099-b73c-8bed657d1875)
+
+![WhatsApp Image 2024-06-18 at 11 13 20 (2)](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/582092a0-2d84-4916-a120-3133a1aee845)
+
+![WhatsApp Image 2024-06-18 at 11 13 34](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/5f44e328-2165-4a30-8652-bb8ddc060693)
+
