@@ -5,7 +5,7 @@
 
 **Julia Gabriela de Resende, juliarsende@hotmail.com**
 
-**Leandra Costa Ramos, email do aluno 3**
+**Leandra Costa Ramos, lee.ramss15@gmail.com**
 
 **Luiz Victor Aldenucci, luizvictoraldenucci@gmail.com**
 
@@ -132,9 +132,9 @@ _Com grande potencial de crescimento, o WheelsOn pode se expandir para outras ci
 
 **Renato Matos Alves Penna**
 
-    WheelsOn se finalizou como um projeto bem sucedido, em um mercado não muito explorado no Brasil. Foi aplicado com excelência o conhecimento adquirido ao longo do curso de Engenharia de Software, utilizando metodologias ágeis, tecnologias modernas e modelagem de processos de negócios. O projeto se baseou em tecnologias como Java Spring Boot, e tecnologias front-end com HTML, CSS e JavaScript.
+   _WheelsOn se finalizou como um projeto bem sucedido, em um mercado não muito explorado no Brasil. Foi aplicado com excelência o conhecimento adquirido ao longo do curso de Engenharia de Software, utilizando metodologias ágeis, tecnologias modernas e modelagem de processos de negócios. O projeto se baseou em tecnologias como Java Spring Boot, e tecnologias front-end com HTML, CSS e JavaScript._
     
-    Caso o projeto fosse continuado, seria interessante a implementação de um sistema de avaliação dos veículos e locadores, para que os locatários possam ter uma experiência mais segura e confiável. Também gostaria de aprimorar a interface e a segurança do sistema. Tornando-o mais próximo de um aplicativo de aluguel de veículos de sucesso.
+   _Caso o projeto fosse continuado, seria interessante a implementação de um sistema de avaliação dos veículos e locadores, para que os locatários possam ter uma experiência mais segura e confiável. Também gostaria de aprimorar a interface e a segurança do sistema. Tornando-o mais próximo de um aplicativo de aluguel de veículos de sucesso._
     
 **Julia Gabriela de Resende**
 
@@ -142,9 +142,15 @@ _O WheelsOn é um projeto promissor com o potencial de revolucionar o mercado de
 
 **Leandra Costa Ramos**
 
+_Participar desse projeto foi muito legal. Gostei de trabalhar com colegas dedicados e aprender com eles. Juntos, conseguimos fazer um ótimo trabalho e trocar muitas ideias. Foi uma experiência positiva e divertida._
+
 **Luiz Victor Aldenucci**
 
+_O WheelsOn é um projeto inovador de aluguel de carros que oferece uma ampla gama de veículos, desde modelos econômicos até de luxo. Com preços competitivos, transparência nas tarifas e uma rede de pontos de retirada estratégica, o WheelsOn garante conveniência e segurança aos seus clientes. Integrando tecnologia moderna e práticas sustentáveis, o WheelsOn se destaca como uma solução prática e confiável para diversas necessidades de mobilidade._
+
 **Pedro Araújo Franco**
+_A dedicação e esforço dos integrantes do grupo contribuiu para a realização de um projeto que, na minha opinião, atendeu a todas as expectativas e e atingiu todos os resultados esperados durante o planejamento. Achei a separação das etapas da implementação do projeto por sprints muito eficiente. Me senti sobrecarregado em poucos momentos e senti prazer genuíno em implementar as partes que fiz. _
+
 
 **Gabrielle Lira Dantas Wanderley**
 
