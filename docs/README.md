@@ -149,6 +149,8 @@ _Participar desse projeto foi muito legal. Gostei de trabalhar com colegas dedic
 _O WheelsOn é um projeto inovador de aluguel de carros que oferece uma ampla gama de veículos, desde modelos econômicos até de luxo. Com preços competitivos, transparência nas tarifas e uma rede de pontos de retirada estratégica, o WheelsOn garante conveniência e segurança aos seus clientes. Integrando tecnologia moderna e práticas sustentáveis, o WheelsOn se destaca como uma solução prática e confiável para diversas necessidades de mobilidade._
 
 **Pedro Araújo Franco**
+_A dedicação e esforço dos integrantes do grupo contribuiu para a realização de um projeto que, na minha opinião, atendeu a todas as expectativas e e atingiu todos os resultados esperados durante o planejamento. Achei a separação das etapas da implementação do projeto por sprints muito eficiente. Me senti sobrecarregado em poucos momentos e senti prazer genuíno em implementar as partes que fiz. _
+
 
 **Gabrielle Lira Dantas Wanderley**
 
