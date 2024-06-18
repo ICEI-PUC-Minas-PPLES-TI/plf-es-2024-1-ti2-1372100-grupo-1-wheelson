@@ -132,9 +132,9 @@ _Com grande potencial de crescimento, o WheelsOn pode se expandir para outras ci
 
 **Renato Matos Alves Penna**
 
-   _ WheelsOn se finalizou como um projeto bem sucedido, em um mercado não muito explorado no Brasil. Foi aplicado com excelência o conhecimento adquirido ao longo do curso de Engenharia de Software, utilizando metodologias ágeis, tecnologias modernas e modelagem de processos de negócios. O projeto se baseou em tecnologias como Java Spring Boot, e tecnologias front-end com HTML, CSS e JavaScript._
+   _WheelsOn se finalizou como um projeto bem sucedido, em um mercado não muito explorado no Brasil. Foi aplicado com excelência o conhecimento adquirido ao longo do curso de Engenharia de Software, utilizando metodologias ágeis, tecnologias modernas e modelagem de processos de negócios. O projeto se baseou em tecnologias como Java Spring Boot, e tecnologias front-end com HTML, CSS e JavaScript._
     
-    _Caso o projeto fosse continuado, seria interessante a implementação de um sistema de avaliação dos veículos e locadores, para que os locatários possam ter uma experiência mais segura e confiável. Também gostaria de aprimorar a interface e a segurança do sistema. Tornando-o mais próximo de um aplicativo de aluguel de veículos de sucesso._
+    Caso o projeto fosse continuado, seria interessante a implementação de um sistema de avaliação dos veículos e locadores, para que os locatários possam ter uma experiência mais segura e confiável. Também gostaria de aprimorar a interface e a segurança do sistema. Tornando-o mais próximo de um aplicativo de aluguel de veículos de sucesso._
     
 **Julia Gabriela de Resende**
 
