@@ -64,6 +64,18 @@ _Um processo eficiente de gerenciamento de veículos é fundamental para garanti
 ### Descrição do processo
 
 _No processo de aluguel de veículos, o cliente inicialmente faz uma solicitação, e a agência verifica a disponibilidade do veículo desejado. Uma vez confirmada a disponibilidade, o cliente fornece informações pessoais e de pagamento, e a agência emite a confirmação da reserva junto com os detalhes do aluguel. Após receber as instruções, o cliente retira o veículo no local e data combinados. Ao término do período de uso, o cliente devolve o veículo no local previamente descrito._
+![WhatsApp Image 2024-06-18 at 11 07 35](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/284fb4e6-c95d-411f-af5a-de2aa9247de9)
+
+![WhatsApp Image 2024-06-18 at 11 07 56](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/6a3a2bb8-24b8-4026-a792-8ba33a68cb36)
+
+![WhatsApp Image 2024-06-18 at 11 08 13](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/122964a5-55bc-4f94-80be-76c5854ebf29)
+
+
+![WhatsApp Image 2024-06-18 at 11 08 25](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/fcf521e4-ad29-42fc-8e68-6c56619d1587)
+
+
+![WhatsApp Image 2024-06-18 at 11 08 55](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/9635fc10-09d4-4bf6-90cd-35f637ba7bb5)
+
 
 ## 6.4. Telas do processo 4
 
@@ -71,3 +83,11 @@ _No processo de aluguel de veículos, o cliente inicialmente faz uma solicitaç�
 
 _Se consiste no processo de devoução de um veículo para o locador. Trata as medidas necessarias em caso de entrega do automóvel em condições piores do que na data inicial de aluguel._
 
+![WhatsApp Image 2024-06-18 at 11 11 34](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/165b5232-70cc-4b96-9e88-d8b3e32b2b7e)
+![WhatsApp Image 2024-06-18 at 11 11 34 (1)](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/141cd013-09e9-4dac-8990-996f6b77c459)
+![WhatsApp Image 2024-06-18 at 11 11 35](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/80711b25-cc54-4d2a-bbce-114bf7afe381)
+![WhatsApp Image 2024-06-18 at 11 11 35 (1)](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/d858e1d2-4b11-425e-b74e-40a420738edf)
+
+
+
+![WhatsApp Image 2024-06-18 at 11 11 35 (2)](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/89420964/3a80459f-6026-440a-854a-140114b37449)
