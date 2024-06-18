@@ -5,7 +5,7 @@
 
 **Julia Gabriela de Resende, juliarsende@hotmail.com**
 
-**Leandra Costa Ramos, email do aluno 3**
+**Leandra Costa Ramos, lee.ramss15@gmail.com**
 
 **Luiz Victor Aldenucci, luizvictoraldenucci@gmail.com**
 
@@ -143,6 +143,8 @@ _O WheelsOn é um projeto promissor com o potencial de revolucionar o mercado de
 **Leandra Costa Ramos**
 
 **Luiz Victor Aldenucci**
+
+_O WheelsOn é um projeto inovador de aluguel de carros que oferece uma ampla gama de veículos, desde modelos econômicos até de luxo. Com preços competitivos, transparência nas tarifas e uma rede de pontos de retirada estratégica, o WheelsOn garante conveniência e segurança aos seus clientes. Integrando tecnologia moderna e práticas sustentáveis, o WheelsOn se destaca como uma solução prática e confiável para diversas necessidades de mobilidade._
 
 **Pedro Araújo Franco**
 
