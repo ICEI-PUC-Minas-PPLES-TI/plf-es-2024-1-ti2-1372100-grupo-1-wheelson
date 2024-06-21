@@ -63,9 +63,11 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     function fillReview() {
+      const urlParams = new URLSearchParams(window.location.search);
+      const valordiario = urlParams.get('dailycost');
         reviewTime.textContent = `Horário de encontro: ${stepDetails.time}`;
         reviewDays.textContent = `Data final do aluguel: ${stepDetails.days}`;
-        const totalCost = calculaDiferencaDias(dataAtual,stepDetails.days)*stepDetails.costPerDay;;
+        const totalCost = calculaDiferencaDias(dataAtual,stepDetails.days)*valordiario;
         reviewCost.textContent = `Custo total: R$ ${totalCost}`;
     }
 
@@ -78,7 +80,8 @@ document.addEventListener("DOMContentLoaded", function() {
         const urlParams = new URLSearchParams(window.location.search);
         const idVeiculo = urlParams.get('vehicleId');
         console.log("idveiculo: ",idVeiculo)
-        const totalCost = calculaDiferencaDias(dataAtual,stepDetails.days)*stepDetails.costPerDay;
+        const valordiario = urlParams.get('dailycost');
+        const totalCost = calculaDiferencaDias(dataAtual,stepDetails.days)*valordiario;
         const params = new URLSearchParams(window.location.search)
         const idLocador= params.get('idLocador');
         const data_fim =  new Date(stepDetails.days);
