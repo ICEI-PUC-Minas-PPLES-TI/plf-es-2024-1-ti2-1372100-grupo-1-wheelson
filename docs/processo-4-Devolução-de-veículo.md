@@ -2,7 +2,8 @@
 
 _Se consiste no processo de devoução de um veículo para o locador. Trata as medidas necessarias em caso de entrega do automóvel em condições piores do que na data inicial de aluguel._
 
-![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129300086/248b516d-fed0-4759-b77a-9d6e1efd4316)
+![image](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/assets/129300086/d0b69828-0dfd-48ee-87e3-9fb15f913609)
+
 
 
 
