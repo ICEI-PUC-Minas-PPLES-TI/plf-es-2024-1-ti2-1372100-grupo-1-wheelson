@@ -49,7 +49,7 @@
             <div class="buttons-options">
               <div class="row">
                 <div class="col-12">
-                <a href="/src/front/pages/formAluguel.html?vehicleId=${carro.id}&idLocador=${carro.locador.id}">
+                <a href="/src/front/pages/formAluguel.html?vehicleId=${carro.id}&idLocador=${carro.locador.id}&dailycost=${carro.valorDiario}">
                   <button class="btn btn-outline-light btn-sm">Alugar</button>
                 </a>
                 </div>
