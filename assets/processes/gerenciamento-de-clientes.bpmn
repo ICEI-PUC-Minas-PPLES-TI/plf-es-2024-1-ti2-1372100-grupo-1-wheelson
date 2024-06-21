@@ -32,7 +32,7 @@
       <bpmn:outgoing>Flow_01un2mo</bpmn:outgoing>
       <bpmn:outgoing>Flow_1t5nxsi</bpmn:outgoing>
     </bpmn:exclusiveGateway>
-    <bpmn:userTask id="Activity_0gt4c2z" name="Preencher dados necessários">
+    <bpmn:userTask id="Activity_0gt4c2z" name="Cadastrar dados como locador">
       <bpmn:incoming>Flow_01un2mo</bpmn:incoming>
       <bpmn:outgoing>Flow_0rmcbz5</bpmn:outgoing>
     </bpmn:userTask>
@@ -47,6 +47,7 @@
     <bpmn:sequenceFlow id="Flow_0n9rrn4" sourceRef="Activity_1nhre1x" targetRef="Event_10hwgn9" />
     <bpmn:serviceTask id="Activity_1nhre1x" name="Inserir usuário no sistema">
       <bpmn:incoming>Flow_01h9ksg</bpmn:incoming>
+      <bpmn:incoming>Flow_0rmcbz5</bpmn:incoming>
       <bpmn:outgoing>Flow_0n9rrn4</bpmn:outgoing>
       <bpmn:property id="Property_0l2ug2h" name="__targetRef_placeholder" />
       <bpmn:dataInputAssociation id="DataInputAssociation_0noh9n8">
@@ -67,15 +68,14 @@
     <bpmn:dataStoreReference id="DataStoreReference_026xsyj" />
     <bpmn:userTask id="Activity_0bw9chi" name="Atualizar status do usuário">
       <bpmn:incoming>Flow_11vrtx0</bpmn:incoming>
-      <bpmn:incoming>Flow_0rmcbz5</bpmn:incoming>
       <bpmn:outgoing>Flow_1l4xrwv</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:sequenceFlow id="Flow_0rmcbz5" sourceRef="Activity_0gt4c2z" targetRef="Activity_0bw9chi" />
+    <bpmn:sequenceFlow id="Flow_0rmcbz5" sourceRef="Activity_0gt4c2z" targetRef="Activity_1nhre1x" />
     <bpmn:userTask id="Activity_1tcqxe1" name="Analisar documentação">
       <bpmn:incoming>Flow_036zhvs</bpmn:incoming>
       <bpmn:outgoing>Flow_11vrtx0</bpmn:outgoing>
     </bpmn:userTask>
-    <bpmn:userTask id="Activity_0mnrss0" name="Preencher documentação necessária">
+    <bpmn:userTask id="Activity_0mnrss0" name="Cadastrar dados como locatário">
       <bpmn:incoming>Flow_1t5nxsi</bpmn:incoming>
       <bpmn:outgoing>Flow_036zhvs</bpmn:outgoing>
     </bpmn:userTask>
@@ -138,12 +138,12 @@
         <dc:Bounds x="230" y="550" width="100" height="80" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
-      <bpmndi:BPMNShape id="TextAnnotation_0xidkg2_di" bpmnElement="TextAnnotation_0xidkg2">
-        <dc:Bounds x="190" y="220" width="100" height="70" />
-        <bpmndi:BPMNLabel />
-      </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="Activity_1jwnlxn_di" bpmnElement="Activity_0mnrss0">
         <dc:Bounds x="340" y="260" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="TextAnnotation_0xidkg2_di" bpmnElement="TextAnnotation_0xidkg2">
+        <dc:Bounds x="190" y="220" width="100" height="70" />
         <bpmndi:BPMNLabel />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge id="Flow_1dsma8a_di" bpmnElement="Flow_1dsma8a">
@@ -213,9 +213,8 @@
       <bpmndi:BPMNEdge id="Flow_0rmcbz5_di" bpmnElement="Flow_0rmcbz5">
         <di:waypoint x="630" y="320" />
         <di:waypoint x="630" y="360" />
-        <di:waypoint x="555" y="360" />
-        <di:waypoint x="555" y="580" />
-        <di:waypoint x="520" y="580" />
+        <di:waypoint x="860" y="360" />
+        <di:waypoint x="860" y="510" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge id="Association_0eb732t_di" bpmnElement="Association_0eb732t">
         <di:waypoint x="340" y="278" />
