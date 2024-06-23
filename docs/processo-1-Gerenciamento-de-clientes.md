@@ -14,25 +14,26 @@
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-|    Cadastrar-se como Locador   |  Tela de cadastro de locador        |       |
-| Cadastrar-se como Locatário | Tela de cadastro de locatário |     |
+|    Locar um veículo   |  Tela de cadastro de locador        |       |
+| Alugar um veículo | Tela de cadastro de locatário |     |
 | Voltar | Retorna a página inicial  | cancel |
 
 **Cadastrar dados como locatário**
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-|   Nome          |   Caixa de texto |                |                   |
-|   CPF           | Caixa de texto   | 000.000.000-00 |                   |
-| Data de nascimento | Data          |    00/00/0000  |                   |
+|   Nome Completo         |   Caixa de texto |                |                   |
 |   E-mail        | Caixa de texto   |                |                   |
 |   Telefone     | Número            | (00) 9 0000-0000 |                 |  
+| Data de nascimento | Data          |    00/00/0000  |                   |
 | Rua            | Caixa de texto  |                |                     |
 | Bairro        | Caixa de texto  |                   |                   |
 | Número         | Número            |                |                   |
 | Cidade        | Caixa de seleção   |                |                   |
 | UF            | Caixa de seleção   |                |                   |
-| Foto do documento CNH        | Arquivo  |                |              |          
+|   CPF           | Caixa de texto   | 000.000.000-00 |                   |
+| Registro documento CNH        | Caixa de texto  |                |              |   
+| Senha        | Caixa de texto  |                   |                   |       
             
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
@@ -44,7 +45,7 @@
 
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
-|   Nome          |   Caixa de texto |                |                   |
+|   Nome Completo         |   Caixa de texto |                |                   |
 |   CPF           | Caixa de texto   | 000.000.000-00 |                   |
 | Data de nascimento | Data          |    00/00/0000  |                   |
 |   E-mail        | Caixa de texto   |                |                   |
@@ -54,10 +55,11 @@
 | Número         | Número            |                |                   |
 | Cidade        | Caixa de seleção   |                |                   |
 | UF            | Caixa de seleção   |                |                   |
+|Senha        | Caixa de texto  |                   |                   |
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-|   Enviar            |  Envia dados para Tela de Atualizar status do usuário      |       Default            |
+|   Enviar            |  Volta para o Menu principal      |       Default            |
 | Voltar | Retorna para tela anterior | cancel |
 
 
@@ -67,25 +69,15 @@
 | **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
 | ---             | ---              | ---            | ---               |
 |   Nome          |   Caixa de texto |   Apenas visualização             |                   |
+| N° de registro CNH | Caixa de texto | Apenas visualização |                   |       
 |   CPF           | Caixa de texto   | Apenas visualização|                   |
-| Data de nascimento | Data          |   Apenas visualização  |                   |
-|   E-mail        | Caixa de texto   |      Apenas visualização          |                   |
-|   Telefone     | Número            | Apenas visualização |                 |  
-| Rua            | Caixa de texto  |      Apenas visualização          |                     |
-| Bairro        | Caixa de texto  |         Apenas visualização          |                   |
-| Número         | Número            |         Apenas visualização       |                   |
-| Cidade        | Caixa de seleção   |        Apenas visualização        |                   |
-| UF            | Caixa de seleção   |        Apenas visualização        |                   |
-| Foto do documento CNH        | Imagem  |      Apenas visualização          |              |         
 
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| Proxima tarefa       | Tela de Atualizar status do usuário            |                 |
+
 
 **Atualizar status do usuário**
 | **Comandos**         |  **Destino**                   | **Tipo**          |
 | ---                  | ---                            | ---               |
-|         Aprovar          |      Fim do processo    |                   |
-|         Reprovar         |    Cancela processo                  | cancel  |
+|         Aprovar          |    Aprova usuário e Fim do processo    |                   |
+
 
 

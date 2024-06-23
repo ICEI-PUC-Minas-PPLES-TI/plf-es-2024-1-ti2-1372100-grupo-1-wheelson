@@ -59,8 +59,6 @@ _Desenvolver um sistema para automação dos processos de aluguel de um veículo
 
 #### 1.3.1 Objetivos específicos
 
--_Elaborar mecanismos de pesquisa e filtragem de veículos disponiveis para aluguel ._
-
 -_Desenvolver requisitos que visem a gerência dos veículos registrados e seus status correntes (disponível ou alugado)._
 
 -_Desenvolver um sistema interno de pagamentos._
@@ -94,13 +92,13 @@ _O projeto WheelsOn visa preencher esta lacuna deixada pelo mercado, unindo prop
 
 ### 3.3. Modelagem dos processos
 
-[PROCESSO 1 - Nome do Processo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-1-Gerenciamento-de-clientes.md)  
+[PROCESSO 1 - Gerenciamento de Clientes](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-1-Gerenciamento-de-clientes.md)  
 
-[PROCESSO 2 - Gerenciamento de veiculos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-2-Gerenciamento-de-veiculos.md )
+[PROCESSO 2 - Gerenciamento de veículos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-2-Gerenciamento-de-veiculos.md )
 
-[PROCESSO 3 - Reserva de veículo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-3-Aluguel-de-ve%C3%ADculos.md)
+[PROCESSO 3 - Aluguel de veículo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-3-Aluguel-de-ve%C3%ADculos.md)
 
-[PROCESSO 4 - Nome do Processo](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-4-Devolu%C3%A7%C3%A3o-de-ve%C3%ADculo.md)
+[PROCESSO 4 - Devolução de veículos](https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson/blob/main/docs/processo-4-Devolu%C3%A7%C3%A3o-de-ve%C3%ADculo.md)
 
 ## 4. Projeto da solução
 
