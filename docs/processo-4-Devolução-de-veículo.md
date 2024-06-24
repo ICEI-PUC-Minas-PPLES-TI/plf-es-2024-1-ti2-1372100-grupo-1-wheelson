@@ -24,13 +24,13 @@ _Se consiste no processo de devoução de um veículo para o locador. Trata as m
 | Enviar            | Envio para a equipe WheelsOn     | default           |
 
 
-**Finalizar aluguel**
+**Iniciar Devolução**
 
 
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
 | [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| Finalizar aluguel            | Fim do Processo de devolução     | default           |
+| Devolver veículo            | Tela inicial "menu locatário"    | default           |
 
 
 **Registrar o valor extra a ser pago pelo proprietário**
@@ -45,28 +45,12 @@ _Se consiste no processo de devoução de um veículo para o locador. Trata as m
 | ---                  | ---                            | ---               |
 | Enviar            | Envio para o locatário     | default           |
 
-**Escolher forma de pagamento (cartão de crédito ou pix)**
 
-| **Comandos**         |  **Destino**                   | **Tipo**          |
-| ---                  | ---                            | ---               |
-| [Nome do botão/link] | Atividade/processo de destino  | (default/cancel/  ) |
-| PIX                  | Tela de pagamento por pix      | default                  |
-|   Cartão de crédito |  Tela de preenchimento de dados do cartão| default       |
 
-**Preencher dados do cartão de crédito e realizar pagamento**
-
-| **Campo**       | **Tipo**         | **Restrições** | **Valor default** |
-| ---             | ---              | ---            | ---               |
-| [Nome do campo] | [tipo de dados]  |                |                   |
-|  Nome do titular  | Caixa de texto  |                |                   |
-|  Número do cartão     |    Número   |0000 0000 0000 0000    |                   |
-|   Data de validade  |    Data        |   00/00/0000       |                   |
-|  CVV               |    Número              |3 dígitos                |           |
-|CPF ou CNPJ do titular   |Caixa de texto   |      formato de CPF ou CNPJ          |   |
-
+**Confirmar devolução**
 | **Comandos**         |  **Destino**                   | **Tipo** |
 | ---                  | ---                            | ---               |
-| Realizar pagamento   |Tela de finalização do aluguel    | default           |
+| Confirmar devolução  |Fim do processo de aluguel    | default           |
 
 
 
