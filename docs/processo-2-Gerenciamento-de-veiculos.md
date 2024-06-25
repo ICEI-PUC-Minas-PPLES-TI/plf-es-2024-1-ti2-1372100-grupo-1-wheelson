@@ -59,7 +59,7 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | Placa           | Caixa de texto   |sem caracteres especiais|     0000000       |
 | Modelo          | Caixa de texto   |                |                   |
 | Ano de fabricação| Data            |                |                   |
-| Valor Diário| Número            |       R$00,00         |                   |
+| Valor (R$)  | Número            |       R$00,00         |                   |
 | Rua de encontro    | Caixa de texto   |                |                   |
 | Bairro de encontro| Data            |                |                   |
 | Ponto de referência     | Caixa de texto   |                |                   |
