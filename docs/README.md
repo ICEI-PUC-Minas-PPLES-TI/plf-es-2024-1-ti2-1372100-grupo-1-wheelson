@@ -151,6 +151,7 @@ _A dedicação e esforço dos integrantes do grupo contribuiu para a realizaçã
 
 
 **Gabrielle Lira Dantas Wanderley**
+_Concluir o projeto WheelsOn foi um marco significativo em minha formação como engenheiro de software. A plataforma não apenas atingiu seus objetivos de negócio, mas também se tornou um testemunho das habilidades que adquirimos ao longo do curso. Estou ansioso para aplicar esse aprendizado em futuros desafios e continuar a explorar o vasto campo da engenharia de software._
 
 # REFERÊNCIAS
 
