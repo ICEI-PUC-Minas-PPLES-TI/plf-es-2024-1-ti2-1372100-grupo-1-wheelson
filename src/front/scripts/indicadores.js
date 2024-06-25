@@ -1,16 +1,13 @@
 import Dashboards from 'src/front/scripts/dashboards.src.js';
 
-const plotLines = [{
-    label: {
-        text: 'Today',
-        align: 'left',
-        rotation: 0,
-        y: 0
-    },
-    value: Date.UTC(2023, 5, 2),
-    zIndex: 7
-}];
+// Função para buscar dados do backend
+const fetchData = (url) => {
+    return fetch(url)
+        .then(response => response.json())
+        .catch(error => console.error('Error fetching data:', error));
+};
 
+// Configuração do Highcharts
 Highcharts.setOptions({
     credits: {
         enabled: false
@@ -20,66 +17,55 @@ Highcharts.setOptions({
     }
 });
 
+// Dados de exemplo para duracaoMediaReservas
+const duracaoMediaReservasData = [
+    ['Car', 'Average Duration'],
+    ['HB20', 10],
+    ['ARGO', 20],
+    ['SW4', 30],
+    ['STRADA', 40],
+    ['MINI', 50],
+    ['POLO', 60],
+    ['UNO', 70],
+    ['CORSA', 80],
+    ['HRV', 90],
+    ['IDEA', 100]
+];
+
 Dashboards.board('container', {
     dataPool: {
         connectors: [{
             id: 'taxaMensalAlugueis',
             type: 'JSON',
-            options: {
-                data: [
-                    ['Month', 'Taxa'],
-                    ['Jan', 5],
-                    ['Feb', 8],
-                    ['Mar', 40],
-                    ['Apr', 15],
-                    ['May', 45],
-                    ['Jun', 38],
-                    ['Jul', 40],
-                    ['Aug', 10],
-                    ['Sep', 54],
-                    ['Oct', 10],
-                    ['Nov', 11],
-                    ['Dec', 0]
-                ]
+            dataProcessor: function(connector) {
+                return fetchData('/aluguel/taxa-mensal').then(data => {
+                    // Convertendo a resposta do backend para o formato esperado
+                    const taxaMensal = Object.keys(data).map(key => [key, data[key]]);
+                    return {
+                        data: [['Month', 'Taxa'], ...taxaMensal]
+                    };
+                });
             }
         }, {
             id: 'duracaoMediaReservas',
             type: 'JSON',
             options: {
-                data: [
-                    ['Car', 'Average Duration'],
-                    ['HB20', 10],
-                    ['ARGO', 20],
-                    ['SW4', 30],
-                    ['STRADA', 40],
-                    ['MINI', 50],
-                    ['POLO', 60],
-                    ['UNO', 70],
-                    ['CORSA', 80],
-                    ['HRV', 90],
-                    ['IDEA', 100]
-                ]
-                
+                data: duracaoMediaReservasData
             }
         }, {
             id: 'frequenciaAluguelPorVeiculo',
             type: 'JSON',
             dataProcessor: function(connector) {
-                return new Promise((resolve, reject) => {
-                    fetch('/aluguel/alugueis')
-                        .then(response => response.json())
-                        .then(data => {
-                            const totalAlugueis = data.length;
-                            const alugueisPorCarro = data.reduce((acc, aluguel) => {
-                                acc[aluguel.carroId] = (acc[aluguel.carroId] || 0) + 1;
-                                return acc;
-                            }, {});
-                            const frequenciaAluguel = Object.keys(alugueisPorCarro).map(carroId => [`Car ${carroId}`, alugueisPorCarro[carroId] / totalAlugueis]);
-                            resolve({
-                                data: [['Car', 'Frequency'], ...frequenciaAluguel]
-                            });
-                        })
-                        .catch(error => reject(error));
+                return fetchData('/aluguel/alugueis').then(data => {
+                    const totalAlugueis = data.length;
+                    const alugueisPorCarro = data.reduce((acc, aluguel) => {
+                        acc[aluguel.carro.id] = (acc[aluguel.carro.id] || 0) + 1;
+                        return acc;
+                    }, {});
+                    const frequenciaAluguel = Object.keys(alugueisPorCarro).map(carroId => [`Car ${carroId}`, alugueisPorCarro[carroId] / totalAlugueis]);
+                    return {
+                        data: [['Car', 'Frequency'], ...frequenciaAluguel]
+                    };
                 });
             }
         }]
