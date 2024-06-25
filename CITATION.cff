@@ -1,6 +1,7 @@
+---
 cff-version: 1.0.1
 message: Please cite this software using these metadata.
-title: 
+title: null
 authors:
   - family-names: Matos Alves Penna
     given-names: Renato
@@ -10,26 +11,21 @@ authors:
     given-names: Gabrielle
   - family-names: Aldenucci
     given-names: Luiz Victor
-  - family-names:  de Resende
+  - family-names: de Resende
     given-names: Julia Gabriela
-      - family-names: Costa Ramos
+  - family-names: Costa Ramos
     given-names: Leandra
-
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: Alonso Veloso
-    given-names: Eveline 
+    given-names: Eveline
   - name-suffix: Professor
     affiliation: PUC Minas
     family-names: Baroni De Carvalho
-    given-names: Juliana Amaral 
-  - name-suffix: Professor
-    affiliation: PUC Minas
-    family-names: De Brito
-    given-names: Aline Norberta
+    given-names: Juliana Amaral
     keywords:
-    - 
-repository-code: 
+      - null
+repository-code: https://github.com/ICEI-PUC-Minas-PPLES-TI/plf-es-2024-1-ti2-1372100-grupo-1-wheelson
 license: CC-BY-4.0
 version: 1.0.0
-date-released:
+date-released: 25-06-2024
