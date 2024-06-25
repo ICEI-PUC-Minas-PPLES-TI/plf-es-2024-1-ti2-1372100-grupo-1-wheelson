@@ -131,6 +131,9 @@ submitBtn.addEventListener("click", () => {
     })
     .then(data => {
         console.log('Success:', data);
+        console.log("Locatário cadastrado com sucesso!");
+        alert("Locatário cadastrado com sucesso!");
+        //mandar para página inicial
         window.location.href = "index.html";
     })
     .catch(error => {
