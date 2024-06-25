@@ -60,6 +60,10 @@ _* **Tabela** - campo formado por uma matriz de valores_
 | Modelo          | Caixa de texto   |                |                   |
 | Ano de fabricação| Data            |                |                   |
 | Valor Diário| Número            |       R$00,00         |                   |
+| Rua de encontro    | Caixa de texto   |                |                   |
+| Bairro de encontro| Data            |                |                   |
+| Ponto de referência     | Caixa de texto   |                |                   |
+
 
 
 | **Comandos**         |  **Destino**                   | **Tipo**          |
